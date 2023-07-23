@@ -6,7 +6,7 @@
 		> Field - Ward No, JE name and mobile no/ AE name and mobile no
 
     3. Street Management - Add/ View/ Edit/ Delete ( Link ward based)
-		>  select ward, Street name
+		> select ward, Street name
 
     4. Complaint Management with Reply -  Add/ View/ Edit/ Delete/ Export - (Filter date/ward/street/complete/pending )
 
