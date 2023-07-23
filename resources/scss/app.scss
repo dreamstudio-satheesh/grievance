@@ -1,5 +1,5 @@
 /*
-Template Name: Velzon - Admin & Dashboard Template
+Template Name: CleanSalem - Clean Green Salem
 Author: 4MDesigner
 Version: 2.2.0
 Website: https://4MDesigner.com/
