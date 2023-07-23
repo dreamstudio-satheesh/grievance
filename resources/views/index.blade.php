@@ -3,7 +3,7 @@
 @section('content')
 @component('components.breadcrumb')
 @slot('li_1') Pages @endslot
-@slot('title') Starter  @endslot
+@slot('title') Dashboard  @endslot
 @endcomponent
 @endsection
 @section('script')
