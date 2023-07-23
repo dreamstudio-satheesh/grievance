@@ -1264,7 +1264,7 @@
                                 <script>
                                     document.write(new Date().getFullYear())
 
-                                </script> © Velzon - 4MDesigner
+                                </script> © CleanSalem - 4MDesigner
                             </p>
                         </div>
                     </div>
