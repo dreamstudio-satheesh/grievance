@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('complaints', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('client_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('ward_id');
             $table->unsignedBigInteger('street_id');
             $table->string('subject');
@@ -24,7 +24,7 @@ return new class extends Migration
             $table->timestamps();
 
             // Foreign key constraints
-            $table->foreign('client_id')->references('id')->on('clients')->onDelete('cascade');
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->foreign('ward_id')->references('id')->on('wards')->onDelete('cascade');
             $table->foreign('street_id')->references('id')->on('streets')->onDelete('cascade');
 

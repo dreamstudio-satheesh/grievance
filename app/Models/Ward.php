@@ -8,4 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Ward extends Model
 {
     use HasFactory;
+
+     protected $fillable = ['name'];
+
+    public function streets()
+    {
+        return $this->hasMany(Street::class, 'ward_id');
+    }
 }
