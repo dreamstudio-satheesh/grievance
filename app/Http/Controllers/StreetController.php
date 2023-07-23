@@ -7,79 +7,60 @@ use Illuminate\Http\Request;
 
 class StreetController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        $streets = Street::all();
+        return view('streets.index', compact('streets'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function show($id)
+    {
+        $street = Street::findOrFail($id);
+        return view('streets.show', compact('street'));
+    }
+
     public function create()
     {
-        //
+        return view('streets.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'ward_id' => 'required|integer|exists:wards,id',
+        ]);
+
+        $street = Street::create($validatedData);
+
+        return redirect()->route('streets.show', $street->id)->with('success', 'Street created successfully!');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Street  $street
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Street $street)
+    public function edit($id)
     {
-        //
+        $street = Street::findOrFail($id);
+        return view('streets.edit', compact('street'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Street  $street
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Street $street)
+    public function update(Request $request, $id)
     {
-        //
+        $street = Street::findOrFail($id);
+
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'ward_id' => 'required|integer|exists:wards,id',
+        ]);
+
+        $street->update($validatedData);
+
+        return redirect()->route('streets.show', $street->id)->with('success', 'Street updated successfully!');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Street  $street
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Street $street)
+    public function destroy($id)
     {
-        //
-    }
+        $street = Street::findOrFail($id);
+        $street->delete();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Street  $street
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Street $street)
-    {
-        //
+        return redirect()->route('streets.index')->with('success', 'Street deleted successfully!');
     }
 }

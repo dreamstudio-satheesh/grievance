@@ -2,84 +2,64 @@
 
 namespace App\Http\Controllers;
 
+
 use App\Models\Ward;
 use Illuminate\Http\Request;
 
 class WardController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        //
+        $wards = Ward::all();
+        return view('wards.index', compact('wards'));
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function show($id)
+    {
+        $ward = Ward::findOrFail($id);
+        return view('wards.show', compact('ward'));
+    }
+
     public function create()
     {
-        //
+        return view('wards.create');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+        ]);
+
+        $ward = Ward::create($validatedData);
+
+        return redirect()->route('wards.show', $ward->id)->with('success', 'Ward created successfully!');
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Ward  $ward
-     * @return \Illuminate\Http\Response
-     */
-    public function show(Ward $ward)
+    public function edit($id)
     {
-        //
+        $ward = Ward::findOrFail($id);
+        return view('wards.edit', compact('ward'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Ward  $ward
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Ward $ward)
+    public function update(Request $request, $id)
     {
-        //
+        $ward = Ward::findOrFail($id);
+
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+        ]);
+
+        $ward->update($validatedData);
+
+        return redirect()->route('wards.show', $ward->id)->with('success', 'Ward updated successfully!');
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Ward  $ward
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, Ward $ward)
+    public function destroy($id)
     {
-        //
-    }
+        $ward = Ward::findOrFail($id);
+        $ward->delete();
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Ward  $ward
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy(Ward $ward)
-    {
-        //
+        return redirect()->route('wards.index')->with('success', 'Ward deleted successfully!');
     }
 }
