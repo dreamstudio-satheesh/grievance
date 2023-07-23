@@ -20,7 +20,7 @@ class CreateUsersTable extends Migration
             $table->string('name');
             $table->string('email')->unique();
             $table->string('mobile_number')->unique();
-            $table->string('role');
+            $table->string('role')->nullable();
             $table->integer('ward_number')->nullable();
             $table->unsignedBigInteger('street_id')->nullable();
             $table->timestamp('email_verified_at')->nullable();
@@ -30,7 +30,7 @@ class CreateUsersTable extends Migration
             $table->timestamps();
 
              // Foreign key constraint
-             $table->foreign('street_id')->references('id')->on('streets')->onDelete('set null');
+             // $table->foreign('street_id')->references('id')->on('streets')->onDelete('set null');
         });
         User::create(['name' => 'admin','mobile_number' => '912456780','email' => 'admin@app.com','password' => Hash::make('password'),'email_verified_at'=>'2022-01-02 17:04:58','avatar' => 'avatar-1.jpg','created_at' => now(),]);
     }
