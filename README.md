@@ -27,4 +27,4 @@
 
    12. Logout
 
-    13. Api for News & events, Photos Gallery, Track Complaints, List of complaints ( User submitted), Finished Complaints
+ ## Api for News & events, Photos Gallery, Track Complaints, List of complaints ( User submitted), Finished Complaints
