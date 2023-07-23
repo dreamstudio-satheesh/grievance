@@ -29,7 +29,7 @@
                         <div class="me-2"><i
                                 class="ri-map-pin-user-line me-1 text-white-75 fs-16 align-middle"></i>California,
                             United States</div>
-                        <div><i class="ri-building-line me-1 text-white-75 fs-16 align-middle"></i>Themesbrand
+                        <div><i class="ri-building-line me-1 text-white-75 fs-16 align-middle"></i>4MDesigner
                         </div>
                     </div>
                 </div>

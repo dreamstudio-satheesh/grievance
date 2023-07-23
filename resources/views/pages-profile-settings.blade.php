@@ -393,7 +393,7 @@
                                                     <label for="companyName" class="form-label">Company
                                                         Name</label>
                                                     <input type="text" class="form-control" id="companyName"
-                                                        placeholder="Company name" value="Themesbrand">
+                                                        placeholder="Company name" value="4MDesigner">
                                                 </div>
                                             </div>
                                             <!--end col-->

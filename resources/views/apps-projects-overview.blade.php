@@ -22,7 +22,7 @@
                                         <div>
                                             <h4 class="fw-bold">Velzon - Admin & Dashboard</h4>
                                             <div class="hstack gap-3 flex-wrap">
-                                                <div><i class="ri-building-line align-bottom me-1"></i> Themesbrand</div>
+                                                <div><i class="ri-building-line align-bottom me-1"></i> 4MDesigner</div>
                                                 <div class="vr"></div>
                                                 <div>Create Date : <span class="fw-medium">15 Sep, 2021</span></div>
                                                 <div class="vr"></div>

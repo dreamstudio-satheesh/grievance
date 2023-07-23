@@ -85,7 +85,7 @@
                                 </td>
                                 <td class="collection">
                                     <div class="d-flex align-items-center">
-                                        <img src="https://img.themesbrand.com/velzon/images/img-1.gif" alt="" class="avatar-xs rounded-circle object-cover me-2"> <a href="apps-nft-item-details" class="link-dark">Patterns Arts & Culture</a>
+                                        <img src="https://img.4MDesigner.com/velzon/images/img-1.gif" alt="" class="avatar-xs rounded-circle object-cover me-2"> <a href="apps-nft-item-details" class="link-dark">Patterns Arts & Culture</a>
                                     </div>
                                 </td>
                                 <td class="volume_price">32,850</td>
@@ -125,7 +125,7 @@
                                 </td>
                                 <td class="collection">
                                     <div class="d-flex align-items-center">
-                                        <img src="https://img.themesbrand.com/velzon/images/img-2.gif" alt="" class="avatar-xs rounded-circle object-cover me-2"> <a href="apps-nft-item-details" class="link-dark">Long-tailed Macaque</a>
+                                        <img src="https://img.4MDesigner.com/velzon/images/img-2.gif" alt="" class="avatar-xs rounded-circle object-cover me-2"> <a href="apps-nft-item-details" class="link-dark">Long-tailed Macaque</a>
                                     </div>
                                 </td>
                                 <td class="volume_price">3,63,000</td>
@@ -185,7 +185,7 @@
                                 </td>
                                 <td class="collection">
                                     <div class="d-flex align-items-center">
-                                        <img src="https://img.themesbrand.com/velzon/images/img-5.gif" alt="" class="avatar-xs rounded-circle object-cover me-2"> <a href="apps-nft-item-details" class="link-dark">The Chirstoper</a>
+                                        <img src="https://img.4MDesigner.com/velzon/images/img-5.gif" alt="" class="avatar-xs rounded-circle object-cover me-2"> <a href="apps-nft-item-details" class="link-dark">The Chirstoper</a>
                                     </div>
                                 </td>
                                 <td class="volume_price">1,87,600</td>
@@ -205,7 +205,7 @@
                                 </td>
                                 <td class="collection">
                                     <div class="d-flex align-items-center">
-                                        <img src="https://img.themesbrand.com/velzon/images/img-3.gif" alt="" class="avatar-xs rounded-circle object-cover me-2"> <a href="apps-nft-item-details" class="link-dark">Walking On Air</a>
+                                        <img src="https://img.4MDesigner.com/velzon/images/img-3.gif" alt="" class="avatar-xs rounded-circle object-cover me-2"> <a href="apps-nft-item-details" class="link-dark">Walking On Air</a>
                                     </div>
                                 </td>
                                 <td class="volume_price">4,62,000</td>

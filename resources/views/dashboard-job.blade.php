@@ -347,7 +347,7 @@
                                                 <img src="{{URL::asset('assets/images/companies/img-5.png')}}" alt="" height="16">
                                             </div>
                                         </div>
-                                        <h6 class="mb-0">Themesbrand</h6>
+                                        <h6 class="mb-0">4MDesigner</h6>
                                     </div>
                                 </td>
                                 <td>

@@ -160,11 +160,11 @@
 @endsection
 @section('script')
 <script src="{{ URL::asset('assets/libs/apexcharts/apexcharts.min.js') }}"></script>
-<script src="https://img.themesbrand.com/velzon/apexchart-js/stock-prices.js"></script>
+<script src="https://img.4MDesigner.com/velzon/apexchart-js/stock-prices.js"></script>
 <!-- for github style chart -->
-<script src="https://img.themesbrand.com/velzon/apexchart-js/github-data.js"></script>
+<script src="https://img.4MDesigner.com/velzon/apexchart-js/github-data.js"></script>
 <!-- for irregular timeseries chart -->
-<script src="https://img.themesbrand.com/velzon/apexchart-js/irregular-data-series.js"></script>
+<script src="https://img.4MDesigner.com/velzon/apexchart-js/irregular-data-series.js"></script>
 <script src="{{ URL::asset('assets/libs/moment/moment.min.js') }}"></script>
 <script src="{{ URL::asset('assets/js/pages/apexcharts-area.init.js') }}"></script>
 <script src="{{ URL::asset('/assets/js/app.min.js') }}"></script>

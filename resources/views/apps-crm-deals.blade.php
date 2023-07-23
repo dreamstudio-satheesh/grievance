@@ -866,7 +866,7 @@
                     </div>
                     <div class="collapse border-top border-top-dashed" id="needsIdentified4">
                         <div class="card-body">
-                            <h6 class="fs-14 mb-1">Themesbrand <small class="badge badge-soft-danger">3
+                            <h6 class="fs-14 mb-1">4MDesigner <small class="badge badge-soft-danger">3
                                     Month</small></h6>
                             <p class="text-muted">As a company grows however, you find it's not as easy
                                 to shout across</p>
@@ -932,7 +932,7 @@
                     </div>
                     <div class="collapse border-top border-top-dashed" id="needsIdentified5">
                         <div class="card-body">
-                            <h6 class="fs-14 mb-1">Themesbrand <small class="badge badge-soft-danger">3
+                            <h6 class="fs-14 mb-1">4MDesigner <small class="badge badge-soft-danger">3
                                     Days</small></h6>
                             <p class="text-muted">As a company grows however, you find it's not as easy
                                 to shout across</p>

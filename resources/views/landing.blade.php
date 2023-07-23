@@ -1638,7 +1638,7 @@
                                     <script>
                                         document.write(new Date().getFullYear())
 
-                                    </script> Â© Velzon - Themesbrand
+                                    </script> Â© Velzon - 4MDesigner
                                 </p>
                             </div>
                         </div>

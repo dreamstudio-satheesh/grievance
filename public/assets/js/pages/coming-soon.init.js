@@ -1,8 +1,8 @@
 /*
 Template Name: Velzon - Admin & Dashboard Template
-Author: Themesbrand
-Website: https://Themesbrand.com/
-Contact: Themesbrand@gmail.comom
+Author: 4MDesigner
+Website: https://4MDesigner.com/
+Contact: 4MDesigner@gmail.comom
 File: Coming soon Init Js File
 */
 

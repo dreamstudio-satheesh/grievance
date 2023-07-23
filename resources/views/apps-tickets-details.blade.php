@@ -20,7 +20,7 @@
                                 <div class="col-md">
                                     <h4 class="fw-semibold" id="ticket-title" >#VLZ135 - Create an Excellent UI for a Dashboard</h4>
                                     <div class="hstack gap-3 flex-wrap">
-                                        <div class="text-muted"><i class="ri-building-line align-bottom me-1"></i><span id="ticket-client">Themesbrand</span></div>
+                                        <div class="text-muted"><i class="ri-building-line align-bottom me-1"></i><span id="ticket-client">4MDesigner</span></div>
                                         <div class="vr"></div>
                                         <div class="text-muted">Create Date : <span class="fw-medium " id="create-date">20 Dec, 2021</span></div>
                                         <div class="vr"></div>
@@ -184,7 +184,7 @@ userIdx: {}
                             </tr>
                             <tr>
                                 <td class="fw-medium">Client</td>
-                                <td id="t-client">Themesbrand</td>
+                                <td id="t-client">4MDesigner</td>
                             </tr>
                             <tr>
                                 <td class="fw-medium">Project</td>

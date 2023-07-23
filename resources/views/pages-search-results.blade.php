@@ -92,7 +92,7 @@
                         <div class="tab-pane active" id="all" role="tabpanel">
                             <div class="pb-3">
                                 <h5 class="mb-1"><a href="javascript:void(0);">Velzon - Responsive Bootstrap 5 Admin Dashboard</a></h5>
-                                <p class="text-success mb-2">https://themesbrand.com/velzon/index</p>
+                                <p class="text-success mb-2">https://4MDesigner.com/velzon/index</p>
                                 <p class="text-muted mb-2">Velzon admin is super flexible, powerful, clean, modern & responsive admin template based on <span class="fw-semibold">bootstrap 5</span> stable with unlimited possibilities. You can simply change to any layout or mode by changing a couple of lines of code. You can start small and large projects or update design in your existing project using Velzon it is very quick and easy as it is beautiful, adroit, and delivers the ultimate user experience.</p>
                                 <ul class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0">
                                     <li class="list-inline-item me-3"><i class="ri-thumb-up-line align-middle me-1"></i>10</li>
@@ -103,7 +103,7 @@
                                                 <i class="ri-user-line"></i>
                                             </div>
                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                <span class="fw-medium">Themesbrand</span>
+                                                <span class="fw-medium">4MDesigner</span>
                                             </div>
                                         </div>
                                     </li>
@@ -158,8 +158,8 @@
                             <div class="border border-dashed"></div>
 
                             <div class="py-3">
-                                <h5 class="mb-1"><a href="javascript:void(0);">Skote - Admin & Dashboard Template by Themesbrand</a></h5>
-                                <p class="text-success mb-2">https://themesbrand.com/skote/</p>
+                                <h5 class="mb-1"><a href="javascript:void(0);">Skote - Admin & Dashboard Template by 4MDesigner</a></h5>
+                                <p class="text-success mb-2">https://4MDesigner.com/skote/</p>
                                 <p class="text-muted mb-2">Skote is an admin dashboard template that is a beautifully crafted, clean & minimal designed admin template with Dark, Light Layouts with RTL options. You can build any type of web application like Saas based interface, eCommerce, Crypto, CRM, CMS, Project management apps, Admin Panels, etc.</p>
                                 <ul class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0">
                                     <li class="list-inline-item me-3"><i class="ri-thumb-up-line align-middle me-1"></i>485</li>
@@ -170,7 +170,7 @@
                                                 <i class="ri-user-line"></i>
                                             </div>
                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                <span class="fw-medium">Themesbrand</span>
+                                                <span class="fw-medium">4MDesigner</span>
                                             </div>
                                         </div>
                                     </li>
@@ -181,7 +181,7 @@
 
                             <div class="py-3">
                                 <h5 class="mb-1"><a href="javascript:void(0);">Minia - React Js Admin & Dashboard Template</a></h5>
-                                <p class="text-success mb-2">https://themesbrand.com/minia/react/</p>
+                                <p class="text-success mb-2">https://4MDesigner.com/minia/react/</p>
                                 <p class="text-muted mb-2">Minia react is a simple and beautiful admin template built with Bootstrap ^5.1.3. It has <span class="fw-semibold">5+ different layouts and 3 modes</span> ( Dark, Light & RTL ) which are managed by SCSS only. You can simply change to any layouts or mode by changing a couple of lines code.</p>
                                 <ul class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0">
                                     <li class="list-inline-item me-3"><i class="ri-thumb-up-line align-middle me-1"></i>69</li>
@@ -192,7 +192,7 @@
                                                 <i class="ri-user-line"></i>
                                             </div>
                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                <span class="fw-medium">Themesbrand</span>
+                                                <span class="fw-medium">4MDesigner</span>
                                             </div>
                                         </div>
                                     </li>
@@ -202,8 +202,8 @@
                             <div class="border border-dashed"></div>
 
                             <div class="py-3">
-                                <h5 class="mb-1"><a href="javascript:void(0);">Doson - Angular Admin & Dashboard Template by Themesbrand</a></h5>
-                                <p class="text-success mb-2">https://themesbrand.com/dason/angular/</p>
+                                <h5 class="mb-1"><a href="javascript:void(0);">Doson - Angular Admin & Dashboard Template by 4MDesigner</a></h5>
+                                <p class="text-success mb-2">https://4MDesigner.com/dason/angular/</p>
                                 <p class="text-muted mb-2">Dason is a simple and beautiful admin template built with Bootstrap ^5.1.3. It has 5+ different layouts and 3 modes ( Dark, Light & RTL ) which are managed by SCSS only. You can simply change to any layouts or mode by changing a couple of lines code.</p>
                                 <ul class="list-inline d-flex align-items-center g-3 text-muted fs-14 mb-0">
                                     <li class="list-inline-item me-3"><i class="ri-thumb-up-line align-middle me-1"></i>102</li>
@@ -214,7 +214,7 @@
                                                 <i class="ri-user-line"></i>
                                             </div>
                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                <span class="fw-medium">Themesbrand</span>
+                                                <span class="fw-medium">4MDesigner</span>
                                             </div>
                                         </div>
                                     </li>
@@ -910,7 +910,7 @@
                                 <div class="col-lg-12 video-list">
                                     <div class="list-element">
                                         <h5 class="mb-1"><a href="javascript:void(0);">Admin dashboard templates - Material Design for Velzon</a></h5>
-                                        <p class="text-success">https://themesbrand.com/velzon/index</p>
+                                        <p class="text-success">https://4MDesigner.com/velzon/index</p>
                                         <div class="d-flex flex-column flex-sm-row">
                                             <div class="flex-shrink-0">
                                                 <iframe src="https://www.youtube.com/embed/GfSZtaoc5bw" title="YouTube video" allowfullscreen class="rounded"></iframe>
@@ -927,7 +927,7 @@
                                                                 <i class="ri-user-line"></i>
                                                             </div>
                                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                                <span class="fw-medium">Themesbrand</span>
+                                                                <span class="fw-medium">4MDesigner</span>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -938,7 +938,7 @@
 
                                     <div class="list-element mt-4">
                                         <h5 class="mb-1"><a href="javascript:void(0);">Create Responsive Admin Dashboard using Html CSS</a></h5>
-                                        <p class="text-success">https://themesbrand.com/velzon/index</p>
+                                        <p class="text-success">https://4MDesigner.com/velzon/index</p>
                                         <div class="d-flex flex-column flex-sm-row">
                                             <div class="flex-shrink-0">
                                                 <iframe src="https://www.youtube.com/embed/Z-fV2lGKnnU" title="YouTube video" allowfullscreen class="rounded"></iframe>
@@ -955,7 +955,7 @@
                                                                 <i class="ri-user-line"></i>
                                                             </div>
                                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                                <span class="fw-medium">Themesbrand</span>
+                                                                <span class="fw-medium">4MDesigner</span>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -966,7 +966,7 @@
 
                                     <div class="list-element mt-4">
                                         <h5 class="mb-1"><a href="javascript:void(0);">Velzon - The Most Popular Bootstrap 5 HTML, Angular & React Js Admin</a></h5>
-                                        <p class="text-success">https://themesbrand.com/velzon/index</p>
+                                        <p class="text-success">https://4MDesigner.com/velzon/index</p>
                                         <div class="d-flex flex-column flex-sm-row">
                                             <div class="flex-shrink-0">
                                                 <iframe src="https://www.youtube.com/embed/2RZQN_ko0iU" title="YouTube video" allowfullscreen class="rounded"></iframe>
@@ -983,7 +983,7 @@
                                                                 <i class="ri-user-line"></i>
                                                             </div>
                                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                                <span class="fw-medium">Themesbrand</span>
+                                                                <span class="fw-medium">4MDesigner</span>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -994,7 +994,7 @@
 
                                     <div class="list-element mt-4">
                                         <h5 class="mb-1"><a href="javascript:void(0);">Velzon Admin Dashboard (website analytics) with Bootstrap 5</a></h5>
-                                        <p class="text-success">https://themesbrand.com/velzon/index</p>
+                                        <p class="text-success">https://4MDesigner.com/velzon/index</p>
                                         <div class="d-flex flex-column flex-sm-row">
                                             <div class="flex-shrink-0">
                                                 <iframe src="https://www.youtube.com/embed/Z-fV2lGKnnU" title="YouTube video" allowfullscreen class="rounded"></iframe>
@@ -1011,7 +1011,7 @@
                                                                 <i class="ri-user-line"></i>
                                                             </div>
                                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                                <span class="fw-medium">Themesbrand</span>
+                                                                <span class="fw-medium">4MDesigner</span>
                                                             </div>
                                                         </div>
                                                     </li>
@@ -1022,7 +1022,7 @@
 
                                     <div class="list-element mt-4">
                                         <h5 class="mb-1"><a href="javascript:void(0);">Dashboard Admin Basics - YouTube</a></h5>
-                                        <p class="text-success">https://themesbrand.com/velzon/index</p>
+                                        <p class="text-success">https://4MDesigner.com/velzon/index</p>
                                         <div class="d-flex flex-column flex-sm-row">
                                             <div class="flex-shrink-0">
                                                 <iframe src="https://www.youtube.com/embed/1y_kfWUCFDQ" title="YouTube video" allowfullscreen class="rounded"></iframe>
@@ -1039,7 +1039,7 @@
                                                                 <i class="ri-user-line"></i>
                                                             </div>
                                                             <div class="flex-grow-1 fs-13 ms-1">
-                                                                <span class="fw-medium">Themesbrand</span>
+                                                                <span class="fw-medium">4MDesigner</span>
                                                             </div>
                                                         </div>
                                                     </li>

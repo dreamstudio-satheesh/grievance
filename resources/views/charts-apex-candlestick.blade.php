@@ -70,7 +70,7 @@
     <script src="{{ URL::asset('assets/libs/apexcharts/apexcharts.min.js') }}"></script>
     <script src="https://apexcharts.com/samples/assets/ohlc.js"></script>
     <!-- for Category x-axis chart -->
-    <script src="https://img.themesbrand.com/velzon/apexchart-js/dayjs.min.js"></script>
+    <script src="https://img.4MDesigner.com/velzon/apexchart-js/dayjs.min.js"></script>
     <script src="{{ URL::asset('assets/js/pages/apexcharts-candlestick.init.js') }}"></script>
 
     <script src="{{ URL::asset('/assets/js/app.min.js') }}"></script>

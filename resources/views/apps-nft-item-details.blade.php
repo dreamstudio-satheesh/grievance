@@ -24,7 +24,7 @@
                                     <img src="{{URL::asset('assets/images/nft/img-03.jpg')}}" alt="" class="img-fluid rounded">
                                 </div>
                                 <div class="col-3">
-                                    <img src="https://img.themesbrand.com/velzon/images/img-3.gif" alt="" class="img-fluid rounded h-100 object-cover">
+                                    <img src="https://img.4MDesigner.com/velzon/images/img-3.gif" alt="" class="img-fluid rounded h-100 object-cover">
                                 </div>
                                 <div class="col-3">
                                     <img src="{{URL::asset('assets/images/nft/img-06.jpg')}}" alt="" class="img-fluid rounded">
@@ -176,7 +176,7 @@
                                             <tr>
                                                 <th scope="row">
                                                     <div class="d-flex align-items-center">
-                                                        <img src="https://img.themesbrand.com/velzon/images/img-4.gif" alt="" class="avatar-xs rounded object-cover" />
+                                                        <img src="https://img.4MDesigner.com/velzon/images/img-4.gif" alt="" class="avatar-xs rounded object-cover" />
                                                         <a href="apps-nft-item-details" class="link-dark"><span class="mb-0 ms-2">Evolved Reality</span></a>
                                                     </div>
                                                 </th>
