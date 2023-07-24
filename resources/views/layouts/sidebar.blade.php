@@ -35,10 +35,10 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarIcons">
+                    <a class="nav-link menu-link" href="#users" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="users">
                         <i class="ri-account-circle-line"></i> <span>Users</span>
                     </a>
-                    <div class="collapse menu-dropdown" id="sidebarIcons">
+                    <div class="collapse menu-dropdown" id="users">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
                                 <a href="icons-remix" class="nav-link">@lang('translation.remix')</a>
