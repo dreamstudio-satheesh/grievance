@@ -40,7 +40,7 @@
                     <div class="collapse menu-dropdown" id="sidebarDashboards">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{ url('/home')}}" class="nav-link">Home</a>
+                                <a href="{{ url('/index')}}" class="nav-link">Home</a>
                             </li>
                            
                         </ul>
