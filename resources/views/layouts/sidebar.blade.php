@@ -32,11 +32,10 @@
             </div>
             <ul class="navbar-nav" id="navbar-nav">
                
-
+                <li class="menu-title"><span>@lang('translation.menu')</span></li>
                 <li class="nav-item">
                     <a href="users/index"  class="nav-link"> <i class="ri-account-circle-line"></i> Users</a>
-                </li>
-                
+                </li>                
 
             </ul>
         </div>
