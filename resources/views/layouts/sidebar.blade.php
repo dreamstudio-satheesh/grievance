@@ -34,8 +34,23 @@
                
                 <li class="menu-title"><span>@lang('translation.menu')</span></li>
                 <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarDashboards" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ri-dashboard-2-line"></i> <span>@lang('translation.dashboards')</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="sidebarDashboards">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ url('/home')}}" class="nav-link">Home</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
                     <a href="users/index"  class="nav-link"> <i class="ri-account-circle-line"></i> Users</a>
-                </li>                
+                </li>
+                
+                
 
             </ul>
         </div>
