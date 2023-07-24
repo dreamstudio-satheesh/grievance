@@ -34,17 +34,17 @@
                 <li class="menu-title"><span>@lang('translation.menu')</span></li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarIcons">
+                    <a class="nav-link menu-link" href="#" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="users">
                         <i class="ri-account-circle-line"></i> <span>Users</span>
                     </a>
                     <div class="collapse menu-dropdown" id="users">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="users/index" class="nav-link">User List</a>
+                                <a href="users/index" class="nav-link">Users List</a>
                             </li>
                             <li class="nav-item">
                                 <a href="users/create" class="nav-link">New User</a>
-                            </li>
+                            </li>                         
                         </ul>
                     </div>
                 </li>
