@@ -47,7 +47,11 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="users/index"  class="nav-link"> <i class="ri-account-circle-line"></i> Users</a>
+                    <a href="users/index"  class="nav-link"> <i class="ri-account-circle-line"></i> Users List</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="users/index"  class="nav-link"> <i class="ri-account-circle-line"></i>Add User</a>
                 </li>
                 
                 
