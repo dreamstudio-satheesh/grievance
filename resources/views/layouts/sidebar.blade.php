@@ -38,12 +38,19 @@
                         <i class="ri-account-circle-line"></i> <span>Users</span>
                     </a>
 
-                    <li class="nav-item">
-                        <a href="charts-chartjs" class="nav-link">User List</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="charts-echarts" class="nav-link">Create User</a>
-                    </li>
+                    <div class="collapse menu-dropdown" id="sidebarIcons">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="charts-chartjs" class="nav-link">User List</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="charts-echarts" class="nav-link">Create User</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+
+                   
                    
                 </li>
             </ul>
