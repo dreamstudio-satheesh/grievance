@@ -23,7 +23,6 @@ class User extends Authenticatable
         'email',
         'mobile_number',
         'password',
-        'role',
         'ward_number', 
         'street_id',       
         'avatar',
@@ -47,4 +46,16 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    /**
+     * Method setPasswordAttribute
+     *
+     * @param $value $value [explicite description]
+     *
+     * @return void
+     */
+    public function setPasswordAttribute($value)
+    {
+        $this->attributes['password'] = bcrypt($value);
+    }
 }
