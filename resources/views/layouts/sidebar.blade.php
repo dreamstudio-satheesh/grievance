@@ -31,29 +31,12 @@
             <div id="two-column-menu">
             </div>
             <ul class="navbar-nav" id="navbar-nav">
-                <li class="menu-title"><span>@lang('translation.menu')</span></li>
-
+               
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#users" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="users">
-                        <i class="ri-account-circle-line"></i> <span>Users</span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="users">
-                        <ul class="nav nav-sm flex-column">
-                            <li class="nav-item">
-                                <a href="icons-remix" class="nav-link">@lang('translation.remix')</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="icons-boxicons" class="nav-link">@lang('translation.boxicons')</a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="icons-materialdesign" class="nav-link">@lang('translation.material-design')</a>
-                            </li>
-                         
-                        </ul>
-                    </div>
+                    <a href="users/index"  class="nav-link"> <i class="ri-account-circle-line"></i> Users</a>
                 </li>
-             
+                
 
             </ul>
         </div>
