@@ -33,8 +33,9 @@
             <ul class="navbar-nav" id="navbar-nav">
                 <li class="menu-title"><span>@lang('translation.menu')</span></li>
 
+
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarIcons">
+                    <a class="nav-link menu-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarIcons">
                         <i class="ri-account-circle-line"></i> <span>Users</span>
                     </a>
                     <div class="collapse menu-dropdown" id="sidebarIcons">
