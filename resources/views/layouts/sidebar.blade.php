@@ -37,22 +37,38 @@
                     <a class="nav-link menu-link" href="#sidebarAuth" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarAuth">
                         <i class="ri-account-circle-line"></i> <span>Users</span>
                     </a>
+                   
+                </li>
 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#sidebarIcons" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarIcons">
+                        <i class="ri-compasses-2-line"></i> <span>@lang('translation.icons')</span>
+                    </a>
                     <div class="collapse menu-dropdown" id="sidebarIcons">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="charts-chartjs" class="nav-link">User List</a>
+                                <a href="icons-remix" class="nav-link">@lang('translation.remix')</a>
                             </li>
                             <li class="nav-item">
-                                <a href="charts-echarts" class="nav-link">Create User</a>
+                                <a href="icons-boxicons" class="nav-link">@lang('translation.boxicons')</a>
                             </li>
-                            
+                            <li class="nav-item">
+                                <a href="icons-materialdesign" class="nav-link">@lang('translation.material-design')</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="icons-lineawesome" class="nav-link">@lang('translation.line-awesome')</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="icons-feather" class="nav-link">@lang('translation.feather')</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="icons-crypto" class="nav-link"> <span>@lang('translation.crypto-svg')</span></a>
+                            </li>
                         </ul>
                     </div>
-
-                   
-                   
                 </li>
+             
+
             </ul>
         </div>
         <!-- Sidebar -->
