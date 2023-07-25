@@ -8,10 +8,9 @@
 
 
     <div class="card">
-    <form method="POST" action="{{ route("users.store") }}" class="tablelist-form" autocomplete="off">
+    <form method="POST" action="{{ route("users.store") }}" class="tablelist-form" >
         @csrf
-        <div class="card-body">
-            
+        <div class="card-body">           
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Ward Name</label>
@@ -21,9 +20,8 @@
 
         </div>
         <div class="card-footer" >
-            <div class="hstack gap-2 justify-content-end">
-                
-                <button type="submit" value="Submit" class="btn btn-success">Add Ward</button>
+            <div class="hstack gap-2 justify-content-end">                
+                <button type="submit" value="submit" class="btn btn-success">Add Ward</button>
             </div>
         </div>
     </form>
