@@ -6,6 +6,24 @@
 @slot('title') Users  @endslot
 @endcomponent
 
+
+<div class="row g-4 mb-3">
+    <div class="col-sm-auto">
+        <div>
+            <button type="button" class="btn btn-primary add-btn" data-bs-toggle="modal" id="create-btn" data-bs-target="#showModal"><i class="ri-add-line align-bottom me-1"></i> Add</button>
+            <button class="btn btn-soft-danger" onclick="deleteMultiple()"><i class="ri-delete-bin-2-line"></i></button>
+        </div>
+    </div>
+    <div class="col-sm">
+        <div class="d-flex justify-content-sm-end">
+            <div class="search-box ms-2">
+                <input type="text" class="form-control search" placeholder="Search...">
+                <i class="ri-search-line search-icon"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
 <table class="table table-nowrap">
     <thead>
     <tr>
