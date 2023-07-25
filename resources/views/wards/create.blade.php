@@ -3,7 +3,7 @@
 @section('content')
 @component('components.breadcrumb')
 @slot('li_1') Pages @endslot
-@slot('title') Add User  @endslot
+@slot('title') Add Wards  @endslot
 @endcomponent
 
 
@@ -25,7 +25,7 @@
         <div class="card-footer" >
             <div class="hstack gap-2 justify-content-end">
                 
-                <button type="submit" class="btn btn-success" id="add-btn">Add User</button>
+                <button type="submit" class="btn btn-success" id="add-btn">Add Ward</button>
             </div>
         </div>
     </form>
