@@ -51,16 +51,16 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('users/create')}}"  class="nav-link"> <i class="ri-account-circle-line"></i>Add User</a>
+                    <a href="{{ url('users/create')}}"  class="nav-link"> <i class="ri-user-add-line"></i>Add User</a>
                 </li>
                 
                 
                 <li class="nav-item">
-                    <a href="{{ url('/wards')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Ward List</a>
+                    <a href="{{ url('/wards')}}"  class="nav-link"> <i class="ri-newspaper-fill"></i> Ward List</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('wards/create')}}"  class="nav-link"> <i class="ri-account-circle-line"></i>New Ward</a>
+                    <a href="{{ url('wards/create')}}"  class="nav-link"> <i class="ri-newspaper-line"></i>New Ward</a>
                 </li>
 
 
