@@ -8,7 +8,7 @@
 
 
     <div class="card">
-    <form method="POST" action="{{ route("users.store") }}" class="tablelist-form" >
+    <form method="post" action="{{ route("users.store") }}" class="tablelist-form" >
         @csrf
         <div class="card-body">           
 
