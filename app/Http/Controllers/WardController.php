@@ -32,7 +32,7 @@ class WardController extends Controller
         ]);
         
 
-        $ward = Ward::create($validatedData);
+       return $ward = Ward::create($validatedData);
 
         return redirect()->route('wards.index', $ward->name)->with('success', 'Ward created successfully!');
     }
