@@ -3,7 +3,7 @@
 @section('content')
 @component('components.breadcrumb')
 @slot('li_1') Pages @endslot
-@slot('title') Users  @endslot
+@slot('title') Wards  @endslot
 @endcomponent
 
 
@@ -31,9 +31,6 @@
     <tr>
     <th scope="col">ID</th>
     <th scope="col">name</th>
-    <th scope="col">email</th>
-    <th scope="col">mobile number</th>
-    <th scope="col">ward number</th>
     <th scope="col">Action</th>
     </tr>
     </thead>
@@ -42,9 +39,6 @@
     <tr>
     <th scope="row"><a href="#" class="fw-semibold">#{{ $ward->id }}</a></th>
     <td>{{ $ward->name }}</td>
-    <td>{{ $ward->email }}</td>
-    <td>{{ $ward->mobile_number }}</td>
-    <td>{{ $ward->ward_number }}</td>
     <td>
       
         <div class="d-flex gap-2">
