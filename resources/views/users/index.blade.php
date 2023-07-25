@@ -44,7 +44,7 @@
     <td>October 15, 2021</td>
     <td>$2,300</td>
     <td>
-        @endforeach
+      
         <div class="d-flex gap-2">
             <div class="edit">
                 <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
@@ -56,7 +56,7 @@
     </td>
     
     </tr>
-    
+         @endforeach
    
     </tbody>
     </table>
