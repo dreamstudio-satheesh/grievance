@@ -27,7 +27,7 @@ class WardController extends Controller
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
+       return $validatedData = $request->validate([
             'name' => 'required|string|max:255',
         ]);
         
