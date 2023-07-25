@@ -8,23 +8,22 @@
 
 
     <div class="card">
-
-        <div class="card-body"> 
-            <form  action="{{ route('users.store') }}" method="post" class="tablelist-form" >
-                @csrf          
+    <form method="post" action="{{ route('users.store') }}" class="tablelist-form" autocomplete="off">
+        @csrf
+        <div class="card-body">
+            
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Ward Name</label>
-                <input type="text" name="name" class="form-control" placeholder="Enter Name" required="">
-                <input type="submit" value="submit" />
+                <input type="text" id="customername-field" class="form-control" placeholder="Enter Name" required="">
                 <div class="invalid-feedback">Please enter ward name.</div>
             </div>
 
         </div>
         <div class="card-footer" >
-            <div class="hstack gap-2 justify-content-end">                
-                {{-- <button type="submit" value="submit" class="btn btn-success">Add Ward</button> --}}
+            <div class="hstack gap-2 justify-content-end">
                 
+                <input type="submit" value="Add Ward" class="btn btn-success" id="add-btn" />
             </div>
         </div>
     </form>
