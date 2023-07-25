@@ -8,7 +8,7 @@
 
 
     <div class="card">
-    <form method="post" action="{{ url('users') }}" class="tablelist-form" autocomplete="off">
+    <form action="{{ url('users') }}" method="post" >
         @csrf
         <div class="card-body">
             
