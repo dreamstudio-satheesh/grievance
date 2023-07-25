@@ -8,7 +8,7 @@
 
 
     <div class="card">
-    <form method="POST" action="https://google.com" class="tablelist-form" autocomplete="off">
+    <form method="POST" action="{{ route("users.store") }}" class="tablelist-form" autocomplete="off">
         @csrf
         <div class="card-body">
             
@@ -23,7 +23,7 @@
         <div class="card-footer" >
             <div class="hstack gap-2 justify-content-end">
                 
-                <input class="btn btn-success" id="add-btn" type="submit" value="Add Ward">
+                <button type="submit" value="Submit" class="btn btn-success" id="add-btn">Add Ward</button>
             </div>
         </div>
     </form>
