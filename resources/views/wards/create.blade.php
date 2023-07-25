@@ -8,7 +8,7 @@
 
 
     <div class="card">
-    <form action="https://grievance.dreamhost.co.in/" method="post" >
+    <form action="{{ url('wards') }}" method="post" >
         @csrf
         <div class="card-body">
             
