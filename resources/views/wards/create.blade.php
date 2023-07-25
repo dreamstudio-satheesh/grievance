@@ -22,6 +22,7 @@
         <div class="card-footer" >
             <div class="hstack gap-2 justify-content-end">                
                 <button type="submit" value="submit" class="btn btn-success">Add Ward</button>
+                <input type="submit" value="Send Request" />
             </div>
         </div>
     </form>
