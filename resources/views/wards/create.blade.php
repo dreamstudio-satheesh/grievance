@@ -8,16 +8,14 @@
 
 
     <div class="card">
-    <form class="tablelist-form" autocomplete="off">
+    <form method="POST" action="{{ route('users.store') }}" class="tablelist-form" autocomplete="off">
+        @csrf
         <div class="card-body">
-            <div class="mb-3"  style="display: none;">
-                <label for="id-field" class="form-label">ID</label>
-                <input type="text" id="id-field" class="form-control" placeholder="ID" readonly="">
-            </div>
+            
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Ward Name</label>
-                <input type="text" id="customername-field" class="form-control" placeholder="Enter Name" required="">
+                <input type="text" name="name" class="form-control" placeholder="Enter Name" required="">
                 <div class="invalid-feedback">Please enter ward name.</div>
             </div>
 
