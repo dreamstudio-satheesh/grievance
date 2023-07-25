@@ -30,19 +30,21 @@
     <thead>
     <tr>
     <th scope="col">ID</th>
-    <th scope="col">Customer</th>
-    <th scope="col">Date</th>
-    <th scope="col">Invoice</th>
+    <th scope="col">name</th>
+    <th scope="col">email</th>
+    <th scope="col">mobile number</th>
+    <th scope="col">ward number</th>
     <th scope="col">Action</th>
     </tr>
     </thead>
     <tbody>
         @foreach ($users as $user)
     <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#VZ2110</a></th>
-    <td>Bobby Davis</td>
-    <td>October 15, 2021</td>
-    <td>$2,300</td>
+    <th scope="row"><a href="#" class="fw-semibold">#{{ $user->id }}</a></th>
+    <td>{{ $user->name }}</td>
+    <td>{{ $user->email }}</td>
+    <td>{{ $user->mobile_number }}</td>
+    <td>{{ $user->ward_number }}</td>
     <td>
       
         <div class="d-flex gap-2">
