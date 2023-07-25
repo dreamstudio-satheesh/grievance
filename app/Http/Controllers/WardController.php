@@ -27,17 +27,14 @@ class WardController extends Controller
 
     public function store(Request $request)
     {
-        return 'hi';
-        
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
         ]);
-
-        return  $validatedData;
+        
 
         $ward = Ward::create($validatedData);
 
-        return redirect()->route('wards.index', $ward->id)->with('success', 'Ward created successfully!');
+        return redirect()->route('wards.index', $ward->name)->with('success', 'Ward created successfully!');
     }
 
     public function edit($id)
