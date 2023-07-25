@@ -55,6 +55,15 @@
                 </li>
                 
                 
+                <li class="nav-item">
+                    <a href="{{ url('/wards')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Ward List</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="{{ url('wards/create')}}"  class="nav-link"> <i class="ri-account-circle-line"></i>New Ward</a>
+                </li>
+
+
 
             </ul>
         </div>
