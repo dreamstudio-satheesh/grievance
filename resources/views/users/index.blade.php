@@ -22,29 +22,20 @@
     <td>Bobby Davis</td>
     <td>October 15, 2021</td>
     <td>$2,300</td>
-    <td><a href="javascript:void(0);" class="link-success">View More <i class="ri-arrow-right-line align-middle"></i></a></td>
+    <td>
+        <div class="d-flex gap-2">
+            <div class="edit">
+                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+            </div>
+            <div class="remove">
+                <button class="btn btn-sm btn-primary remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Remove</button>
+            </div>
+        </div>
+    </td>
+    
     </tr>
-    <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#VZ2109</a></th>
-    <td>Christopher Neal</td>
-    <td>October 7, 2021</td>
-    <td>$5,500</td>
-    <td><a href="javascript:void(0);" class="link-success">View More <i class="ri-arrow-right-line align-middle"></i></a></td>
-    </tr>
-    <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#VZ2108</a></th>
-    <td>Monkey Karry</td>
-    <td>October 5, 2021</td>
-    <td>$2,420</td>
-    <td><a href="javascript:void(0);" class="link-success">View More <i class="ri-arrow-right-line align-middle"></i></a></td>
-    </tr>
-    <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#VZ2107</a></th>
-    <td>James White</td>
-    <td>October 2, 2021</td>
-    <td>$7,452</td>
-    <td><a href="javascript:void(0);" class="link-success">View More <i class="ri-arrow-right-line align-middle"></i></a></td>
-    </tr>
+    
+   
     </tbody>
     </table>
 @endsection
