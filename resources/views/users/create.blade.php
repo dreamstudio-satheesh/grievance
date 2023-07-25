@@ -7,13 +7,10 @@
 @endcomponent
 
 
-<div class="modal-content">
-    <div class="modal-header bg-light p-3">
-        <h5 class="modal-title" id="exampleModalLabel">Add Customer</h5>
-    </div>
+    <div class="card">
     <form class="tablelist-form" autocomplete="off">
-        <div class="modal-body">
-            <div class="mb-3" id="modal-id" style="display: none;">
+        <div class="card-body">
+            <div class="mb-3"  style="display: none;">
                 <label for="id-field" class="form-label">ID</label>
                 <input type="text" id="id-field" class="form-control" placeholder="ID" readonly="">
             </div>
@@ -47,7 +44,7 @@
                 <div class="choices" data-type="select-one" tabindex="0" role="combobox" aria-autocomplete="list" aria-haspopup="true" aria-expanded="false"><div class="choices__inner"><select class="form-control choices__input" data-trigger="" name="status-field" id="status-field" required="" hidden="" tabindex="-1" data-choice="active"><option value="" data-custom-properties="[object Object]">Status</option></select><div class="choices__list choices__list--single"><div class="choices__item choices__placeholder choices__item--selectable" data-item="" data-id="1" data-value="" data-custom-properties="[object Object]" aria-selected="true">Status</div></div></div><div class="choices__list choices__list--dropdown" aria-expanded="false"><input type="text" class="choices__input choices__input--cloned" autocomplete="off" autocapitalize="off" spellcheck="false" role="textbox" aria-autocomplete="list" aria-label="Status" placeholder=""><div class="choices__list" role="listbox"><div id="choices--status-field-item-choice-3" class="choices__item choices__item--choice is-selected choices__placeholder choices__item--selectable is-highlighted" role="option" data-choice="" data-id="3" data-value="" data-select-text="Press to select" data-choice-selectable="" aria-selected="true">Status</div><div id="choices--status-field-item-choice-1" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="1" data-value="Active" data-select-text="Press to select" data-choice-selectable="">Active</div><div id="choices--status-field-item-choice-2" class="choices__item choices__item--choice choices__item--selectable" role="option" data-choice="" data-id="2" data-value="Block" data-select-text="Press to select" data-choice-selectable="">Block</div></div></div></div>
             </div>
         </div>
-        <div class="modal-footer" >
+        <div class="card-footer" >
             <div class="hstack gap-2 justify-content-end">
                 
                 <button type="submit" class="btn btn-success" id="add-btn">Add Customer</button>
