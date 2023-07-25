@@ -19,7 +19,7 @@
         <div class="d-flex justify-content-sm-end">
             <div>
                 {{-- <button type="button" class="btn btn-primary add-btn" data-bs-toggle="modal" id="create-btn" data-bs-target="#showModal"><i class="ri-add-line align-bottom me-1"></i> Add</button> --}}
-                <a href="{{ url('users/create') }}" class="btn btn-primary add-btn"><i class="ri-add-line align-bottom me-1"></i> Add></a>
+                <a href="{{ url('wards/create') }}" class="btn btn-primary add-btn"><i class="ri-add-line align-bottom me-1"></i> Add></a>
             </div>
           
         </div>
@@ -38,13 +38,13 @@
     </tr>
     </thead>
     <tbody>
-        @foreach ($users as $user)
+        @foreach ($wards as $ward)
     <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#{{ $user->id }}</a></th>
-    <td>{{ $user->name }}</td>
-    <td>{{ $user->email }}</td>
-    <td>{{ $user->mobile_number }}</td>
-    <td>{{ $user->ward_number }}</td>
+    <th scope="row"><a href="#" class="fw-semibold">#{{ $ward->id }}</a></th>
+    <td>{{ $ward->name }}</td>
+    <td>{{ $ward->email }}</td>
+    <td>{{ $ward->mobile_number }}</td>
+    <td>{{ $ward->ward_number }}</td>
     <td>
       
         <div class="d-flex gap-2">
