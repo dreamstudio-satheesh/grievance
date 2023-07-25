@@ -31,6 +31,8 @@ class WardController extends Controller
             'name' => 'required|string|max:255',
         ]);
 
+        return  $validatedData;
+
         $ward = Ward::create($validatedData);
 
         return redirect()->route('wards.index', $ward->id)->with('success', 'Ward created successfully!');
