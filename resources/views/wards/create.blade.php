@@ -15,7 +15,7 @@
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Ward Name</label>
-                <input type="text" id="customername-field" class="form-control" placeholder="Enter Name" required="">
+                <input type="text"  class="form-control" placeholder="Enter Name" required="">
                 <div class="invalid-feedback">Please enter ward name.</div>
             </div>
 
@@ -23,7 +23,7 @@
         <div class="card-footer" >
             <div class="hstack gap-2 justify-content-end">
                 
-                <input type="submit" value="Add Ward" class="btn btn-success" id="add-btn" />
+                <input type="submit" value="Add Ward" class="btn btn-success"  />
             </div>
         </div>
     </form>
