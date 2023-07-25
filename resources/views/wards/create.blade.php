@@ -8,9 +8,10 @@
 
 
     <div class="card">
-    <form  action="{{ route('users.store') }}" method="post" class="tablelist-form" >
-        @csrf
-        <div class="card-body">           
+
+        <div class="card-body"> 
+            <form  action="{{ route('users.store') }}" method="post" class="tablelist-form" >
+                @csrf          
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Ward Name</label>
