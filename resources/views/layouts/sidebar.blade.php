@@ -47,11 +47,11 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="users/index"  class="nav-link"> <i class="ri-account-circle-line"></i> Users List</a>
+                    <a href="{{ url('/users')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Users List</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="users/index"  class="nav-link"> <i class="ri-account-circle-line"></i>Add User</a>
+                    <a href="{{ url('users/create')}}"  class="nav-link"> <i class="ri-account-circle-line"></i>Add User</a>
                 </li>
                 
                 
