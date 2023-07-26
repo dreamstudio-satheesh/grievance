@@ -46,12 +46,22 @@
                         </ul>
                     </div>
                 </li>
+                <li class="menu-title"><span>@lang('translation.menu')</span></li>
                 <li class="nav-item">
-                    <a href="{{ url('/users')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Users List</a>
-                </li>
+                    <a class="nav-link menu-link" href="#UserList" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ri-account-circle-line"></i> <span>Users</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="UserList">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ url('/users')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Users List</a>
+                            </li>
 
-                <li class="nav-item">
-                    <a href="{{ url('users/create')}}"  class="nav-link"> <i class="ri-user-add-line"></i>Add User</a>
+                            <li class="nav-item">
+                                <a href="{{ url('users/create')}}"  class="nav-link"> <i class="ri-user-add-line"></i>Add User</a>
+                            </li>
+                        </ul>
+                    </div>
                 </li>
                 
                 
