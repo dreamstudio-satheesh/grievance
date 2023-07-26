@@ -46,7 +46,8 @@
                         </ul>
                     </div>
                 </li>
-                <li class="menu-title"><span>@lang('translation.menu')</span></li>
+               
+                
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#UserList" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="ri-account-circle-line"></i> <span>Users</span>
