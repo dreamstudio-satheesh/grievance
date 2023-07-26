@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Ward;
 use App\Models\Street;
 use Illuminate\Http\Request;
 
@@ -21,7 +22,8 @@ class StreetController extends Controller
 
     public function create()
     {
-        return view('streets.create');
+        $wards = Ward::all();
+        return view('streets.create', compact('wards'));
     }
 
     public function store(Request $request)

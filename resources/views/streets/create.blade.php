@@ -18,6 +18,17 @@
                 <input type="text" name="name"  class="form-control" placeholder="Enter Name" required="">
                 <div class="invalid-feedback">Please enter street name.</div>
             </div>
+
+            
+            <div class="mb-3">
+                <label class="form-label text-muted">Select Ward</label>
+                <select name="ward_id" class="form-control" >
+                    @foreach ($wards as $ward)
+                    <option value="{{ $ward->id }}">{{ $ward->name }}</option>
+                    @endforeach
+                </select>
+            </div>
+            
            
         </div>
         <div class="card-footer" >
@@ -33,5 +44,6 @@
 
 @endsection
 @section('script')
+<script src="{{ URL::asset('assets/libs/prismjs/prismjs.min.js') }}"></script>
 <script src="{{ URL::asset('/assets/js/app.min.js') }}"></script>
 @endsection
