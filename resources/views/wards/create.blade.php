@@ -24,9 +24,10 @@
             <div class="hstack gap-2 justify-content-end">
                 
                 <button type="submit" class="btn btn-success" id="add-btn">Add Ward</button>
+            </form>
             </div>
         </div>
-    </form>
+    
 </div>
 
 
