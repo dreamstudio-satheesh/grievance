@@ -67,10 +67,10 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#UserList" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                    <a class="nav-link menu-link" href="#Wardlist" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="ri-newspaper-fill"></i> <span>Wards</span>
                     </a>
-                    <div class="collapse menu-dropdown" id="UserList">
+                    <div class="collapse menu-dropdown" id="Wardlist">
                         <ul class="nav nav-sm flex-column">
 
                             <li class="nav-item">
@@ -86,10 +86,10 @@
 
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#UserList" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                    <a class="nav-link menu-link" href="#StreetList" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="ri-barricade-fill"></i> <span>Streets</span>
                     </a>
-                    <div class="collapse menu-dropdown" id="UserList">
+                    <div class="collapse menu-dropdown" id="StreetList">
                         <ul class="nav nav-sm flex-column">
 
                             <li class="nav-item">
