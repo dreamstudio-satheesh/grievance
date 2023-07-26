@@ -35,7 +35,7 @@ class StreetController extends Controller
 
         $street = Street::create($validatedData);
 
-        return redirect()->route('streets.show', $street->id)->with('success', 'Street created successfully!');
+        return redirect()->route('streets', $street->id)->with('success', 'Street created successfully!');
     }
 
     public function edit($id)
