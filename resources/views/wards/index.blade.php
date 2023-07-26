@@ -30,7 +30,11 @@
     <thead>
     <tr>
     <th scope="col">ID</th>
-    <th scope="col">name</th>
+    <th scope="col">Name</th>
+    <th scope="col">JE Name</th>
+    <th scope="col">JE Mobile</th>
+    <th scope="col">AE Name</th>
+    <th scope="col">JE Mobile</th>
     <th scope="col">Action</th>
     </tr>
     </thead>
@@ -39,6 +43,10 @@
     <tr>
     <th scope="row"><a href="#" class="fw-semibold">#{{ $ward->id }}</a></th>
     <td>{{ $ward->name }}</td>
+    <td>{{ $ward->jename }}</td>
+    <td>{{ $ward->jemobile }}</td>
+    <td>{{ $ward->aename }}</td>
+    <td>{{ $ward->aemobile }}</td>
     <td>
       
         <div class="d-flex gap-2">
