@@ -37,7 +37,7 @@
             </div>
             <div class="mb-3">
                 <label for="customername-field" class="form-label">AE Mobile</label>
-                <input type="text" name="jemobile"  class="form-control" placeholder="Enter AE Mobile" required="">
+                <input type="text" name="aemobile"  class="form-control" placeholder="Enter AE Mobile" required="">
                 <div class="invalid-feedback">Please enter AE Mobile.</div>
             </div>
 
