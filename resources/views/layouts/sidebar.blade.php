@@ -68,7 +68,7 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#Wardlist" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="ri-newspaper-fill"></i> <span>Wards</span>
+                        <i class="ri-newspaper-fill"></i> <span>Location</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Wardlist">
                         <ul class="nav nav-sm flex-column">
@@ -80,18 +80,8 @@
                             <li class="nav-item">
                                 <a href="{{ url('wards/create')}}"  class="nav-link"> <i class="ri-newspaper-line"></i>New Ward</a>
                             </li>
-                        </ul>
-                    </div>
-                </li>
 
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="#StreetList" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="ri-barricade-fill"></i> <span>Streets</span>
-                    </a>
-                    <div class="collapse menu-dropdown" id="StreetList">
-                        <ul class="nav nav-sm flex-column">
-
+                            
                             <li class="nav-item">
                                 <a href="{{ url('/streets')}}"  class="nav-link"> <i class="ri-barricade-fill"></i> Streets List</a>
                             </li>
@@ -103,6 +93,9 @@
                         </ul>
                     </div>
                 </li>
+
+
+              
                 
                 
                 <li class="nav-item">
