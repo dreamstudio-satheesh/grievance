@@ -78,11 +78,11 @@
                                 <div class="collapse menu-dropdown" id="Panchayat">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a href="{{ url('/Panchayats')}}"  class="nav-link"> Panchayat List</a>
+                                            <a href="{{ url('/panchayats')}}"  class="nav-link"> Panchayat List</a>
                                         </li>
                         
                                         <li class="nav-item">
-                                            <a href="{{ url('Panchayats/create')}}"  class="nav-link"></i>New Panchayat</a>
+                                            <a href="{{ url('panchayats/create')}}"  class="nav-link"></i>New Panchayat</a>
                                         </li>
                                         <li class="nav-item">
                                             <a href="{{ url('/wards')}}"  class="nav-link"> Ward List</a>
