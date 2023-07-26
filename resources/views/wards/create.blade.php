@@ -18,6 +18,28 @@
                 <input type="text" name="name"  class="form-control" placeholder="Enter Name" required="">
                 <div class="invalid-feedback">Please enter ward name.</div>
             </div>
+            <div class="mb-3">
+                <label for="customername-field" class="form-label">JE Name</label>
+                <input type="text" name="jename"  class="form-control" placeholder="Enter JE Name" required="">
+                <div class="invalid-feedback">Please enter JE name.</div>
+            </div>
+           
+            <div class="mb-3">
+                <label for="customername-field" class="form-label">JE Mobile</label>
+                <input type="text" name="jemobile"  class="form-control" placeholder="Enter JE Mobile" required="">
+                <div class="invalid-feedback">Please enter JE Mobile.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="customername-field" class="form-label">AE Name</label>
+                <input type="text" name="aename"  class="form-control" placeholder="Enter AE Name" required="">
+                <div class="invalid-feedback">Please enter AE name.</div>
+            </div>
+            <div class="mb-3">
+                <label for="customername-field" class="form-label">AE Mobile</label>
+                <input type="text" name="jemobile"  class="form-control" placeholder="Enter AE Mobile" required="">
+                <div class="invalid-feedback">Please enter AE Mobile.</div>
+            </div>
 
         </div>
         <div class="card-footer" >
