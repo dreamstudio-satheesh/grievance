@@ -33,9 +33,13 @@
             </div>
 
             <div class="mb-3">
-                <label for="date-field" class="form-label">Ward Number</label>
-                <input type="text" id="date-field" class="form-control" placeholder="Select Date" required="">
-                <div class="invalid-feedback">Please select a Ward Number.</div>
+                <label class="form-label text-muted">Select Ward</label>
+                <select name="ward_id" class="form-control" >
+                    @foreach ($wards as $ward)
+                    <option value="{{ $ward->id }}">{{ $ward->name }}</option>
+                    @endforeach
+                </select>
+                
             </div>
 
             <div>
