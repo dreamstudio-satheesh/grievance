@@ -65,11 +65,11 @@
 
 
                 <li class="nav-item">
-                    <a href="{{ url('/streets')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Streets List</a>
+                    <a href="{{ url('/streets')}}"  class="nav-link"> <i class="ri-barricade-fill"></i> Streets List</a>
                 </li>
 
                 <li class="nav-item">
-                    <a href="{{ url('streets/create')}}"  class="nav-link"> <i class="ri-user-add-line"></i>Add Street</a>
+                    <a href="{{ url('streets/create')}}"  class="nav-link"> <i class=" ri-barricade-line"></i>Add Street</a>
                 </li>
 
 
