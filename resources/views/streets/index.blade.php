@@ -31,7 +31,7 @@
     <tr>
     <th scope="col">ID</th>
     <th scope="col">Name</th>
-    
+    <th scope="col">Ward Name</th>
     <th scope="col">Action</th>
     </tr>
     </thead>
@@ -40,7 +40,7 @@
     <tr>
     <th scope="row"><a href="#" class="fw-semibold">#{{ $street->id }}</a></th>
     <td>{{ $street->name }}</td>
-    
+    <td>{{ $street->ward->name }}</td>
     <td>
       
         <div class="d-flex gap-2">
