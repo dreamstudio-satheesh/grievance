@@ -29,6 +29,10 @@ class WardController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
+            'jename' => 'string|max:255',
+            'jemobile' => 'string',
+            'aemobile' => 'string',
+            'aename' => 'string|max:255',
         ]);
 
         $ward = Ward::create($validatedData);
