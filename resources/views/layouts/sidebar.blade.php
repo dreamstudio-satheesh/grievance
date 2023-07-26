@@ -78,7 +78,7 @@
                             </li>
             
                             <li class="nav-item">
-                                <a href="{{ url('wards/create')}}"  class="nav-link"> <i class="ri-newspaper-line"></i>New Ward</a>
+                                <a href="{{ url('wards/create')}}"  class=""> <i class="ri-newspaper-line"></i>New Ward</a>
                             </li>
                         </ul>
                     </div>
