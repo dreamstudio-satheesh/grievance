@@ -84,6 +84,25 @@
                     </div>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#Wardlist" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ri-newspaper-fill"></i> <span>Complaints</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="Wardlist">
+                        <ul class="nav nav-sm flex-column">
+
+                            <li class="nav-item">
+                                <a href="{{ url('/wards')}}"  class="nav-link"> <i class="ri-newspaper-fill"></i> Ward List</a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a href="{{ url('wards/create')}}"  class="nav-link"> <i class="ri-newspaper-line"></i>New Ward</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#StreetList" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
