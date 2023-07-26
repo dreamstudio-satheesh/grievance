@@ -6,7 +6,9 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WardController;
 use App\Http\Controllers\StreetController;
+use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ComplaintController;
+use App\Http\Controllers\PanchayatController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -37,7 +39,22 @@ Route::delete('/users/{id}', [UserController::class, 'destroy'])->name('users.de
 Route::post('/update-profile/{id}', [HomeController::class, 'updateProfile'])->name('updateProfile');
 Route::post('/update-password/{id}', [HomeController::class, 'updatePassword'])->name('updatePassword');
 
+Route::get('/divisions', [DivisionController::class, 'index'])->name('divisions.index');
+Route::get('/divisions/create', [DivisionController::class, 'create'])->name('divisions.create');
+Route::post('/divisions', [DivisionController::class, 'store'])->name('divisions.store');
+Route::get('/divisions/{id}', [DivisionController::class, 'show'])->name('divisions.show');
+Route::get('/divisions/{id}/edit', [DivisionController::class, 'edit'])->name('divisions.edit');
+Route::put('/divisions/{id}', [DivisionController::class, 'update'])->name('divisions.update');
+Route::delete('/divisions/{id}', [DivisionController::class, 'destroy'])->name('divisions.destroy');
 
+
+Route::get('/panchayats', [PanchayatController::class, 'index'])->name('panchayats.index');
+Route::get('/panchayats/create', [PanchayatController::class, 'create'])->name('panchayats.create');
+Route::post('/panchayats', [PanchayatController::class, 'store'])->name('panchayats.store');
+Route::get('/panchayats/{id}', [PanchayatController::class, 'show'])->name('panchayats.show');
+Route::get('/panchayats/{id}/edit', [PanchayatController::class, 'edit'])->name('panchayats.edit');
+Route::put('/panchayats/{id}', [PanchayatController::class, 'update'])->name('panchayats.update');
+Route::delete('/panchayats/{id}', [PanchayatController::class, 'destroy'])->name('panchayats.destroy');
 
 Route::get('/streets', [StreetController::class, 'index'])->name('streets.index');
 Route::get('/streets/create', [StreetController::class, 'create'])->name('streets.create');

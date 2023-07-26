@@ -71,24 +71,63 @@
                         <i class="ri-newspaper-fill"></i> <span>Location</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Wardlist">
-                        <ul class="nav nav-sm flex-column">
+                        <ul class="nav nav-sm flex-column">                            
 
                             <li class="nav-item">
-                                <a href="{{ url('/wards')}}"  class="nav-link"> <i class="ri-newspaper-fill"></i> Ward List</a>
+                                <a href="#Panchayat" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCrm">Panchayat List</a>
+                                <div class="collapse menu-dropdown" id="Panchayat">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="{{ url('/Panchayats')}}"  class="nav-link"> Panchayat List</a>
+                                        </li>
+                        
+                                        <li class="nav-item">
+                                            <a href="{{ url('Panchayats/create')}}"  class="nav-link"></i>New Panchayat</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a href="{{ url('/wards')}}"  class="nav-link"> Ward List</a>
+                                        </li>
+                        
+                                        <li class="nav-item">
+                                            <a href="{{ url('wards/create')}}"  class="nav-link"></i>New Ward</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="{{ url('/streets')}}"  class="nav-link">  Streets List</a>
+                                        </li>
+                        
+                                        <li class="nav-item">
+                                            <a href="{{ url('streets/create')}}"  class="nav-link"> Add Street</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
-            
-                            <li class="nav-item">
-                                <a href="{{ url('wards/create')}}"  class="nav-link"> <i class="ri-newspaper-line"></i>New Ward</a>
+
+                             <li class="nav-item">
+                                <a href="#Division" class="nav-link" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarCrm">Division List</a>
+                                <div class="collapse menu-dropdown" id="Division">
+                                    <ul class="nav nav-sm flex-column">
+                                        <li class="nav-item">
+                                            <a href="{{ url('/divisions')}}"  class="nav-link"> Division List</a>
+                                        </li>
+                        
+                                        <li class="nav-item">
+                                            <a href="{{ url('divisions/create')}}"  class="nav-link"> Division Ward</a>
+                                        </li>
+
+                                        <li class="nav-item">
+                                            <a href="{{ url('/streets')}}"  class="nav-link"> Streets List</a>
+                                        </li>
+                        
+                                        <li class="nav-item">
+                                            <a href="{{ url('streets/create')}}"  class="nav-link"> Add Street</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
 
                             
-                            <li class="nav-item">
-                                <a href="{{ url('/streets')}}"  class="nav-link"> <i class="ri-barricade-fill"></i> Streets List</a>
-                            </li>
-            
-                            <li class="nav-item">
-                                <a href="{{ url('streets/create')}}"  class="nav-link"> <i class=" ri-barricade-line"></i>Add Street</a>
-                            </li>
+                           
 
                         </ul>
                     </div>
