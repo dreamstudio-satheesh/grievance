@@ -30,12 +30,12 @@ class DstreetController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
-            'ward_id' => 'required|integer',
+            'division_id' => 'required|integer',
         ]);
 
         $street = Dstreet::create($validatedData);
 
-        return redirect()->route('dstreets.index', $street->id)->with('success', 'Dstreet created successfully!');
+        return redirect()->route('dstreets.index', $street->id)->with('success', 'street created successfully!');
     }
 
     public function edit($id)
