@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WardController;
 use App\Http\Controllers\StreetController;
+use App\Http\Controllers\DstreetController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\PanchayatController;
@@ -66,6 +67,14 @@ Route::get('/streets/{id}', [StreetController::class, 'show'])->name('streets.sh
 Route::get('/streets/{id}/edit', [StreetController::class, 'edit'])->name('streets.edit');
 Route::put('/streets/{id}', [StreetController::class, 'update'])->name('streets.update');
 Route::delete('/streets/{id}', [StreetController::class, 'destroy'])->name('streets.destroy');
+
+Route::get('/dstreets', [DstreetController::class, 'index'])->name('dstreets.index');
+Route::get('/dstreets/create', [DstreetController::class, 'create'])->name('dstreets.create');
+Route::post('/dstreets', [DstreetController::class, 'store'])->name('dstreets.store');
+Route::get('/dstreets/{id}', [DstreetController::class, 'show'])->name('dstreets.show');
+Route::get('/dstreets/{id}/edit', [DstreetController::class, 'edit'])->name('dstreets.edit');
+Route::put('/dstreets/{id}', [DstreetController::class, 'update'])->name('dstreets.update');
+Route::delete('/dstreets/{id}', [DstreetController::class, 'destroy'])->name('dstreets.destroy');
 
 
 Route::get('/wards', [WardController::class, 'index'])->name('wards.index');
