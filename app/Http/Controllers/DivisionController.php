@@ -14,7 +14,8 @@ class DivisionController extends Controller
      */
     public function index()
     {
-        //
+        $divisions = Division::all();
+        return view('divisions.index', compact('divisions'));
     }
 
     /**
@@ -24,7 +25,7 @@ class DivisionController extends Controller
      */
     public function create()
     {
-        //
+        return view('divisions.create');
     }
 
     /**
@@ -35,7 +36,17 @@ class DivisionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'jename' => 'string|max:255',
+            'jemobile' => 'string',
+            'aemobile' => 'string',
+            'aename' => 'string|max:255',
+        ]);
+
+        $division = Division::create($validatedData);
+
+        return redirect()->route('divisions.index', $division->name)->with('success', 'Division created successfully!');
     }
 
     /**
