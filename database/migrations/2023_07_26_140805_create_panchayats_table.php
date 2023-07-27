@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('panchayats', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('pname')->nullable();
+            $table->string('pmobile')->nullable();
+            $table->string('vname')->nullable();
+            $table->string('vmobile')->nullable();
             $table->timestamps();
         });
     }

@@ -3,7 +3,7 @@
 @section('content')
 @component('components.breadcrumb')
 @slot('li_1') Pages @endslot
-@slot('title') Wards  @endslot
+@slot('title') Panchayats  @endslot
 @endcomponent
 
 
@@ -19,7 +19,7 @@
         <div class="d-flex justify-content-sm-end">
             <div>
                 {{-- <button type="button" class="btn btn-primary add-btn" data-bs-toggle="modal" id="create-btn" data-bs-target="#showModal"><i class="ri-add-line align-bottom me-1"></i> Add</button> --}}
-                <a href="{{ url('wards/create') }}" class="btn btn-primary add-btn"><i class="ri-add-line align-bottom me-1"></i> Add </a>
+                <a href="{{ url('panchayats/create') }}" class="btn btn-primary add-btn"><i class="ri-add-line align-bottom me-1"></i> Add </a>
             </div>
           
         </div>
@@ -31,16 +31,22 @@
     <tr>
     <th scope="col">ID</th>
     <th scope="col">Name</th>
-    <th scope="col">Panchayat name</th>
+    <th scope="col">president Name</th>
+    <th scope="col">president Mobile</th>
+    <th scope="col">Vicepresident Name</th>
+    <th scope="col">Vicepresident Mobile</th>
     <th scope="col">Action</th>
     </tr>
     </thead>
     <tbody>
-        @foreach ($wards as $ward)
+        @foreach ($panchayats as $panchayat)
     <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#{{ $ward->id }}</a></th>
-    <td>{{ $ward->name }}</td>
-    <td>{{ $ward->panchayat->name }}</td>
+    <th scope="row"><a href="#" class="fw-semibold">#{{ $panchayat->id }}</a></th>
+    <td>{{ $panchayat->name }}</td>
+    <td>{{ $panchayat->pname }}</td>
+    <td>{{ $panchayat->pmobile }}</td>
+    <td>{{ $panchayat->vname }}</td>
+    <td>{{ $panchayat->vmobile }}</td>
     <td>
       
         <div class="d-flex gap-2">

@@ -11,6 +11,12 @@ class Ward extends Model
 
     protected $guarded = ['id'];
 
+
+    public function panchayat()
+    {
+        return $this->belongsTo(Panchayat::class, 'panchayat_id');
+    }
+
     public function streets()
     {
         return $this->hasMany(Street::class, 'ward_id');

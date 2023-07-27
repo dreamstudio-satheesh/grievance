@@ -15,6 +15,11 @@ return new class extends Migration
     {
         Schema::create('divisions', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('jename')->nullable();
+            $table->string('jemobile')->nullable();
+            $table->string('aename')->nullable();
+            $table->string('aemobile')->nullable();
             $table->timestamps();
         });
     }

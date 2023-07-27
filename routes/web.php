@@ -24,6 +24,9 @@ Auth::routes();
 //Language Translation
 Route::get('index/{locale}', [HomeController::class, 'lang']);
 
+
+Route::group(['middleware' => ['role:admin']], function () {
+    
 Route::get('/', [HomeController::class, 'root'])->name('root');
 
 
@@ -82,6 +85,8 @@ Route::get('/complaints/{id}', [ComplaintController::class, 'show'])->name('comp
 Route::get('/complaints/{id}/edit', [ComplaintController::class, 'edit'])->name('complaints.edit');
 Route::put('/complaints/{id}', [ComplaintController::class, 'update'])->name('complaints.update');
 Route::delete('/complaints/{id}', [ComplaintController::class, 'destroy'])->name('complaints.destroy');
+
+});
 
 
 

@@ -16,11 +16,11 @@ return new class extends Migration
         Schema::create('wards', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('jename')->nullable();
-            $table->string('jemobile')->nullable();
-            $table->string('aename')->nullable();
-            $table->string('aemobile')->nullable();
+            $table->unsignedBigInteger('panchayat_id');
             $table->timestamps();
+
+            // Foreign key constraint
+            $table->foreign('panchayat_id')->references('id')->on('panchayats')->onDelete('cascade');
         });
     }
 

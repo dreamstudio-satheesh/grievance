@@ -14,7 +14,8 @@ class PanchayatController extends Controller
      */
     public function index()
     {
-        //
+        $panchayats = Panchayat::all();
+        return view('panchayats.index', compact('panchayats'));
     }
 
     /**
@@ -24,7 +25,7 @@ class PanchayatController extends Controller
      */
     public function create()
     {
-        //
+        return view('panchayats.create');
     }
 
     /**
@@ -35,7 +36,17 @@ class PanchayatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'pname' => 'string|max:255',
+            'pmobile' => 'string',
+            'vmobile' => 'string',
+            'vname' => 'string|max:255',
+        ]);
+
+        $panchayat = Panchayat::create($validatedData);
+
+        return redirect()->route('panchayats.index', $panchayat->name)->with('success', 'Panchayat created successfully!');
     }
 
     /**

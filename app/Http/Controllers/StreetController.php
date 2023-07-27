@@ -30,12 +30,12 @@ class StreetController extends Controller
     {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
-            'ward_id' => 'required|integer|exists:wards,id',
+            'ward_id' => 'required|integer',
         ]);
 
         $street = Street::create($validatedData);
 
-        return redirect()->route('streets', $street->id)->with('success', 'Street created successfully!');
+        return redirect()->route('streets.index', $street->id)->with('success', 'Street created successfully!');
     }
 
     public function edit($id)

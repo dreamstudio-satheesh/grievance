@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 
 use App\Models\Ward;
+use App\Models\Panchayat;
 use Illuminate\Http\Request;
 
 class WardController extends Controller
@@ -22,17 +23,15 @@ class WardController extends Controller
 
     public function create()
     {
-        return view('wards.create');
+        $panchayats = Panchayat::all();
+        return view('wards.create', compact('panchayats'));
     }
 
     public function store(Request $request)
     {
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
-            'jename' => 'string|max:255',
-            'jemobile' => 'string',
-            'aemobile' => 'string',
-            'aename' => 'string|max:255',
+            'panchayat_id'  => 'required|integer|exists:panchayats.id',
         ]);
 
         $ward = Ward::create($validatedData);
