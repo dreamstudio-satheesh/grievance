@@ -15,7 +15,6 @@ return new class extends Migration
     {
         Schema::create('dstreets', function (Blueprint $table) {
             $table->id();
-            $table->id();
             $table->string('name');
             $table->unsignedBigInteger('division_id');
             $table->timestamps();
