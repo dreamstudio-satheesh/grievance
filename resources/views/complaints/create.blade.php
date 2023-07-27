@@ -2,8 +2,8 @@
 @section('title') @lang('translation.dashboards') @endsection
 @section('content')
 @component('components.breadcrumb')
-@slot('li_1') Pages @endslot
-@slot('title') Add Complaint  @endslot
+@slot('li_1') GRIEVANCES @endslot
+@slot('title') REGISTER GRIEVANCES  @endslot
 @endcomponent
 
 
