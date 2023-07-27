@@ -116,11 +116,11 @@
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="{{ url('/streets')}}"  class="nav-link"> Streets List</a>
+                                            <a href="{{ url('/dstreets')}}"  class="nav-link"> Streets List</a>
                                         </li>
                         
                                         <li class="nav-item">
-                                            <a href="{{ url('streets/create')}}"  class="nav-link"> Add Street</a>
+                                            <a href="{{ url('dstreets/create')}}"  class="nav-link"> Add Street</a>
                                         </li>
                                     </ul>
                                 </div>
