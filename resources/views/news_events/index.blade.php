@@ -18,7 +18,7 @@
     <div class="col-sm">
         <div class="d-flex justify-content-sm-end">
             <div>
-                <a href="{{ route('/admin/news_events.create') }}" class="btn btn-primary add-btn"><i class="ri-add-line align-bottom me-1"></i> Add </a>
+                <a href="{{ url('admin/news_events/create') }}" class="btn btn-primary add-btn"><i class="ri-add-line align-bottom me-1"></i> Add </a>
             </div>
           
         </div>

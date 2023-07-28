@@ -26,11 +26,14 @@ Auth::routes();
 //Language Translation
 Route::get('index/{locale}', [HomeController::class, 'lang']);
 
-
-Route::group(['prefix' => 'admin','middleware' => ['role:admin']], function () {
     
 Route::get('/', [HomeController::class, 'root'])->name('root');
 
+
+Route::group(['prefix' => 'admin','middleware' => ['role:admin']], function () {
+
+    
+Route::get('/', [HomeController::class, 'root'])->name('root');
 
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::get('/users/create', [UserController::class, 'create'])->name('users.create');

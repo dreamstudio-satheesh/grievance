@@ -28,9 +28,9 @@ class HomeController extends Controller
      */
     public function index(Request $request)
     {
-        if (view()->exists($request->path())) {
-            return view($request->path());
-        }
+       if (auth()->user()->hasRole('admin')) {
+        return redirect()->route('admin.index');
+       }
         return abort(404);
     }
 
