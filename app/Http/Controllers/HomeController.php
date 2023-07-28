@@ -31,7 +31,7 @@ class HomeController extends Controller
        if (auth()->user()->hasRole('admin')) {
         return redirect()->route('admin.index');
        }
-        return abort(404);
+       return view('frontend.home');
     }
 
     public function root()

@@ -39,6 +39,7 @@ Route::get('/event-single.php', [PagesController::class, 'single'])->name('singl
 Route::get('/complaint.php', [PagesController::class, 'complaint'])->name('complaint');
 Route::get('/contact.php', [PagesController::class, 'contact'])->name('contact');
 
+Route::get('/home', [HomeController::class, 'index'])->name('userhome');
 
 
 Route::group(['prefix' => 'admin','middleware' => ['role:admin']], function () {
