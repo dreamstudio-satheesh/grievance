@@ -5,12 +5,13 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WardController;
+use App\Http\Controllers\PagesController;
 use App\Http\Controllers\StreetController;
 use App\Http\Controllers\DstreetController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ComplaintController;
-use App\Http\Controllers\PanchayatController;
 use App\Http\Controllers\NewsEventController;
+use App\Http\Controllers\PanchayatController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -23,11 +24,21 @@ use App\Http\Controllers\NewsEventController;
 */
 
 Auth::routes();
+
 //Language Translation
 Route::get('index/{locale}', [HomeController::class, 'lang']);
 
     
-Route::get('/', [HomeController::class, 'root'])->name('root');
+Route::get('/', [PagesController::class, 'home'])->name('homepage');
+    
+Route::get('/aboutus.php', [PagesController::class, 'aboutus'])->name('aboutus');
+Route::get('/trustee.php', [PagesController::class, 'trustee'])->name('trustee');
+Route::get('/gallery.php', [PagesController::class, 'gallery'])->name('gallery');
+Route::get('/news-events.php', [PagesController::class, 'events'])->name('events');
+Route::get('/event-single.php', [PagesController::class, 'single'])->name('single');
+Route::get('/complaint.php', [PagesController::class, 'complaint'])->name('complaint');
+Route::get('/contact.php', [PagesController::class, 'contact'])->name('contact');
+
 
 
 Route::group(['prefix' => 'admin','middleware' => ['role:admin']], function () {
