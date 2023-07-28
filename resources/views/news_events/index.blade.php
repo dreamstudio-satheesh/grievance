@@ -38,9 +38,9 @@
     <tbody>
         @foreach($newsEvents as $newsEvent)
     <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#{{ $division->id }}</a></th>
-    <td>{{ $division->title }}</td>
-    <td>{{ $division->date }}</td>
+    <th scope="row"><a href="#" class="fw-semibold">#{{ $newsEvent->id }}</a></th>
+    <td>{{ $newsEvent->title }}</td>
+    <td>{{ $newsEvent->date }}</td>
     <td>
       
         <div class="d-flex gap-2">
