@@ -126,7 +126,7 @@
                                     <div class="header__top-search">
                                         <ul>
                                             <li class="search__icon"><i class="fas fa-search"></i></li>
-											<li>Login & Register</li>
+											<li><a href="{{ ur('login') }}">Login & Register</a></li>
                                             <li class="cart__icon"><i class="fas fa-user"></i></li>
                                         </ul>
                                     </div>
