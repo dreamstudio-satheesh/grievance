@@ -67,6 +67,22 @@
                                             </div>
                                         </div>
 
+                                        <div class="mb-3">
+                                            <label for="mobile_number" class="form-label">Mobile Number <span
+                                                    class="text-danger">*</span></label>
+                                            <input type="text" class="form-control @error('mobile_number') is-invalid @enderror"
+                                                name="mobile_number" value="{{ old('mobile_number') }}" id="mobile_number"
+                                                placeholder="Enter mobile number" required>
+                                            @error('mobile_number')
+                                                <span class="invalid-feedback" role="alert">
+                                                    <strong>{{ $message }}</strong>
+                                                </span>
+                                            @enderror
+                                            <div class="invalid-feedback">
+                                                Please enter username
+                                            </div>
+                                        </div>
+
                                        
                                         <div class="mb-2">
                                             <label for="userpassword" class="form-label">Password <span
