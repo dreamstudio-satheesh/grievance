@@ -124,18 +124,10 @@
                                         </li>
                                     </ul>
                                 </div>
-                            </li>
-
-                            
-                           
-
+                            </li>                        
                         </ul>
                     </div>
-                </li>
-
-
-              
-                
+                </li>                
                 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#complaintsList" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
@@ -153,6 +145,18 @@
                             </li>
                         </ul>
                     </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ url('/news_events')}}">
+                        <i class="ri-honour-line"></i> <span>News & Events</span>
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="{{ url('/news_events/create')}}">
+                        <i class="ri-honour-line"></i> <span> create News & Events</span>
+                    </a>
                 </li>
 
 

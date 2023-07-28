@@ -8,7 +8,7 @@
 
 
     <div class="card">
-    <form action="{{ route('streets.store') }}"  method="post" >
+    <form action="{{ route('streets.store') }}"  method="POST" >
         @csrf
         <div class="card-body">
 

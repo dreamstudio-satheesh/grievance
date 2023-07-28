@@ -8,7 +8,7 @@
 
 
     <div class="card">
-    <form action="{{ route('panchayats.store') }}"  method="post" >
+    <form action="{{ route('panchayats.store') }}"  method="POST" >
         @csrf
         <div class="card-body">
             

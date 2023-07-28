@@ -8,7 +8,7 @@
 
 
     <div class="card">
-        <form action="{{ route('complaints.store') }}"  method="post" >
+        <form action="{{ route('complaints.store') }}"  method="POST" >
         @csrf
         <div class="card-body">
 

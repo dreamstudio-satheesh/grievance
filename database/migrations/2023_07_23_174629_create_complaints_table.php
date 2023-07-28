@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('dstreet_id')->nullable();
             $table->string('subject');
             $table->text('description');
+            $table->string('photo')->nullable();
             $table->string('priority');
             $table->string('status');
             $table->timestamps();

@@ -10,6 +10,7 @@ use App\Http\Controllers\DstreetController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\PanchayatController;
+use App\Http\Controllers\NewsEventController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -95,8 +96,18 @@ Route::get('/complaints/{id}/edit', [ComplaintController::class, 'edit'])->name(
 Route::put('/complaints/{id}', [ComplaintController::class, 'update'])->name('complaints.update');
 Route::delete('/complaints/{id}', [ComplaintController::class, 'destroy'])->name('complaints.destroy');
 
-});
 
+Route::get('/news_events', [NewsEventController::class, 'index'])->name('news_events.index');
+Route::get('/news_events/create', [NewsEventController::class, 'create'])->name('news_events.create');
+Route::post('/news_events', [NewsEventController::class, 'store'])->name('news_events.store');
+Route::get('/news_events/{id}', [NewsEventController::class, 'show'])->name('news_events.show');
+Route::get('/news_events/{id}/edit', [NewsEventController::class, 'edit'])->name('news_events.edit');
+Route::put('/news_events/{id}', [NewsEventController::class, 'update'])->name('news_events.update');
+Route::delete('/news_events/{id}', [NewsEventController::class, 'destroy'])->name('news_events.destroy');
+
+
+
+});
 
 
 
