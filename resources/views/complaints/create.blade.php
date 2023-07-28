@@ -12,7 +12,26 @@
         @csrf
         <div class="card-body">
 
-            
+            <div class="mb-3">
+                <label for="customername-field" class="form-label"> Name</label>
+                <input type="text" name="name"  class="form-control" placeholder="Enter Name" required="">
+            </div>
+
+            <div class="mb-3">
+                <label for="customername-field" class="form-label"> Mobile No</label>
+                <input type="text" name="mobile"  class="form-control" placeholder="Enter Mobile Number" required="">
+            </div>
+
+
+            <div class="mb-3">
+                <label for="customername-field" class="form-label"> Email</label>
+                <input type="text" name="email"  class="form-control" placeholder="Enter Mail ID" required="">
+            </div>
+
+            <div class="mb-3">
+                <label for="customername-field" class="form-label"> Door No</label>
+                <input type="text" name="doorno"  class="form-control" placeholder="Enter Door Number" required="">
+            </div>
 
             @livewire('show-city-town')
 
@@ -74,12 +93,7 @@
                 </select>
             </div>
 
-            <div class="mb-3">
-                <label for="customername-field" class="form-label"> Name</label>
-                <input type="text" name="name"  class="form-control" placeholder="Enter Name" required="">
-            </div>
-
-
+          
 
    
         </div>
@@ -89,7 +103,7 @@
         <div class="card-footer" >
             <div class="hstack gap-2 justify-content-end">
                 
-                <button type="submit" class="btn btn-success"> Add Ward</button> 
+                <button type="submit" class="btn btn-success"> Add Complaint</button> 
             </form>
             </div>
         </div>
