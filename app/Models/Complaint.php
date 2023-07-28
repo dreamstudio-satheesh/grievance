@@ -9,7 +9,7 @@ class Complaint extends Model
 {
     use HasFactory;
 
-     protected $fillable = ['user_id', 'ward_id', 'street_id', 'subject', 'description', 'status'];
+    protected $guarded = ['id'];
 
     public function user()
     {

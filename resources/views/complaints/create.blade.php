@@ -12,9 +12,31 @@
         @csrf
         <div class="card-body">
 
+            @if (count($errors) > 0)
+            <div class="mb-3">
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+            @endif
+            
+            <div class="mb-3">
+                <label class="form-label text-muted">* Created For </label>
+                <select name="user_id" class="form-control" required >
+                @foreach ($users as $user)
+                    <option value="{{ $user->id }}">{{ $user->name }}</option>
+                @endforeach
+                 
+                </select>
+            </div>
+
             <div class="mb-3">
                 <label for="customername-field" class="form-label"> Name</label>
-                <input type="text" name="name"  class="form-control" placeholder="Enter Name" required="">
+                <input type="text" name="username"  class="form-control" placeholder="Enter Name" required="">
             </div>
 
             <div class="mb-3">
@@ -37,7 +59,7 @@
 
             <div class="mb-3">
                 <label class="form-label text-muted">Grievance Type</label>
-                <select name="" class="form-control" required >
+                <select name="subject" class="form-control" required >
                 <option selected="" value="">Select</option>
                 <option value="Blockage of drainage">Blockage of drainage</option>
                 <option value="Mosquito menace">Mosquito menace</option>
@@ -89,6 +111,16 @@
                 <option selected="" value="Medium">Medium</option>
                 <option value="High">High</option>
                 <option value="Low">Low</option>
+                 
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label text-muted">*Status</label>
+                <select name="status" class="form-control" required >
+                <option selected="" value="new">New</option>
+                <option value="in-progress">In Progress</option>
+                <option value="resolved">resolved</option>
                  
                 </select>
             </div>

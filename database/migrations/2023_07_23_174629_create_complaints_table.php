@@ -16,17 +16,23 @@ return new class extends Migration
         Schema::create('complaints', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('user_id');
-            $table->unsignedBigInteger('ward_id');
-            $table->unsignedBigInteger('street_id');
+            $table->string('username');
+            $table->string('email');
+            $table->string('mobile');
+            $table->string('doorno');
+            $table->string('panchayat_id')->nullable();
+            $table->string('ward_id')->nullable();
+            $table->string('street_id')->nullable();
+            $table->string('division_id')->nullable();
+            $table->string('dstreet_id')->nullable();
             $table->string('subject');
             $table->text('description');
+            $table->string('priority');
             $table->string('status');
             $table->timestamps();
 
             // Foreign key constraints
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
-            $table->foreign('ward_id')->references('id')->on('wards')->onDelete('cascade');
-            $table->foreign('street_id')->references('id')->on('streets')->onDelete('cascade');
 
         });
     }

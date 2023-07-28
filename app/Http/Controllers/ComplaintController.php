@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use App\Models\Complaint;
 use Illuminate\Http\Request;
 
@@ -9,7 +10,7 @@ class ComplaintController extends Controller
 {
     public function index()
     {
-        $complaints = Complaint::all();
+        $complaints = Complaint::with('user')->get();
         return view('complaints.index', compact('complaints'));
     }
 
@@ -21,22 +22,33 @@ class ComplaintController extends Controller
 
     public function create()
     {
-        return view('complaints.create');
+        $users = User::role('user')->get();       
+        return view('complaints.create', compact('users'));
     }
 
     public function store(Request $request)
     {
-        $validatedData = $request->validate([
-            'user_id' => 'required|integer|exists:users,id',
-            'street_id' => 'required|integer|exists:streets,id',
+      $validatedData = $request->validate([
+            'user_id' => 'required|integer',
+            'username' => 'required|string|max:255',
+            'mobile' => 'required|string|max:11',
+            'email' => 'required|email',
+            'doorno' => 'required|string',
+            'panchayat_id' => 'nullable|integer',
+            'ward_id' => 'nullable|integer',
+            'street_id' => 'nullable|integer',
+            'division_id' => 'nullable|integer',
+            'dstreet_id' => 'nullable|integer',
             'subject' => 'required|string|max:255',
+            'priority' => 'required|string',
             'description' => 'required|string',
             'status' => 'required|string|in:new,in-progress,resolved',
         ]);
 
+
         $complaint = Complaint::create($validatedData);
 
-        return redirect()->route('complaints.show', $complaint->id)->with('success', 'Complaint created successfully!');
+        return redirect()->route('complaints.index', $complaint->id)->with('success', 'Complaint created successfully!');
     }
 
     public function edit($id)

@@ -32,6 +32,7 @@
     <th scope="col">ID</th>
     <th scope="col">User Name</th>
     <th scope="col">Title</th>
+    <th scope="col">Status</th>
     <th scope="col">Action</th>
     </tr>
     </thead>
@@ -39,8 +40,9 @@
         @foreach ($complaints as $complaint)
     <tr>
     <th scope="row"><a href="#" class="fw-semibold">#{{ $complaint->id }}</a></th>
-    <td>{{ $complaint->user->name }}</td>
+    <td>{{ $complaint->usename }}</td>
     <td>{{ $complaint->subject }}</td>
+    <td>{{ $complaint->status }}</td>
     <td>
       
         <div class="d-flex gap-2">

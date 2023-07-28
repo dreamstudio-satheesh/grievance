@@ -2,7 +2,7 @@
     
 
     <div class="mb-3">
-        <label class="form-label text-muted">Select Type</label>
+        <label class="form-label text-muted">Select Location Type</label>
         <select  wire:model="Selectedtype"  class="form-control" required >
             <option selected="" value="Select">Select</option>
             <option value="City">City</option>
