@@ -65,5 +65,5 @@
     </table>
 @endsection
 @section('script')
-<script src="{{ URL::asset('/assets/js/app.min.js') }}"></script>
+<script src="{{ URL::asset('/admin_assets/js/app.min.js') }}"></script>
 @endsection

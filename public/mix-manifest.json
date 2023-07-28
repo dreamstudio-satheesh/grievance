@@ -191,7 +191,7 @@
     "/assets/css/app.min.css": "/assets/css/app.min.css",
     "/assets/css/custom.min.css": "/assets/css/custom.min.css",
     "/assets/js/plugins.min.js": "/assets/js/plugins.min.js",
-    "/assets/js/app.min.js": "/assets/js/app.min.js",
+    "/admin_assets/js/app.min.js": "/admin_assets/js/app.min.js",
     "/assets/js/pages/leaflet-us-states.js": "/assets/js/pages/leaflet-us-states.js",
     "/assets/js/pages/form-wizard.init.js": "/assets/js/pages/form-wizard.init.js",
     "/assets/js/pages/crm-leads.init.js": "/assets/js/pages/crm-leads.init.js",

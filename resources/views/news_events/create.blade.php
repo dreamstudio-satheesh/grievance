@@ -110,5 +110,5 @@
 @section('script')
     <script src="{{ URL::asset('admin_assets/libs/dropzone/dropzone.min.js') }}"></script>
     <script src="{{ URL::asset('admin_assets/js/pages/form-file-upload.init.js') }}"></script>
-    <script src="{{ URL::asset('/assets/js/app.min.js') }}"></script>
+    <script src="{{ URL::asset('/admin_assets/js/app.min.js') }}"></script>
 @endsection
