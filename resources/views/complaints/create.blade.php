@@ -115,7 +115,7 @@
                         </div><!-- end card header -->
         
                         <div class="card-body">
-                            <p class="text-muted">Upload Your News images & Photos Here</p>
+                            <p class="text-muted">Upload Your  images  Here</p>
         
                             <div class="dropzone">
                                 <div class="fallback">
