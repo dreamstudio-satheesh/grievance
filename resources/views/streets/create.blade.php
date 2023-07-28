@@ -41,6 +41,6 @@
 
 @endsection
 @section('script')
-<script src="{{ URL::asset('assets/libs/prismjs/prismjs.min.js') }}"></script>
+<script src="{{ URL::asset('admin_assets/libs/prismjs/prismjs.min.js') }}"></script>
 <script src="{{ URL::asset('/assets/js/app.min.js') }}"></script>
 @endsection

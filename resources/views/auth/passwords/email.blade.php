@@ -17,8 +17,8 @@
                                                     <div class="d-flex flex-column h-100">
                                                         <div class="mb-4 mb-md-5">
                                                             <a href="/index" class="d-block auth-logo">
-                                                                <img src="{{URL::asset('assets/images/logo-dark.png')}}" alt="" height="22" class="auth-logo-dark me-start">
-                                                                <img src="{{URL::asset('assets/images/logo-light.png')}}" alt="" height="22" class="auth-logo-light me-start">
+                                                                <img src="{{URL::asset('admin_assets/images/logo-dark.png')}}" alt="" height="22" class="auth-logo-dark me-start">
+                                                                <img src="{{URL::asset('admin_assets/images/logo-light.png')}}" alt="" height="22" class="auth-logo-light me-start">
                                                             </a>
                                                         </div>
                                                         <div class="auth-content my-auto">
@@ -154,5 +154,5 @@
 
 @endsection
 @section('script')
-    <script src="{{ URL::asset('assets/js/pages/eva-icon.init.js') }}"></script>
+    <script src="{{ URL::asset('admin_assets/js/pages/eva-icon.init.js') }}"></script>
 @endsection

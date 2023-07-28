@@ -2,7 +2,7 @@
 @section('title') @lang('translation.dashboards') @endsection
 @section('content')
 @section('css')
-    <link href="{{ URL::asset('assets/libs/dropzone/dropzone.min.css') }}" rel="stylesheet">
+    <link href="{{ URL::asset('admin_assets/libs/dropzone/dropzone.min.css') }}" rel="stylesheet">
 @endsection
 @component('components.breadcrumb')
 @slot('li_1') Pages @endslot
@@ -50,7 +50,7 @@
                                         <div class="d-flex p-2">
                                             <div class="flex-shrink-0 me-3">
                                                 <div class="avatar-sm bg-light rounded">
-                                                    <img data-dz-thumbnail class="img-fluid rounded d-block" src="{{URL::asset('assets/images/new-document.png')}}"
+                                                    <img data-dz-thumbnail class="img-fluid rounded d-block" src="{{URL::asset('admin_assets/images/new-document.png')}}"
                                                         alt="Dropzone-Image" />
                                                 </div>
                                             </div>
@@ -108,7 +108,7 @@
 
 @endsection
 @section('script')
-    <script src="{{ URL::asset('assets/libs/dropzone/dropzone.min.js') }}"></script>
-    <script src="{{ URL::asset('assets/js/pages/form-file-upload.init.js') }}"></script>
+    <script src="{{ URL::asset('admin_assets/libs/dropzone/dropzone.min.js') }}"></script>
+    <script src="{{ URL::asset('admin_assets/js/pages/form-file-upload.init.js') }}"></script>
     <script src="{{ URL::asset('/assets/js/app.min.js') }}"></script>
 @endsection

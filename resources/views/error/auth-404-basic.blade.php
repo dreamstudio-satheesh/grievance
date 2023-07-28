@@ -17,7 +17,7 @@
                         <div class="col-lg-12">
                             <div class="text-center pt-4">
                                 <div class="">
-                                    <img src="{{ URL::asset('assets/images/error.svg') }}" alt="" class="error-basic-img move-animation">
+                                    <img src="{{ URL::asset('admin_assets/images/error.svg') }}" alt="" class="error-basic-img move-animation">
                                 </div>
                                 <div class="mt-n4">
                                     <h1 class="display-1 fw-medium">404</h1>
@@ -55,7 +55,7 @@
 @endsection
 @section('script')
 <!-- particles js -->
-<script src="{{ URL::asset('assets/libs/particles.js/particles.js.min.js') }}"></script>
+<script src="{{ URL::asset('admin_assets/libs/particles.js/particles.js.min.js') }}"></script>
 <!-- particles app js -->
-<script src="{{ URL::asset('assets/js/pages/particles.app.js') }}"></script>
+<script src="{{ URL::asset('admin_assets/js/pages/particles.app.js') }}"></script>
 @endsection
