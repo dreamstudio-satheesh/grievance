@@ -124,7 +124,7 @@
                                         </ul>
                                     </div>
                                     <div class="header__top-search">
-                                        @guest
+                                        
                                         <ul>
                                             @guest
                                             <li class="search__icon"><i class="fas fa-search"></i></li>
