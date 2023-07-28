@@ -28,3 +28,6 @@
    12. Logout
 
  ## Api for News & events, Photos Gallery, Track Complaints, List of complaints ( User submitted), Finished Complaints
+
+
+ # git remote add appserver cleansalem@cleansalem.org:/home1/cleansalem/grievance.git 
