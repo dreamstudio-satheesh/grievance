@@ -29,7 +29,7 @@ class HomeController extends Controller
     public function index(Request $request)
     {
        if (auth()->user()->hasRole('admin')) {
-        return redirect()->route('admin.index');
+        return redirect()->route('root');
        }
        return view('frontend.home');
     }
