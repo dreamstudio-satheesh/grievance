@@ -8,6 +8,11 @@ class PagesController extends Controller
 {
     public function home()
     {
+        if (auth()->user()->hasRole('admin')) {
+           
+            return redirect('admin');
+        }
+        
         return view('frontend.home');
     }
 
