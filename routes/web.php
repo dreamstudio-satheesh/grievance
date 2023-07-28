@@ -27,7 +27,7 @@ Auth::routes();
 Route::get('index/{locale}', [HomeController::class, 'lang']);
 
 
-Route::group(['middleware' => ['role:admin']], function () {
+Route::group(['prefix' => 'admin','middleware' => ['role:admin']], function () {
     
 Route::get('/', [HomeController::class, 'root'])->name('root');
 

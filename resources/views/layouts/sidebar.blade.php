@@ -12,7 +12,7 @@
             </span>
         </a>
         <!-- Light Logo-->
-        <a href="{{ url('/') }}" class="logo logo-light">
+        <a href="{{ url('/admin/') }}" class="logo logo-light">
             <span class="logo-sm">
                 <img src="{{ URL::asset('admin_assets/images/logo-sm.png') }}" alt="" height="22">
             </span>
@@ -40,7 +40,7 @@
                     <div class="collapse menu-dropdown" id="sidebarDashboards">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{ url('/')}}" class="nav-link">Home</a>
+                                <a href="{{ url('/admin/')}}" class="nav-link">Home</a>
                             </li>
                            
                         </ul>
@@ -55,11 +55,11 @@
                     <div class="collapse menu-dropdown" id="UserList">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{ url('/users')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Users List</a>
+                                <a href="{{ url('/admin/users')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Users List</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="{{ url('users/create')}}"  class="nav-link"> <i class="ri-user-add-line"></i>Add User</a>
+                                <a href="{{ url('/admin/users/create')}}"  class="nav-link"> <i class="ri-user-add-line"></i>Add User</a>
                             </li>
                         </ul>
                     </div>
@@ -78,26 +78,26 @@
                                 <div class="collapse menu-dropdown" id="Panchayat">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a href="{{ url('/panchayats')}}"  class="nav-link"> Panchayat List</a>
+                                            <a href="{{ url('/admin/panchayats')}}"  class="nav-link"> Panchayat List</a>
                                         </li>
                         
                                         <li class="nav-item">
-                                            <a href="{{ url('panchayats/create')}}"  class="nav-link"></i>Add Panchayat</a>
+                                            <a href="{{ url('/admin/panchayats/create')}}"  class="nav-link"></i>Add Panchayat</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a href="{{ url('/wards')}}"  class="nav-link"> Ward List</a>
+                                            <a href="{{ url('/admin/wards')}}"  class="nav-link"> Ward List</a>
                                         </li>
                         
                                         <li class="nav-item">
-                                            <a href="{{ url('wards/create')}}"  class="nav-link"></i>Add Ward</a>
+                                            <a href="{{ url('/admin/wards/create')}}"  class="nav-link"></i>Add Ward</a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="{{ url('/streets')}}"  class="nav-link">  Streets List</a>
+                                            <a href="{{ url('/admin/streets')}}"  class="nav-link">  Streets List</a>
                                         </li>
                         
                                         <li class="nav-item">
-                                            <a href="{{ url('streets/create')}}"  class="nav-link"> Add Street</a>
+                                            <a href="{{ url('/admin/streets/create')}}"  class="nav-link"> Add Street</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -108,19 +108,19 @@
                                 <div class="collapse menu-dropdown" id="Division">
                                     <ul class="nav nav-sm flex-column">
                                         <li class="nav-item">
-                                            <a href="{{ url('/divisions')}}"  class="nav-link"> Division List</a>
+                                            <a href="{{ url('/admin/divisions')}}"  class="nav-link"> Division List</a>
                                         </li>
                         
                                         <li class="nav-item">
-                                            <a href="{{ url('divisions/create')}}"  class="nav-link"> Add Division</a>
+                                            <a href="{{ url('/admin/divisions/create')}}"  class="nav-link"> Add Division</a>
                                         </li>
 
                                         <li class="nav-item">
-                                            <a href="{{ url('/dstreets')}}"  class="nav-link"> Streets List</a>
+                                            <a href="{{ url('/admin/dstreets')}}"  class="nav-link"> Streets List</a>
                                         </li>
                         
                                         <li class="nav-item">
-                                            <a href="{{ url('dstreets/create')}}"  class="nav-link"> Add Street</a>
+                                            <a href="{{ url('/admin/dstreets/create')}}"  class="nav-link"> Add Street</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -137,24 +137,24 @@
                         <ul class="nav nav-sm flex-column">
 
                             <li class="nav-item">
-                                <a href="{{ url('/complaints')}}"  class="nav-link"> <i class="ri-discuss-fill"></i>Complaints List</a>
+                                <a href="{{ url('/admin/complaints')}}"  class="nav-link"> <i class="ri-discuss-fill"></i>Complaints List</a>
                             </li>
             
                             <li class="nav-item">
-                                <a href="{{ url('complaints/create')}}"  class="nav-link"> <i class="ri-questionnaire-line"></i>New Compaint</a>
+                                <a href="{{ url('/admin/complaints/create')}}"  class="nav-link"> <i class="ri-questionnaire-line"></i>New Compaint</a>
                             </li>
                         </ul>
                     </div>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ url('/news_events')}}">
+                    <a class="nav-link menu-link" href="{{ url('/admin/news_events')}}">
                         <i class="ri-honour-line"></i> <span>News & Events</span>
                     </a>
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ url('/news_events/create')}}">
+                    <a class="nav-link menu-link" href="{{ url('/admin/news_events/create')}}">
                         <i class="ri-honour-line"></i> <span> create News & Events</span>
                     </a>
                 </li>
