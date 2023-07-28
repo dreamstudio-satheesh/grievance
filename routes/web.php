@@ -112,4 +112,4 @@ Route::delete('/news_events/{id}', [NewsEventController::class, 'destroy'])->nam
 
 
 
-Route::get('{any}', [HomeController::class, 'index'])->name('index');
+//Route::get('{any}', [HomeController::class, 'index'])->name('index');
