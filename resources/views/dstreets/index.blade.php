@@ -30,8 +30,8 @@
     <thead>
     <tr>
     <th scope="col">ID</th>
-    <th scope="col">Name</th>
-    <th scope="col">Division Name</th>
+    <th scope="col"> Division Name</th>
+    <th scope="col">Street Name</th>
     <th scope="col">Action</th>
     </tr>
     </thead>

@@ -29,9 +29,10 @@ class WardController extends Controller
 
     public function store(Request $request)
     {
+       
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
-            'panchayat_id'  => 'required|integer|exists:panchayats.id',
+            'panchayat_id'  => 'required|integer',
         ]);
 
         $ward = Ward::create($validatedData);

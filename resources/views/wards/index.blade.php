@@ -30,7 +30,7 @@
     <thead>
     <tr>
     <th scope="col">ID</th>
-    <th scope="col">Name</th>
+    <th scope="col">Ward No</th>
     <th scope="col">Panchayat name</th>
     <th scope="col">Action</th>
     </tr>
