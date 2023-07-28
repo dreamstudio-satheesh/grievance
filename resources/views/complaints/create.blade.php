@@ -11,7 +11,7 @@
 
 
     <div class="card">
-        <form action="{{ route('complaints.store') }}"  method="POST" >
+        <form action="{{ route('complaints.store') }}"  method="POST" enctype="multipart/form-data" >
         @csrf
         <div class="card-body">
 
