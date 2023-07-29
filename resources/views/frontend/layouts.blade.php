@@ -131,7 +131,7 @@
 											<li><a href="{{ url('login') }}"> Login & Register</a> <i class="fas fa-user"></i></li>
                                             
                                             @else
-                                            <li>Hello  {{ Auth::user()->name }} !</li>
+                                            <li>Hello  {{ Auth::user()->name }}  <i class="fas fa-user"></i></li>
                                             <li><a class="dropdown-item" href="{{ route('logout') }}"
                                                 onclick="event.preventDefault();
                                                               document.getElementById('logout-form').submit();">
