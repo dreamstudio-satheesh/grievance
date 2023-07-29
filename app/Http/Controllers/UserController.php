@@ -43,10 +43,10 @@ class UserController extends Controller
             'email' => 'required|email|unique:users',
             'password' => 'required|string|min:6',
             'mobile_number' => 'required|string',
-            'role' => 'required|string',
         ]);
 
         $user = User::create($validatedData);
+        $user->assignRole('user');
 
         return redirect()->route('users.show', $user->id)->with('success', 'User created successfully!');
     }
