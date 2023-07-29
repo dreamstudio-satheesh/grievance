@@ -48,10 +48,10 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Edit</button>
+                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
             </div>
             <div class="remove">                                
-                <button class="btn btn-sm btn-primary remove-item-btn" data-bs-toggle="modal" data-bs-target="#smallModal" data-attr="{{ route('users.destroy',$user->id) }}">Remove</button>
+                <button class="btn btn-sm btn-primary remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal" data-attr="{{ route('users.destroy',$user->id) }}">Remove</button>
                 
             </div>
         </div>
