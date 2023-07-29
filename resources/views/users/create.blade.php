@@ -30,6 +30,12 @@
                 <div class="invalid-feedback">Please enter a phone.</div>
             </div>
 
+            <div class="mb-3">
+                <label for="phone-field" class="form-label">Password</label>
+                <input type="text" name="password" id="password" class="form-control" placeholder="Enter password" required="">
+                <div class="invalid-feedback">Please enter password.</div>
+            </div>
+
            
 
            
