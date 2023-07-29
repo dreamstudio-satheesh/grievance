@@ -48,7 +48,7 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Edit</button>
             </div>
             <div class="remove">                                
                 <button class="btn btn-sm btn-primary remove-item-btn" data-bs-toggle="modal" data-bs-target="#smallModal" data-attr="{{ route('users.destroy',$user->id) }}">Remove</button>
@@ -124,23 +124,7 @@
     </div>
 </div>
 
-<!-- small modal -->
-<div class="modal fade" id="smallModal" tabindex="-1" role="dialog" aria-labelledby="smallModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-sm" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body" id="smallBody">
-                <div>
-                    <!-- the result to be displayed apply here -->
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 
 <!-- Modal -->
