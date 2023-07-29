@@ -28,7 +28,7 @@
 
                         <div class="card-body p-4">
                             <div class="text-center mt-2">
-                                <h5 class="text-primary">Welcome Back !</h5>
+                                <h5 class="text-success">Welcome Back !</h5>
                                 <p class="text-muted">Sign in to continue to Clean Salem.</p>
                             </div>
                             <div class="p-2 mt-4">
@@ -66,7 +66,7 @@
                                     </div>
 
                                     <div class="mt-4">
-                                        <button class="btn btn-primary w-100" type="submit">Sign In</button>
+                                        <button class="btn btn-success w-100" type="submit">Sign In</button>
                                     </div>
 
                                     <div class="mt-4 text-center">
