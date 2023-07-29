@@ -47,7 +47,11 @@
                 <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
             </div>
             <div class="remove">
-                <button class="btn btn-sm btn-primary remove-item-btn" data-bs-toggle="modal" data-bs-target="#deleteRecordModal">Remove</button>
+                <form action="{{ route('streets.destroy',$street->id) }}" method="POST"> 
+                    @csrf
+                    @method('DELETE')
+                    <button type="submit" class="btn btn-sm btn-primary remove-item-btn">Remove</button>
+                </form> 
             </div>
         </div>
     </td>
