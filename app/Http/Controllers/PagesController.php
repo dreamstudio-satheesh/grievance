@@ -41,7 +41,10 @@ class PagesController extends Controller
 
     public function complaint()
     {
-        return view('frontend.complaint');
+        if (Auth::check()) {
+                
+            return view('frontend.complaint');
+        }
     }
 
     public function contact()
