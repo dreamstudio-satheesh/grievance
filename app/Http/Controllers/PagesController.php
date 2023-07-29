@@ -44,6 +44,8 @@ class PagesController extends Controller
         if (Auth::check()) {
                 
             return view('frontend.complaint');
+        }else{
+            return redirect('register');
         }
     }
 
