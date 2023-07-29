@@ -48,7 +48,7 @@ class UserController extends Controller
         $user = User::create($validatedData);
         $user->assignRole('user');
 
-        return redirect()->route('users.show', $user->id)->with('success', 'User created successfully!');
+        return redirect()->route('users')->with('success', 'User created successfully!');
     }
 
     /**
