@@ -91,6 +91,7 @@ class PanchayatController extends Controller
      */
     public function destroy(Panchayat $panchayat)
     {
-        //
+        $panchayat->delete();
+        return redirect()->route('panchayats.index')->with('success','Panchayat has been deleted successfully');
     }
 }
