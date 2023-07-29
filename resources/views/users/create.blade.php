@@ -30,15 +30,7 @@
                 <div class="invalid-feedback">Please enter a phone.</div>
             </div>
 
-            <div class="mb-3">
-                <label class="form-label text-muted">Select Ward</label>
-                <select name="ward_id" class="form-control" >
-                    @foreach ($wards as $ward)
-                    <option value="{{ $ward->id }}">{{ $ward->name }}</option>
-                    @endforeach
-                </select>
-                
-            </div>
+           
 
            
         </div>

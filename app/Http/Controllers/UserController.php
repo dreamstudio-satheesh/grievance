@@ -26,8 +26,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        $wards = Ward::all();
-        return view('users.create',compact('wards'));
+        
+        return view('users.create');
     }
 
     /**
@@ -44,8 +44,6 @@ class UserController extends Controller
             'password' => 'required|string|min:6',
             'mobile_number' => 'required|string',
             'role' => 'required|string',
-            'ward_number' => 'nullable|integer',
-            'street_id' => 'nullable|integer|exists:streets,id',
         ]);
 
         $user = User::create($validatedData);
