@@ -27,8 +27,7 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
 
-             // Foreign key constraint
-              $table->foreign('street_id')->references('id')->on('streets')->onDelete('set null');
+             
         });
 
        
