@@ -10,8 +10,19 @@
     <div class="card">
     <form action="{{ route('panchayats.store') }}"  method="POST" >
         @csrf
+        
         <div class="card-body">
-            
+            @if ($errors->any())
+            <div class="mb-3">
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+            @endif
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Panchayat Name</label>

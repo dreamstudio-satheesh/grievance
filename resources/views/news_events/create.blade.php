@@ -15,6 +15,18 @@
         @csrf
         <div class="card-body">
 
+            @if ($errors->any())
+            <div class="mb-3">
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            </div>
+            @endif
+
             <div class="mb-3">
                 <label for="title" class="form-label">Title</label>
                 <input type="text" name="title" id="title" placeholder="Enter Title" class="form-control" required>
