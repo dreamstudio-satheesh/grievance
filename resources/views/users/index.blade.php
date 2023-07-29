@@ -32,7 +32,6 @@
     <th scope="col">name</th>
     <th scope="col">email</th>
     <th scope="col">mobile number</th>
-    <th scope="col">ward number</th>
     <th scope="col">Action</th>
     </tr>
     </thead>
@@ -43,7 +42,6 @@
     <td>{{ $user->name }}</td>
     <td>{{ $user->email }}</td>
     <td>{{ $user->mobile_number }}</td>
-    <td>{{ $user->ward_number }}</td>
     <td>
       
         <div class="d-flex gap-2">
