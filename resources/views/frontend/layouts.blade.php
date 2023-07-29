@@ -128,8 +128,8 @@
                                         <ul>
                                             @guest
                                             <li class="search__icon"><i class="fas fa-search"></i></li>
-											<li><a href="{{ url('login') }}">Login & Register</a></li>
-                                            <li><i class="fas fa-user"></i></li>
+											<li><a href="{{ url('login') }}"> Login & Register</a> <i class="fas fa-user"></i></li>
+                                            
                                             @else
                                             <li>Hello  {{ Auth::user()->name }} !</li>
                                             <li><a class="dropdown-item" href="{{ route('logout') }}"
