@@ -12,7 +12,7 @@
             @csrf
         <div class="card-body">
 
-            @if (count($errors) > 0)
+            @if ($errors->any())
             <div class="mb-3">
                 <div class="alert alert-danger">
                     <ul>
