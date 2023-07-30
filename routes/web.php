@@ -8,6 +8,7 @@ use App\Http\Controllers\WardController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\StreetController;
 use App\Http\Controllers\DstreetController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ComplaintController;
 use App\Http\Controllers\NewsEventController;
@@ -120,6 +121,14 @@ Route::get('/news_events/{id}/edit', [NewsEventController::class, 'edit'])->name
 Route::put('/news_events/{id}', [NewsEventController::class, 'update'])->name('news_events.update');
 Route::delete('/news_events/{id}', [NewsEventController::class, 'destroy'])->name('news_events.destroy');
 
+
+Route::get('/galleries', [GalleryController::class, 'index'])->name('galleries.index');
+Route::get('/galleries/create', [GalleryController::class, 'create'])->name('galleries.create');
+Route::post('/galleries', [GalleryController::class, 'store'])->name('galleries.store');
+Route::get('/galleries/{id}', [GalleryController::class, 'show'])->name('galleries.show');
+Route::get('/galleries/{id}/edit', [GalleryController::class, 'edit'])->name('galleries.edit');
+Route::put('/galleries/{id}', [GalleryController::class, 'update'])->name('galleries.update');
+Route::delete('/galleries/{id}', [GalleryController::class, 'destroy'])->name('galleries.destroy');
 
 
 });
