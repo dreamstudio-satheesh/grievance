@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -36,7 +37,8 @@ class PagesController extends Controller
 
     public function gallery()
     {
-        return view('frontend.gallery');
+        $galleries=Gallery::all();
+        return view('frontend.gallery', compact('galleries'));
     }
 
     public function complaint()

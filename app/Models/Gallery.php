@@ -18,12 +18,11 @@ class Gallery extends Model implements HasMedia
 
     public function registerMediaConversions(Media $media = null): void
     {
-          $this->addMediaConversion('thumb')
-            ->width(368)
-            ->height(232)
-            ->sharpen(10)
-            ->quality(60)
-            ->performOnCollections('images');
+      $this->addMediaConversion('thumb')
+      ->width(368)
+      ->height(232)
+      ->sharpen(10);
+
 
     }
     
