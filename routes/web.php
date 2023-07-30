@@ -131,7 +131,7 @@ Route::put('/galleries/{id}', [GalleryController::class, 'update'])->name('galle
 Route::delete('/galleries/{id}', [GalleryController::class, 'destroy'])->name('galleries.destroy');
 
 
-Route::get('/galleries/list', [GalleryController::class, 'list'])->name('galleries.list');
+Route::get('/imagelist', [GalleryController::class, 'list'])->name('imagelist');
 
 
 });
