@@ -193,10 +193,10 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#Gallery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                    <a class="nav-link menu-link" href="#Enquiry" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="ri-questionnaire-fill"></i> <span>Enquiry</span>
                     </a>
-                    <div class="collapse menu-dropdown" id="Gallery">
+                    <div class="collapse menu-dropdown" id="Enquiry">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
                                 <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-questionnaire-line"></i> Enquiry List</a>
