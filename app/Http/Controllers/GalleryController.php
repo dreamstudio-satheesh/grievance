@@ -88,13 +88,13 @@ class GalleryController extends Controller
      * @param  \App\Models\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Gallery $gallery)
+    public function update(Request $request,  $id)
     {
         $validatedData = $request->validate([
             'images' => 'max:5000',
             'images.*' => ['image', 'max:5000'],
         ]);
-
+        $gallery = Gallery::where('id',$id)->first();
         if ($request->has('images')) {
             foreach ($request->images as $image) {
                 // Image::load($image->getPathName())->quality(60)->save();  
