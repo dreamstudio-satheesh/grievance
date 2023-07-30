@@ -147,10 +147,10 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="#Gallery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                    <a class="nav-link menu-link" href="#NewsEvents" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="ri-honour-line"></i> <span>News & Events</span>
                     </a>
-                    <div class="collapse menu-dropdown" id="Gallery">
+                    <div class="collapse menu-dropdown" id="NewsEvents">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
                                 <a class="nav-link menu-link" href="{{ url('/admin/news_events')}}">
