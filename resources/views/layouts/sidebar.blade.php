@@ -159,6 +159,23 @@
                     </a>
                 </li>
 
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#Gallery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ri-gallery-fill"></i> <span>Gallery</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="Gallery">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-image-fill"></i> Users List</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/galleries/create')}}"  class="nav-link"> <i class="ri-image-add-line"></i>Add User</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
 
             </ul>
         </div>
