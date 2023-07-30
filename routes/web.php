@@ -36,7 +36,7 @@ Route::get('/aboutus.php', [PagesController::class, 'aboutus'])->name('aboutus')
 Route::get('/trustee.php', [PagesController::class, 'trustee'])->name('trustee');
 Route::get('/gallery.php', [PagesController::class, 'gallery'])->name('gallery');
 Route::get('/news-events.php', [PagesController::class, 'events'])->name('events');
-Route::get('/event-single.php', [PagesController::class, 'single'])->name('single');
+Route::get('/event-single/{id}', [PagesController::class, 'single'])->name('single');
 Route::get('/complaint.php', [PagesController::class, 'complaint'])->name('complaint');
 Route::get('/contact.php', [PagesController::class, 'contact'])->name('contact');
 

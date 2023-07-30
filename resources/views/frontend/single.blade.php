@@ -11,11 +11,11 @@
                         <div class="event__item">
                             <div class="event__inner">
                                 <div class="event__content pt-0">
-                                    <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit</h3>
+                                    <h3>{{ $newsevent->title }}</h3>
                                     <div class="event__metapost">
                                         <ul class="event__metapost-info">
-                                            <li><i class="far fa-clock"></i> 10am - 12pm</li>
-                                            <li><i class="fas fa-map-marker-alt"></i> PO Box 16122, Collins Street</li>
+                                            <li><i class="far fa-clock"></i>{{$events->date }}</li>
+                                            <li><i class="fas fa-map-marker-alt"></i> {{ $newsevent->location }}</li>
                                             <li class="event__metapost-share">
                                                 <i class="fas fa-share-alt"></i>
                                                 <ul>
@@ -28,14 +28,14 @@
                                         </ul>
                                     </div>
                                     <div class="event__thumb mb-3">
-                                        <img src="assets/images/event/10.jpg" alt="event thumb">
+                                        <img src="{{ $newsevent->getFirstMediaUrl('images') }}" alt="event thumb">
                                         <div class="event__thumb-date">
-                                            <h6>09</h6>
-                                            <p>Nov</p>
+                                            <h6>{{ \Carbon\Carbon::parse($newsevent->date)->format('F') }}</h6>
+                                        <p>{{ \Carbon\Carbon::parse($newsevent->date)->format('d') }}</p>
                                         </div>
                                     </div>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                                    <p>Seamlessly reintermediate resource sucking synergy rather than granular core competencies. Compellingly reintermediate highly efficient ideas rather than economically sound e-commerce. Compellingly leverage existing magnetic process improvements before standards compliant e-services. Uniquely reconceptualize premier methodologies before future-proof models. Enthusiastically leverage other's top-line human capital after dynamic quality vectors. Progressively underwhelm compelling sources without compelling methods of empowerment. Professionally disintermediate best-of-breed markets after installed base technologies. Collaboratively deliver tactical products before user-centric collaboration and idea-sharing. Competently myocardinate impactful total linkage rather than B2B infrastructures. Compellingly create innovative schemas for principle-centered scenarios. Energistically.</p>
+                                    
+                                    <p>{{ $newsevent->description }}</p>
                                 </div>
                             </div>
                         </div>

@@ -6,16 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title')</title>
-    <link rel="shortcut icon" href="assets/css/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ URL::asset('assets/css/favicon.png')}}" type="image/x-icon">
 
-    <link rel="stylesheet" href="assets/css/animate.css">
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/swiper.min.css">
-    <link rel="stylesheet" href="assets/css/lightcase.css">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/animate.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/all.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/swiper.min.css')}}">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/lightcase.css')}}">
 
     <!-- main css for template -->
-    <link rel="stylesheet" href="assets/css/style.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('assets/css/style.min.css')}}">
 </head>
 
 <body>
@@ -49,7 +49,7 @@
     <div class="overlay"></div>
     <div class="cart-sidebar-area">
         <div class="top-content">
-            <img src="assets/images/logo/02.png" alt="logo">
+            <img src="{{ URL::asset('assets/images/logo/02.png')}}" alt="logo">
             <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
         </div>
         <div class="bottom-content">
@@ -110,7 +110,7 @@
                             </div>
                             <div class="header__top-center">
                                 <div class="header__top-logo d-none d-md-block">
-                                    <a href="index.php"><img src="assets/images/logo/01.png" alt="logo"></a>
+                                    <a href="index.php"><img src="{{ URL::asset('assets/images/logo/01.png')}}" alt="logo"></a>
                                 </div>
                             </div>
                             <div class="header__top-right">
@@ -155,8 +155,8 @@
             <div class="container">
                 <div class="header__mainmenu navbar navbar-expand-xl navbar-light">
                     <div class="header__logo">
-                        <a href="index.phpl" class="d-none d-xl-block"><img src="assets/images/logo/02.png" alt="logo"></a>
-                        <a href="index.php" class="d-xl-none"><img src="assets/images/logo/01.png" alt="logo"></a>
+                        <a href="index.phpl" class="d-none d-xl-block"><img src="{{ URL::asset('assets/images/logo/02.png')}}" alt="logo"></a>
+                        <a href="index.php" class="d-xl-none"><img src="{{ URL::asset('assets/images/logo/01.png')}}" alt="logo"></a>
                     </div>
                     <div class="header__bar">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menubar" aria-controls="menubar" aria-expanded="false" aria-label="Toggle navigation">
@@ -260,7 +260,7 @@
             <div class="container">
                 <div class="footer__bottom-area text-center">
                     <div class="footer__bottom-logo">
-                        <a href="index-2.html"><img src="assets/images/logo/01.png" alt="footer logo"></a>
+                        <a href="index-2.html"><img src="{{ URL::asset('assets/images/logo/01.png')}}" alt="footer logo"></a>
                     </div>
                     <div class="footer__bottom-content">
                         <p>Copyright &copy; 2023 <a href="index.php">Clean Salem</a> | Designed by <a href="https://4mdesigner.com">4MDesigner</a></p>
@@ -280,17 +280,17 @@
     <!-- scrollToTop ending here -->
 
     <!-- vendor plugins -->
-    <script src="assets/js/jquery-3.6.0.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/waypoints.min.js"></script>
-    <!-- <script src="assets/js/all.min.js"></script> -->
-    <script src="assets/js/swiper.min.js"></script>
-    <script src="assets/js/lightcase.js"></script>
-    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="{{ URL::asset('assets/js/jquery-3.6.0.min.js')}}"></script>
+    <script src="{{ URL::asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{ URL::asset('assets/js/waypoints.min.js')}}"></script>
+    <!-- <script src="{{ URL::asset('assets/js/all.min.js')}}"></script> -->
+    <script src="{{ URL::asset('assets/js/swiper.min.js')}}"></script>
+    <script src="{{ URL::asset('assets/js/lightcase.js')}}"></script>
+    <script src="{{ URL::asset('assets/js/isotope.pkgd.min.js')}}"></script>
     
-    <script src="assets/js/jquery.counterup.min.js"></script>
-    <script src="assets/js/wow.js"></script>
-    <script src="assets/js/custom.js"></script>
+    <script src="{{ URL::asset('assets/js/jquery.counterup.min.js')}}"></script>
+    <script src="{{ URL::asset('assets/js/wow.js')}}"></script>
+    <script src="{{ URL::asset('assets/js/custom.js')}}"></script>
 </body>
 
 

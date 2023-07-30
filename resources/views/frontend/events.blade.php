@@ -17,7 +17,7 @@
                         <div class="event__item">
                             <div class="event__inner">
                                 <div class="event__thumb">
-                                    <a href="event-single.php"><img src="assets/images/event/01.jpg" alt="event thumb"></a>
+                                    <a href="{{ url('event-single') }}/{{ $events->id }}"><img src="{{ $events->getFirstMediaUrl('images') }}" alt="event thumb"></a>
                                     <div class="event__thumb-date">
                                         <h6>{{ \Carbon\Carbon::parse($events->date)->format('F') }}</h6>
                                         <p>{{ \Carbon\Carbon::parse($events->date)->format('d') }}</p>

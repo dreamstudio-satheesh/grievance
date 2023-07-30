@@ -32,9 +32,10 @@ class PagesController extends Controller
         return view('frontend.events', compact('newsevents'));
     }
 
-    public function single()
+    public function single($id)
     {
-        return view('frontend.single');
+       $newsevent= NewsEvent::findOrFail($id);;
+       return view('frontend.single', compact('newsevent'));
     }
 
     public function gallery()
