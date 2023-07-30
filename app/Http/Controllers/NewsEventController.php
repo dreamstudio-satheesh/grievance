@@ -16,8 +16,8 @@ class NewsEventController extends Controller
 
     public function show($id)
     {
-        $newsEvent = NewsEvent::findOrFail($id);
-        return view('news_events.show', compact('newsEvent'));
+        $newsevents = NewsEvent::findOrFail($id);
+        return view('news_events.show', compact('newsevents'));
     }
 
     public function create()
