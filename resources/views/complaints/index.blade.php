@@ -34,7 +34,7 @@
     <th scope="col">Type</th>
     <th scope="col">Status</th>
     <th scope="col">Action</th>
-    <th scope="col">ForWard</th>
+    <th scope="col">Forward</th>
     </tr>
     </thead>
     <tbody>
