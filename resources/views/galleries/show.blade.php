@@ -50,13 +50,18 @@
     <div class="card">
 
         <div class="card-body">
-            <div class="mb-3">
-                @foreach ($gallery->getMedia('images') as $image)
-                <div class="">
-                    <img src="{{ asset($image->getUrl()) }}">
+            <div class="live-preview">
+
+                <div class="row align-items-center">
+                    @foreach ($gallery->getMedia('images') as $image)
+                    <div class="col-6">
+                        <img class="rounded" alt="200x200" width="200" src="{{ asset($image->getUrl()) }}" data-holder-rendered="true">
+                    </div><!-- end col -->
+                    @endforeach
                 </div>
-                @endforeach
+
             </div>
+           
         </div>
 
     </div>
