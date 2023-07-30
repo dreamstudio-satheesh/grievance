@@ -10,8 +10,8 @@ class NewsEventController extends Controller
 {
     public function index()
     {
-      return  $newsEvents = NewsEvent::all();
-        return view('news_events.index', compact('newsEvents'));
+        $newsEvents = NewsEvent::all();
+        return view('news_events.index', compact('newsevents'));
     }
 
     public function show($id)
