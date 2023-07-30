@@ -15,7 +15,7 @@ class GalleryController extends Controller
      */
     public function index()
     {
-       return $galleries = Gallery::getMedia()->get();
+        $galleries = Gallery::all()->getMedia();
         return view('galleries.index', compact('galleries'));
     }
 
