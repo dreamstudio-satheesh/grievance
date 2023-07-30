@@ -29,9 +29,9 @@ class GalleryController extends Controller
         return view('galleries.create');
     }
 
-    public function showall()
+    public function list()
     {
-        return view('galleries.showall');
+        return view('galleries.list');
     }
 
     /**
