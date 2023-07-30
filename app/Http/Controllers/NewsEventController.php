@@ -10,7 +10,7 @@ class NewsEventController extends Controller
 {
     public function index()
     {
-        $newsevents = NewsEvent::all();
+       return $newsevents = NewsEvent::all();
         return view('news_events.index', compact('newsevents'));
     }
 
@@ -29,21 +29,19 @@ class NewsEventController extends Controller
     {
         $validatedData = $request->validate([
             'title' => 'required|string|max:255',
-            'photo' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
             'location' => 'nullable|string|max:255',
             'description' => 'required|string',
+            'photo' => 'nullable|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
             'date' => 'required|date',
         ]);
 
-        // Handle photo upload
+        $newsevent = NewsEvent::create($validatedData);
+
         if ($request->hasFile('photo')) {
-            $photoPath = $request->file('photo')->store('photos', 'public');
-            $validatedData['photo'] = $photoPath;
+            $newsevent->addMediaFromRequest('photo')->toMediaCollection('images');
         }
 
-        $newsEvent = NewsEvent::create($validatedData);
-
-        return redirect()->route('news_events', $newsEvent->id)->with('success', 'News & Event created successfully!');
+        return redirect()->route('news_events.index', $newsevent->id)->with('success', 'News & Event created successfully!');
     }
 
     public function edit($id)
