@@ -125,6 +125,7 @@ Route::delete('/news_events/{id}', [NewsEventController::class, 'destroy'])->nam
 Route::get('/galleries', [GalleryController::class, 'index'])->name('galleries.index');
 Route::get('/galleries/create', [GalleryController::class, 'create'])->name('galleries.create');
 Route::post('/galleries', [GalleryController::class, 'store'])->name('galleries.store');
+Route::get('/galleries/{id}', [GalleryController::class, 'show'])->name('galleries.show');
 Route::post('/galleries/{id}', [GalleryController::class, 'update'])->name('galleries.update');
 Route::delete('/galleries/{id}', [GalleryController::class, 'destroy'])->name('galleries.destroy');
 
