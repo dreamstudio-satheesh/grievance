@@ -89,9 +89,10 @@ class PanchayatController extends Controller
      * @param  \App\Models\Panchayat  $panchayat
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Panchayat $panchayat)
+    public function destroy($id)
     {
-        return $panchayat->delete();
+        $panchayat = Panchayat::findOrFail($id);
+        $panchayat->delete();
         return redirect()->route('panchayats.index')->with('success','Panchayat has been deleted successfully');
     }
 }
