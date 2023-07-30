@@ -31,10 +31,6 @@
                 <label for="image" class="form-label">Image</label>
                 <input type="file" name="images[]"  class="form-control" accept="image/*" multiple>
             </div>
-
-           
-
-         
        
         </div>
         <div class="card-footer" >

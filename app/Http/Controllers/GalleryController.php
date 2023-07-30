@@ -80,16 +80,6 @@ class GalleryController extends Controller
          return view ('galleries.show', compact('gallery'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  \App\Models\Gallery  $gallery
-     * @return \Illuminate\Http\Response
-     */
-    public function edit(Gallery $gallery)
-    {
-        //
-    }
 
     /**
      * Update the specified resource in storage.
@@ -100,7 +90,7 @@ class GalleryController extends Controller
      */
     public function update(Request $request, Gallery $gallery)
     {
-        //
+        return $request->all();
     }
 
     /**
