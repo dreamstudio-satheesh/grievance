@@ -67,11 +67,11 @@
         <div class="d-flex gap-2">
             <div class="edit">
                 <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                    '.'name :'. $complaint->username) }}" class="btn" > <i class="bx bxl-whatsapp" style="size=24px;  color:green"></i> Je</a>
+                '.'name :'. $complaint->username) }}" class="btn" > <i class="bx bxl-whatsapp" style="size=24px;  color:green"></i> Je</a>
             </div>
             <div class="remove">
                 <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                    '.'name :'. $complaint->username) }}" class="btn" > <i class="bx bxl-whatsapp" style="size=24px; color:green"></i> Ae</a>
+                '.'name :'. $complaint->username) }}" class="btn" > <i class="bx bxl-whatsapp" style="size=24px; color:green"></i> Ae</a>
            
         </div>
     </td>
