@@ -29,16 +29,19 @@
     <thead>
     <tr>
     <th scope="col">ID</th>
-    <th scope="col">User Name</th>
-    <th scope="col">Title</th>
+    <th scope="col">Complaint NO</th>
+    <th scope="col">Name</th>
+    <th scope="col">Type</th>
     <th scope="col">Status</th>
     <th scope="col">Action</th>
+    <th scope="col">ForWard</th>
     </tr>
     </thead>
     <tbody>
         @foreach ($complaints as $complaint)
     <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#{{ $complaint->id }}</a></th>
+    <th scope="row">{{ $complaint->id }}</th>
+    <th>#{{ $complaint->complaint_id }}</th>
     <td>{{ $complaint->usename }}</td>
     <td>{{ $complaint->subject }}</td>
     <td>{{ $complaint->status }}</td>
@@ -55,6 +58,16 @@
                     <button type="submit" class="btn btn-sm btn-primary remove-item-btn">Remove</button>
                 </form>                 
             </div>
+        </div>
+    </td>
+    <td>
+      
+        <div class="d-flex gap-2">
+            <div class="edit">
+                <button class="btn btn-sm btn-success edit-item-btn" >Je</button>
+            </div>
+            <div class="remove">
+                <button class="btn btn-sm btn-primary edit-item-btn" >Je</button>
         </div>
     </td>
     
