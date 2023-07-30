@@ -194,12 +194,12 @@
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#Gallery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
-                        <i class="ri-gallery-fill"></i> <span>Enquiry</span>
+                        <i class="ri-questionnaire-fill"></i> <span>Enquiry</span>
                     </a>
                     <div class="collapse menu-dropdown" id="Gallery">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-image-fill"></i> Enquiry List</a>
+                                <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-questionnaire-line"></i> Enquiry List</a>
                             </li>
 
                            
