@@ -50,17 +50,11 @@ class GalleryController extends Controller
 
         if ($request->has('images')) {
             foreach ($request->images as $image) {
-                Image::load($image->getPathName())->quality(60)->save();
-    
-                $gallery
-                    ->addMedia($image) 
-                    ->toMediaCollection('images');    
+                Image::load($image->getPathName())->quality(60)->save();  
                
                 $gallery->addMedia($image)->toMediaCollection('albums');
             }
         }
-
-
 
         return redirect()->route('galleries.index', $gallery->name)->with('success', 'Gallery created successfully!');
     }
