@@ -28,8 +28,9 @@ class ComplaintController extends Controller
 
     public function store(Request $request)
     {
-      $validatedData = $request->validate([
+          $validatedData = $request->validate([
             'user_id' => 'required|integer',
+            'complaint_id' => 'required|unique:complaints',
             'username' => 'required|string|max:255',
             'mobile' => 'required|string|max:11',
             'email' => 'required|email',
@@ -60,9 +61,11 @@ class ComplaintController extends Controller
     public function update(Request $request, $id)
     {
         $complaint = Complaint::findOrFail($id);
+    
 
         $validatedData = $request->validate([
             'user_id' => 'required|integer|exists:users,id',
+            'complaint_id' => 'required',
             'street_id' => 'required|integer|exists:streets,id',
             'subject' => 'required|string|max:255',
             'description' => 'required|string',

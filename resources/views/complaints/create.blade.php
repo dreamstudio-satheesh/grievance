@@ -40,6 +40,7 @@
             <div class="mb-3">
                 <label for="customername-field" class="form-label"> Name</label>
                 <input type="text" name="username"  class="form-control" placeholder="Enter Name" required="">
+                <input type="hidden" name="complaint_id" value="{{ mt_rand(1000000, 9999999) }}">
             </div>
 
             <div class="mb-3">
