@@ -97,7 +97,7 @@ class GalleryController extends Controller
         $gallery = Gallery::where('id',$id)->first();
         if ($request->has('images')) {
             foreach ($request->images as $image) {
-                // Image::load($image->getPathName())->quality(60)->save();  
+                 Image::load($image->getPathName())->quality(60)->save();  
                
                 $gallery->addMedia($image)->toMediaCollection('images');
             }
