@@ -65,9 +65,12 @@ class GalleryController extends Controller
      * @param  \App\Models\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function show(Gallery $gallery)
+    public function show($id)
     {
-        //
+        $gallery = Gallery::where('id',$id)->first();
+       // $gallery = Gallery::where('id',$id)->with('media')->get() ; 
+
+         return view ('galleries.show', compact('gallery'));
     }
 
     /**
