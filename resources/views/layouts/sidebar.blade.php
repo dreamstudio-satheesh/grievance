@@ -174,7 +174,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="{{ url('/admin/galleries/list')}}"  class="nav-link"> <i class=" ri-film-line"></i>Show Gallery</a>
+                                <a href="{{ url('/admin/galleries/show')}}"  class="nav-link"> <i class=" ri-film-line"></i>Show Gallery</a>
                             </li>
                         </ul>
                     </div>

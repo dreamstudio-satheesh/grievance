@@ -29,6 +29,11 @@ class GalleryController extends Controller
         return view('galleries.create');
     }
 
+    public function showall()
+    {
+        return view('galleries.showall');
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -58,6 +63,8 @@ class GalleryController extends Controller
 
         return redirect()->route('galleries.index', $gallery->name)->with('success', 'Gallery created successfully!');
     }
+
+
 
     /**
      * Display the specified resource.
