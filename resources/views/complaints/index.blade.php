@@ -66,7 +66,7 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <button class="btn btn-sm btn-success edit-item-btn" >Je</button>
+                <a href="https://wa.me/679108040?text=I%20am%20interested%20in%20your%20services.%20How%20to%20get%20started%3F" class="btn btn-sm btn-success edit-item-btn" > <i class="fa fa-whatsapp" style="font-size:48px;color:red"></i> Je</a>
             </div>
             <div class="remove">
                 <button class="btn btn-sm btn-primary edit-item-btn" >Ae</button>
