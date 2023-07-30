@@ -90,7 +90,20 @@ class GalleryController extends Controller
      */
     public function update(Request $request, Gallery $gallery)
     {
-        return $request->all();
+        $validatedData = $request->validate([
+            'images' => 'max:5000',
+            'images.*' => ['image', 'max:5000'],
+        ]);
+
+        if ($request->has('images')) {
+            foreach ($request->images as $image) {
+                // Image::load($image->getPathName())->quality(60)->save();  
+               
+                $gallery->addMedia($image)->toMediaCollection('images');
+            }
+        }
+
+        return redirect()->back()->with('success', 'image uploaded successfully!');
     }
 
     /**
