@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use App\Models\NewsEvent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -27,7 +28,8 @@ class PagesController extends Controller
 
     public function events()
     {
-        return view('frontend.events');
+        $newsevents = NewsEvent::with('media')->get();
+        return view('frontend.events', compact('newsevents'));
     }
 
     public function single()
