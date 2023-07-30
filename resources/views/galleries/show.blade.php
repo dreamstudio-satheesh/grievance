@@ -50,8 +50,8 @@
 
                 <div class="row align-items-center">
                     @foreach ($gallery->getMedia('images') as $image)
-                    <div class="col-4">
-                        <img class="rounded" alt="200x200" width="400" src="{{ asset($image->getUrl()) }}" data-holder-rendered="true">
+                    <div class="col-33">
+                        <img class="rounded" alt="200x200" width="300" src="{{ asset($image->getUrl()) }}" data-holder-rendered="true">
                     </div><!-- end col -->
                     @endforeach
                 </div>
