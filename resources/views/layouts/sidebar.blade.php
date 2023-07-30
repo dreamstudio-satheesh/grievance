@@ -59,6 +59,10 @@
                             </li>
 
                             <li class="nav-item">
+                                <a href="{{ url('/admin/users')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Admins List</a>
+                            </li>
+
+                            <li class="nav-item">
                                 <a href="{{ url('/admin/users/create')}}"  class="nav-link"> <i class="ri-user-add-line"></i>Add User</a>
                             </li>
                         </ul>
@@ -181,6 +185,21 @@
 
                             <li class="nav-item">
                                 <a href="{{ url('/admin/galleries/create')}}"  class="nav-link"> <i class="ri-image-add-line"></i>Add Gallery</a>
+                            </li>
+
+                           
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link menu-link" href="#Gallery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ri-gallery-fill"></i> <span>Enquiry</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="Gallery">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-image-fill"></i> Enquiry List</a>
                             </li>
 
                            
