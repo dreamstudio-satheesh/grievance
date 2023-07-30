@@ -42,7 +42,7 @@
     <tr>
     <th scope="row">{{ $complaint->id }}</th>
     <th>#{{ $complaint->complaint_id }}</th>
-    <td>{{ $complaint->usename }}</td>
+    <td>{{ $complaint->username }}</td>
     <td>{{ $complaint->subject }}</td>
     <td>{{ $complaint->status }}</td>
     <td>
