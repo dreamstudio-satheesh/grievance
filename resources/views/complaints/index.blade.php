@@ -69,7 +69,7 @@
                 <button class="btn btn-sm btn-success edit-item-btn" >Je</button>
             </div>
             <div class="remove">
-                <button class="btn btn-sm btn-primary edit-item-btn" >Je</button>
+                <button class="btn btn-sm btn-primary edit-item-btn" >Ae</button>
         </div>
     </td>
     
