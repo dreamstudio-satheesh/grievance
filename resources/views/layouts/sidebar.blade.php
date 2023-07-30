@@ -146,18 +146,28 @@
                         </ul>
                     </div>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ url('/admin/news_events')}}">
+                    <a class="nav-link menu-link" href="#Gallery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="ri-honour-line"></i> <span>News & Events</span>
                     </a>
+                    <div class="collapse menu-dropdown" id="Gallery">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="{{ url('/admin/news_events')}}">
+                                    <i class="ri-honour-line"></i> <span>News & Events</span>
+                                </a>
+                            </li>
+            
+                            <li class="nav-item">
+                                <a class="nav-link menu-link" href="{{ url('/admin/news_events/create')}}">
+                                    <i class="ri-honour-line"></i> <span> create News & Events</span>
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </div>
                 </li>
-
-                <li class="nav-item">
-                    <a class="nav-link menu-link" href="{{ url('/admin/news_events/create')}}">
-                        <i class="ri-honour-line"></i> <span> create News & Events</span>
-                    </a>
-                </li>
+             
 
                 <li class="nav-item">
                     <a class="nav-link menu-link" href="#Gallery" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
@@ -173,9 +183,7 @@
                                 <a href="{{ url('/admin/galleries/create')}}"  class="nav-link"> <i class="ri-image-add-line"></i>Add Gallery</a>
                             </li>
 
-                           {{--  <li class="nav-item">
-                                <a href="{{ url('/admin/imagelist')}}"  class="nav-link"> <i class=" ri-film-line"></i>Show Gallery</a>
-                            </li> --}}
+                           
                         </ul>
                     </div>
                 </li>
