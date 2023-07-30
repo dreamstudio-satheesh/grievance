@@ -173,9 +173,9 @@
                                 <a href="{{ url('/admin/galleries/create')}}"  class="nav-link"> <i class="ri-image-add-line"></i>Add Gallery</a>
                             </li>
 
-                            <li class="nav-item">
+                           {{--  <li class="nav-item">
                                 <a href="{{ url('/admin/imagelist')}}"  class="nav-link"> <i class=" ri-film-line"></i>Show Gallery</a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </li>
