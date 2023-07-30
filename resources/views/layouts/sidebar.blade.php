@@ -166,11 +166,15 @@
                     <div class="collapse menu-dropdown" id="Gallery">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-image-fill"></i> Users List</a>
+                                <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-image-fill"></i> Gallery List</a>
                             </li>
 
                             <li class="nav-item">
-                                <a href="{{ url('/admin/galleries/create')}}"  class="nav-link"> <i class="ri-image-add-line"></i>Add User</a>
+                                <a href="{{ url('/admin/galleries/create')}}"  class="nav-link"> <i class="ri-image-add-line"></i>Add Gallery</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/galleries/list')}}"  class="nav-link"> <i class=" ri-film-line"></i>Show Gallery</a>
                             </li>
                         </ul>
                     </div>
