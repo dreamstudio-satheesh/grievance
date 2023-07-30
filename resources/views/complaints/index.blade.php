@@ -31,6 +31,7 @@
     <th scope="col">ID</th>
     <th scope="col">Complaint NO</th>
     <th scope="col">Name</th>
+    <th scope="col">Mobile</th>
     <th scope="col">Type</th>
     <th scope="col">Status</th>
     <th scope="col">Action</th>
@@ -43,6 +44,7 @@
     <th scope="row">{{ $complaint->id }}</th>
     <th>#{{ $complaint->complaint_id }}</th>
     <td>{{ $complaint->username }}</td>
+    <td>{{ $complaint->mobile }}</td>
     <td>{{ $complaint->subject }}</td>
     <td>{{ $complaint->status }}</td>
     <td>
