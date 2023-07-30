@@ -43,7 +43,7 @@ class NewsEventController extends Controller
 
         $newsEvent = NewsEvent::create($validatedData);
 
-        return redirect()->route('news_events.show', $newsEvent->id)->with('success', 'News & Event created successfully!');
+        return redirect()->route('news_events', $newsEvent->id)->with('success', 'News & Event created successfully!');
     }
 
     public function edit($id)

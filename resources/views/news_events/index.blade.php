@@ -35,11 +35,11 @@
     </tr>
     </thead>
     <tbody>
-        @foreach($newsEvents as $newsEvent)
+        @foreach($newsEvent as $Event )
     <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#{{ $newsEvent->id }}</a></th>
-    <td>{{ $newsEvent->title }}</td>
-    <td>{{ $newsEvent->date }}</td>
+    <th scope="row"><a href="#" class="fw-semibold">#{{ $Event->id }}</a></th>
+    <td>{{ $Event->title }}</td>
+    <td>{{ $Event->date }}</td>
     <td>
       
         <div class="d-flex gap-2">
@@ -47,7 +47,7 @@
                 <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
             </div>
             <div class="remove">
-                <form action="{{ route('news_events.destroy',$NewsEvents->id) }}" method="POST"> 
+                <form action="{{ route('news_events.destroy',$Event->id) }}" method="POST"> 
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-sm btn-primary remove-item-btn">Remove</button>
