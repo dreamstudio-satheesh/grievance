@@ -42,7 +42,7 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                <a href="{{ url("/admin/galleries/","gallery->id") }}" class="btn btn-sm btn-success edit-item-btn" >Manage</a>
             </div>
             <div class="remove">
                 <form action="{{ route('galleries.destroy',$gallery->id) }}" method="POST"> 
