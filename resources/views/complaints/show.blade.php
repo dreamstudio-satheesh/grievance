@@ -71,19 +71,39 @@
                 
                 <div class="col-xxl-8">
                     <div class="card">
-                        
-                            <div class="d-flex gap-2">
-                                <div class="edit">
+                            @if (!empty($complaint->division->name))
+
+                                <div class="d-flex gap-2">
+                                    <div class="edit">
+                                    
+                                        <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
+                                        '.'name :'. $complaint->username) }}" class="btn  btn-success btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp JE</a>
+                                    </div>
+                                    <div class="remove">
+                                        <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
+                                        '.'name :'. $complaint->username) }}" class="btn  btn-primary btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp AE</a>
                                 
-                                    <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                                    '.'name :'. $complaint->username) }}" class="btn  btn-success btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp JE</a>
+                                    </div>
                                 </div>
-                                <div class="remove">
-                                    <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                                    '.'name :'. $complaint->username) }}" class="btn  btn-primary btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp AE</a>
-                            
+
+                            @elseif (!empty($complaint->panchayat->name))
+
+                                <div class="d-flex gap-2">
+                                    <div class="edit">
+                                    
+                                        <a href="https://wa.me/{{ $complaint->panchayat->pmobile}}?text={{ urlencode($complaint->subject.'
+                                        '.'name :'. $complaint->username) }}" class="btn  btn-success btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>president</a>
+                                    </div>
+                                    <div class="remove">
+                                        <a href="https://wa.me/{{ $complaint->panchayat->vmobile}}?text={{ urlencode($complaint->subject.'
+                                        '.'name :'. $complaint->username) }}" class="btn  btn-primary btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>vise president</a>
+                                
+                                    </div>
                                 </div>
-                            </div>
+                                
+                            @endif
+                        
+                         
                         <div class="card-body p-4">
                             <h6 class="fw-semibold text-uppercase mb-3">{{ $complaint->subject }}</h6>
                             <p class="text-muted">{{ $complaint->description}}</p>

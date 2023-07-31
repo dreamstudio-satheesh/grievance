@@ -16,9 +16,15 @@ class Complaint extends Model
         return $this->belongsTo(User::class, 'user_id');
     }
 
-    public function street()
+    
+    public function panchayat()
     {
-        return $this->belongsTo(Street::class, 'street_id');
+        return $this->belongsTo(Panchayat::class, 'panchayat_id');
+    }
+
+    public function division()
+    {
+        return $this->belongsTo(Division::class, 'division_id');
     }
 
     public function replies()

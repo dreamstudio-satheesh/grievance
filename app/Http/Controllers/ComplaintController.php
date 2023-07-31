@@ -16,7 +16,8 @@ class ComplaintController extends Controller
 
     public function show($id)
     {
-        $complaint = Complaint::with('user', 'street', 'replies.user')->findOrFail($id);
+        $complaint = Complaint::with('panchayat','division','user', 'replies.user')->findOrFail($id);
+
         return view('complaints.show', compact('complaint'));
     }
 
