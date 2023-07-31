@@ -16,6 +16,7 @@
 
     <!-- main css for template -->
     <link rel="stylesheet" href="{{ URL::asset('assets/css/style.min.css')}}">
+    @stack('styles')
 </head>
 
 <body>
@@ -291,6 +292,8 @@
     <script src="{{ URL::asset('assets/js/jquery.counterup.min.js')}}"></script>
     <script src="{{ URL::asset('assets/js/wow.js')}}"></script>
     <script src="{{ URL::asset('assets/js/custom.js')}}"></script>
+
+    @stack('scripts')
 </body>
 
 
