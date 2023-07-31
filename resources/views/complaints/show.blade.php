@@ -57,7 +57,16 @@
                 </div>
              </form>
 
-             <div class="d-flex gap-2">
+             
+            </div>
+            
+        </div>
+    
+           
+
+        <div class="card-footer" >
+
+            <div class="d-flex gap-2">
                 <div class="edit">
                   
                     <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
@@ -69,17 +78,6 @@
                
                  </div>
             </div>
-            </div>
-            
-
-   
-        </div>
-    
-           
-
-        <div class="card-footer" >
-
-     
 
             <div class="row">
                 
