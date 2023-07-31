@@ -76,11 +76,11 @@
                                 <div class="d-flex gap-2">
                                     <div class="edit">
                                     
-                                        <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
+                                        <a href="https://wa.me/{{ $complaint->division->jemobile}}?text={{ urlencode($complaint->subject.'
                                         '.'name :'. $complaint->username) }}" class="btn  btn-success btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp JE</a>
                                     </div>
                                     <div class="remove">
-                                        <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
+                                        <a href="https://wa.me/{{ $complaint->division->aemobile}}?text={{ urlencode($complaint->subject.'
                                         '.'name :'. $complaint->username) }}" class="btn  btn-primary btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp AE</a>
                                 
                                     </div>
