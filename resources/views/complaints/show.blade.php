@@ -53,11 +53,11 @@
                     <div class="edit">
                       
                         <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                        '.'name :'. $complaint->username) }}" class="btn btn-success btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp JE</a>
+                        '.'name :'. $complaint->username) }}" class="btn btn-sm btn-success btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp JE</a>
                     </div>
                     <div class="remove">
                         <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                        '.'name :'. $complaint->username) }}" class="btn btn-primary btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp AE</a>
+                        '.'name :'. $complaint->username) }}" class="btn btn-sm btn-primary btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp AE</a>
                    
                      </div>
                 </div>
