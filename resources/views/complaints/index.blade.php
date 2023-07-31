@@ -51,7 +51,7 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <button class="btn btn-sm btn-success edit-item-btn">Manage</button>
+                <a href="{{ route('complaints.show',$complaint->id) }}" class="btn btn-sm btn-success edit-item-btn">Manage</a>
             </div>
             <div class="remove">
                 <form action="{{ route('complaints.destroy',$complaint->id) }}" method="POST"> 
@@ -62,19 +62,7 @@
             </div>
         </div>
     </td>
-    <td>
-      
-        <div class="d-flex gap-2">
-            <div class="edit">
-                <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                '.'name :'. $complaint->username) }}" class="btn" > <i class="bx bxl-whatsapp" style="size=24px;  color:green"></i> Je</a>
-            </div>
-            <div class="remove">
-                <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                '.'name :'. $complaint->username) }}" class="btn" > <i class="bx bxl-whatsapp" style="size=24px; color:green"></i> Ae</a>
-           
-        </div>
-    </td>
+ 
     
     </tr>
          @endforeach
