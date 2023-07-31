@@ -49,24 +49,26 @@
 
             <div class="mb-3">
 
-                <div class="d-flex gap-2">
-                    <div class="edit">
-                      
-                        <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                        '.'name :'. $complaint->username) }}" class="btn btn-sm btn-success btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp JE</a>
-                    </div>
-                    <div class="remove">
-                        <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
-                        '.'name :'. $complaint->username) }}" class="btn btn-sm btn-primary btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp AE</a>
-                   
-                     </div>
-                </div>
+               
 
                 <div class="hstack gap-2 justify-content-end">
-                    <br>
+                    
                     <button type="submit" class="btn btn-primary"> Reply</button> 
                 </div>
              </form>
+
+             <div class="d-flex gap-2">
+                <div class="edit">
+                  
+                    <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
+                    '.'name :'. $complaint->username) }}" class="btn btn-sm btn-success btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp JE</a>
+                </div>
+                <div class="remove">
+                    <a href="https://wa.me/6379108040?text={{ urlencode($complaint->subject.'
+                    '.'name :'. $complaint->username) }}" class="btn btn-sm btn-primary btn-label" > <i class="bx bxl-whatsapp label-icon align-middle fs-16 me-2"></i>Whatsapp AE</a>
+               
+                 </div>
+            </div>
             </div>
             
 
