@@ -31,7 +31,7 @@
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Reply</label>
-                <textarea name="message"  class="form-control" required="" cols="30" rows="10"></textarea>
+                <textarea name="message"  class="form-control" required="" cols="30" rows="6"></textarea>
             </div>
 
 
