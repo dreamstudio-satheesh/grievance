@@ -27,12 +27,6 @@
             </div>
             @endif
 
-            <div class="mb-3">
-                <label for="image" class="form-label">Upload Images</label>
-                <input type="file" name="images[]"  class="form-control" accept="image/*" multiple>
-            </div>
-            
-
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Reply</label>
@@ -40,7 +34,11 @@
             </div>
 
 
-
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload Images</label>
+                <input type="file" name="images[]"  class="form-control" accept="image/*" multiple>
+            </div>
+            
 
             <div class="mb-3">
                 <label class="form-label text-muted">*Status</label>
