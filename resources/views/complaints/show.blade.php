@@ -26,6 +26,11 @@
                 </div>
             </div>
             @endif
+
+            <div class="mb-3">
+                <label for="image" class="form-label">Upload Images</label>
+                <input type="file" name="images[]"  class="form-control" accept="image/*" multiple>
+            </div>
             
 
 
