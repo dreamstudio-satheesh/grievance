@@ -123,8 +123,8 @@
                                 <div class="d-flex mb-4">
                                     
                                     <div class="flex-grow-1 ms-3">
-                                        <h5 class="fs-13">Donald Palmer <small class="text-muted">24 Dec 2021 - 05:20PM</small></h5>
-                                        <p class="text-muted">If you have further questions, please contact Customer Support from the “Action Menu” on your <a href="javascript:void(0);" class="text-decoration-underline">Online Order Support</a>.</p>
+                                        <h5 class="fs-13">Admin <small class="text-muted">24 July 2023 - 05:20PM</small></h5>
+                                        <p class="text-muted">If you have further questions, please contact Customer Support from the “Action Menu” on your <a href="javascript:void(0);" class="text-decoration-underline">Online  Support</a>.</p>
                                         
                                     </div>
                                 </div>
