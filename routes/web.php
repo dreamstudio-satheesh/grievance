@@ -49,7 +49,9 @@ Route::group(['prefix' => 'admin','middleware' => ['role:admin']], function () {
 
     
 Route::get('/', [HomeController::class, 'root'])->name('root');
-
+Route::get('/admins', [UserController::class, 'admin'])->name('admins');
+Route::get('/admins/add', [UserController::class, 'add'])->name('admins.add');
+Route::post('/admins', [UserController::class, 'storeadmin'])->name('admins.store');
 Route::get('/users', [UserController::class, 'index'])->name('users.index');
 Route::get('/users/create', [UserController::class, 'create'])->name('users.create');
 Route::post('/users', [UserController::class, 'store'])->name('users.store');

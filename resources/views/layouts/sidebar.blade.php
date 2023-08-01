@@ -59,7 +59,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a href="{{ url('/admin/users')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Admins List</a>
+                                <a href="{{ url('/admin/admins')}}"  class="nav-link"> <i class="ri-account-circle-line"></i> Admins List</a>
                             </li>
 
                             <li class="nav-item">

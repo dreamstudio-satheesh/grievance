@@ -19,6 +19,36 @@ class UserController extends Controller
         return view('users.index', compact('users'));
     }
 
+
+    public function admin()
+    {
+        $users = User::role('admin')->get();
+        return view('users.admin', compact('users'));
+    }
+
+    public function add()
+    {
+        
+        return view('users.add');
+    }
+
+    
+    public function storeadmin(Request $request)
+    {
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email|unique:users',
+            'password' => 'required|string|min:6',
+            'mobile_number' => 'required|string',
+        ]);
+
+        $user = User::create($validatedData);
+        $user->assignRole('admin');
+
+        return redirect()->route('admins')->with('success', 'User created successfully!');
+    }
+
+
     /**
      * Show the form for creating a new resource.
      *
@@ -29,6 +59,7 @@ class UserController extends Controller
         
         return view('users.create');
     }
+  
 
     /**
      * Store a newly created resource in storage.
@@ -48,7 +79,7 @@ class UserController extends Controller
         $user = User::create($validatedData);
         $user->assignRole('user');
 
-        return redirect()->route('users')->with('success', 'User created successfully!');
+        return redirect()->route('users.index')->with('success', 'User created successfully!');
     }
 
     /**
