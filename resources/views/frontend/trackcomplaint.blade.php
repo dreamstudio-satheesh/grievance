@@ -50,19 +50,21 @@
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($complaints as $item)
+                            @foreach ($complaints as $complaint)
                             <tr>
                                 <td class="product-item cat-product">
                                     
                                     <div class="p-content">
-                                        <a href="#">123456/20-07-23</a>
+                                       #{{$complaint->complaint_id}}
+                                        <br>
+                                        {{ \Carbon\Carbon::parse($complaint->created_at)->format('d/m/Y')}}
                                     </div>
                                 </td>
-                                <td class="cat-price">Blockage of Drainage</td>
+                                <td class="cat-price">{{$complaint->subject}}</td>
                                 <td class="cat-quantity">
-                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s
+                                    {{$complaint->description}}
                                 </td>
-                                <td class="cat-toprice">Completed/Pending/Process</td>
+                                <td class="cat-toprice">{{$complaint->status}}</td>
                                 <td class="cat-edit">
                                     <a href="#"><i class="fas fa-angle-double-right"></i></a>
                                 </td>
