@@ -51,11 +51,11 @@
                                     <ul class="sidebar__info-list mb-3">
                                         <li>
                                             <div class="sidebar__info-left"><i class="fas fa-map-marker-alt"></i></div>
-                                            <div class="sidebar__info-right">PO Box 16122, Collins Street West Victoria, 8007 Australia</div>
+                                            <div class="sidebar__info-right"></div>
                                         </li>
                                         <li>
                                             <div class="sidebar__info-left"><i class="far fa-calendar-alt"></i></div>
-                                            <div class="sidebar__info-right">09 November, 2022</div>
+                                            <div class="sidebar__info-right">09 July, 2020222</div>
                                         </li>
                                         <li>
                                             <div class="sidebar__info-left"><i class="far fa-clock"></i></div>
