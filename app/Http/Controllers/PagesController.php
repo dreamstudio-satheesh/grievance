@@ -54,7 +54,7 @@ class PagesController extends Controller
     }
     public function store(Request $request)
     {
-       return   $request->all();
+      // return   $request->all();
        $validatedData = $request->validate([
             'user_id' => 'required|integer',
             'complaint_id' => 'required|unique:complaints',

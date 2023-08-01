@@ -27,6 +27,15 @@
                                     
 										
                                     <ul class="codex">
+                                        @if (count($errors) > 0)
+                                            <div class="alert alert-danger">
+                                                <ul>
+                                                    @foreach ($errors->all() as $error)
+                                                        <li>{{ $error }}</li>
+                                                    @endforeach
+                                                </ul>
+                                            </div>
+                                        @endif
                                         <li>
                                             <span class="pull-left">District</span>
                                             <div class="outline-select">
@@ -40,10 +49,14 @@
 
                                         <form action="{{ route('complaintsave') }}"  method="POST" enctype="multipart/form-data" >
                                             @csrf
-
-                                            <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
+                                            <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">                                            
+                                            <input type="hidden" name="email" value="{{ auth()->user()->email }}">                                            
+                                            <input type="hidden" name="doorno" value="nill">                                            
+                                            <input type="hidden" name="priority" value="medium">                                            
+                                            <input type="hidden" name="status" value="new">                                            
+                                            <input type="hidden" name="complaint_id" value="{{ mt_rand(1000000, 9999999) }}">
 										
-                                        @livewire('dropdown')
+                                            @livewire('dropdown')
                                         
                                     </ul>
                                 </div>
@@ -108,7 +121,7 @@
                                         </li>
 										<li>
                                             <span class="pull-left">Name</span>
-                                            <p class="pull-right"><input type="text" name="name" placeholder="Name" class="cart-page-input-text"/></p>
+                                            <p class="pull-right"><input type="text" name="username" placeholder="Name" class="cart-page-input-text"/></p>
                                         </li>
 										<li>
                                             <span class="pull-left">Mobile No</span>
