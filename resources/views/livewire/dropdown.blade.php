@@ -16,7 +16,7 @@
     <li>
         <span class="pull-left">Division</span>
         <div class="outline-select">
-            <select name="division_id"  wire:model="SelectedDivision" required>
+            <select name="division_id"  wire:model="SelectedDivision" >
                 <option selected=""  value="">Select</option>
                 @foreach ($divisions as $division)
                 <option value="{{ $division->id }}">{{ $division->name }}</option>
@@ -30,7 +30,7 @@
             <li>
                 <span class="pull-left">Street Name </span>
                 <div class="outline-select">
-                    <select  name="dsreet_id" required>
+                    <select  name="dsreet_id" >
                         <option selected=""  value="">Select</option>
                         @foreach ($dstreets as $dstreet)
                         <option value="{{ $dstreet->id }}">{{ $dstreet->name }}</option>
@@ -49,7 +49,7 @@
     <li>
         <span class="pull-left">Town Panchayat</span>
         <div class="outline-select">
-        <select name="panchayat_id"  wire:model="SelectedPanchayat" required>
+        <select name="panchayat_id"  wire:model="SelectedPanchayat" >
             <option selected=""  value="">Select</option>
             @foreach ($panchayats as $panchayat)
             <option value="{{ $panchayat->id }}">{{ $panchayat->name }}</option>
@@ -77,7 +77,7 @@
             <li>
                 <span class="pull-left">Street Name </span>
                 <div class="outline-select">
-                    <select name="sreet_id" required>
+                    <select name="sreet_id">
                         <option selected=""  value="">Select</option>
                         @foreach ($streets as $street)
                         <option value="{{ $street->id }}">{{ $street->name }}</option>

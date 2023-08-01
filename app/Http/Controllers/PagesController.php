@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Gallery;
+use App\Models\Complaint;
 use App\Models\NewsEvent;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -10,9 +11,7 @@ use Illuminate\Support\Facades\Auth;
 class PagesController extends Controller
 {
     public function home()
-    {
-       
-        
+    {    
         return view('frontend.home');
     }
 
@@ -52,6 +51,32 @@ class PagesController extends Controller
         }else{
             return redirect('register');
         }
+    }
+    public function store(Request $request)
+    {
+       return   $request->all();
+       $validatedData = $request->validate([
+            'user_id' => 'required|integer',
+            'complaint_id' => 'required|unique:complaints',
+            'username' => 'required|string|max:255',
+            'mobile' => 'required|string|max:11',
+            'email' => 'required|email',
+            'doorno' => 'required|string',
+            'panchayat_id' => 'nullable|integer',
+            'ward_id' => 'nullable|integer',
+            'street_id' => 'nullable|integer',
+            'division_id' => 'nullable|integer',
+            'dstreet_id' => 'nullable|integer',
+            'subject' => 'required|string|max:255',
+            'priority' => 'required|string',
+            'description' => 'required|string',
+            'status' => 'required|string|in:new,in-progress,resolved',
+        ]);
+
+
+        $complaint = Complaint::create($validatedData);
+
+        return redirect()->route('complaints.index', $complaint->id)->with('success', 'Complaint created successfully!');
     }
 
     public function contact()

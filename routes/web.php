@@ -38,6 +38,7 @@ Route::get('/gallery.php', [PagesController::class, 'gallery'])->name('gallery')
 Route::get('/news-events.php', [PagesController::class, 'events'])->name('events');
 Route::get('/event-single/{id}', [PagesController::class, 'single'])->name('single');
 Route::get('/complaint.php', [PagesController::class, 'complaint'])->name('complaint');
+Route::post('/complaint', [PagesController::class, 'store'])->name('complaintsave');
 Route::get('/contact.php', [PagesController::class, 'contact'])->name('contact');
 
 Route::get('/home', [HomeController::class, 'index'])->name('userhome');

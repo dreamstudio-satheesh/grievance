@@ -32,61 +32,6 @@
     </div>
     <!-- ================> preloader ending here <================ -->
 
-    <!-- ================> Header Search <================ -->
-    <div class="header-form">
-        <div class="bg-lay">
-            <div class="cross">
-                <i class="fas fa-times"></i>
-            </div>
-        </div>
-        <form class="form-container">
-            <input type="text" placeholder="Input Your Search" name="name">
-            <button type="submit">Search</button>
-        </form>
-    </div>
-    <!-- ================> Header Search <================ -->
-
-    <!-- ================> Header Cart <================ -->
-    <div class="overlay"></div>
-    <div class="cart-sidebar-area">
-        <div class="top-content">
-            <img src="{{ URL::asset('assets/images/logo/02.png')}}" alt="logo">
-            <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
-        </div>
-        <div class="bottom-content">
-            <div class="cart-products">
-                <h4 class="title">Login</h4>
-				<div class="contact__form">
-                    <form class="d-flex flex-wrap justify-content-between" action="https://demos.codexcoder.com/themeforest/html/peace/peace/contact.php" id="contact-form" method="POST">
-                        <input type="text" placeholder="Username" id="name" name="name" required="required">
-                        <input type="password" placeholder="Password" id="email" name="email" required>
-                        
-                        <div class="text-center w-100">
-                            <button type="submit" class="default-btn move-right"><span>Login Now</span></button>
-                        </div>
-                    </form>
-                    <p class="form-message"></p> 
-                </div> 
-				<br/><br/>
-				
-				<h4 class="title">Register</h4>
-				<div class="contact__form">
-                    <form class="d-flex flex-wrap justify-content-between" action="https://demos.codexcoder.com/themeforest/html/peace/peace/contact.php" id="contact-form" method="POST">
-                        <input class="w-100" type="text" placeholder="Your Name" id="name" name="name" required="required">
-                        <input class="w-100" type="text" placeholder="Mobile No" id="mobile" name="mobile" required>
-						<input class="w-100" type="text" placeholder="Your Email" id="email" name="email" required>
-                        <textarea placeholder="Your Address" rows="8" name="address" id="address" required></textarea>
-                        <div class="text-center w-100">
-                            <button type="submit" class="default-btn move-right"><span>Register Now</span></button>
-                        </div>
-                    </form>
-                    <p class="form-message"></p> 
-                </div> 
-                
-            </div>
-        </div>
-    </div>
-    <!-- ================> Header Cart <================ -->
 
 
 
