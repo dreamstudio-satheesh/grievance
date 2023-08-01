@@ -142,6 +142,43 @@
 <!-- ================> Service section end here <================== -->
 
 
+<!-- ================> gallery section start here <================== -->
+<div class="gallery padding--top padding--bottom bg-light">
+    <div class="container-fluid">
+        <div class="section__header text-center">
+            <h2>Photos Gallery</h2>
+        </div>
+        <div class="section__wrapper">
+            <div class="gallery__filter">
+                <ul>
+                    <li data-filter="*" class="active">All</li>
+                    <li data-filter=".cate-1">Public Grievance</li>
+                    <li data-filter=".cate-2">Meeting</li>
+                    <li data-filter=".cate-3">Events</li>
+                    <li data-filter=".cate-4">Others</li>
+                </ul>
+            </div>
+            
+            <div class="text-center mt-5">
+                <a href="#" class="default-btn move-right"><span>View All</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ================> gallery section end here <================== -->
+
+
+<!-- ================> Event section start here <================== -->
+<div class="event padding--top padding--bottom">
+    <div class="container">
+        <div class="section__header text-center">
+            <h2>Recent News &amp; Event</h2>
+            
+        </div>
+        
+    </div>
+</div>
+<!-- ================> Event section end here <================== -->
 
 
 
