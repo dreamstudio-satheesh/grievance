@@ -46,7 +46,7 @@ class PagesController extends Controller
     public function complaint()
     {
         if (Auth::check()) {
-                
+            
             return view('frontend.complaint');
         }else{
             return redirect('register');
@@ -56,8 +56,8 @@ class PagesController extends Controller
     public function trackcomplaint()
     {
         if (Auth::check()) {
-                
-            return view('frontend.trackcomplaint');
+            $complaints = Complaint::where('user_id', auth()->user()->id)->get();   
+            return view('frontend.trackcomplaint', compact('complaints'));
         }else{
             return redirect('register');
         }

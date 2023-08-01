@@ -50,6 +50,7 @@
                             </tr>
                         </thead>
                         <tbody>
+                            @foreach ($complaints as $item)
                             <tr>
                                 <td class="product-item cat-product">
                                     
@@ -66,6 +67,9 @@
                                     <a href="#"><i class="fas fa-angle-double-right"></i></a>
                                 </td>
                             </tr>
+                                
+                            @endforeach
+                         
                             
                             
                         </tbody>
