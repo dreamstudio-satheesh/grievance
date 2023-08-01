@@ -14,7 +14,7 @@
                                     <h3>{{ $newsevent->title }}</h3>
                                     <div class="event__metapost">
                                         <ul class="event__metapost-info">
-                                            <li><i class="far fa-clock"></i>{{$events->date }}</li>
+                                            <li><i class="far fa-clock"></i>{{$newsevent->date }}</li>
                                             <li><i class="fas fa-map-marker-alt"></i> {{ $newsevent->location }}</li>
                                             <li class="event__metapost-share">
                                                 <i class="fas fa-share-alt"></i>
