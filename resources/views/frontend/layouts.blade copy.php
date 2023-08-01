@@ -69,7 +69,7 @@
                 </div> 
 				<br/><br/>
 				
-                </div> 
+			
                 
             </div>
         </div>
@@ -162,32 +162,32 @@
                                         $pagename = basename($_SERVER['PHP_SELF']);
                                         ?>
                                 <li class="<?php if ($pagename == 'index.php') echo "active"; ?>">
-                                    <a href="index.php">Home</a>
+                                    <a href="https://cleansalem.org/index.php">Home</a>
                                     
                                 </li>
 								<li class="<?php if ($pagename == 'aboutus.php') echo "active"; ?>">
-                                    <a href="#0">About Us</a>
+                                    <a href="https://cleansalem.org/#0">About Us</a>
                                     <ul>
-                                        <li><a href="aboutus.php">About Clean Salem</a></li>
-                                        <li><a href="trustee.php">Our Trustee </a></li>
+                                        <li><a href="https://cleansalem.org/aboutus.php">About Clean Salem</a></li>
+                                        <li><a href="https://cleansalem.org/trustee.php">Our Trustee </a></li>
                                         
                                     </ul>
                                 </li>
                                 <li class="<?php if ($pagename == 'news-events.php') echo "active"; ?>">
-                                    <a href="news-events.php">News &amp; Events</a>
+                                    <a href="https://cleansalem.org/news-events.php">News &amp; Events</a>
                                    
                                 </li>
                                 <li class="<?php if ($pagename == 'gallery.php') echo "active"; ?>">
-                                    <a href="#0">Gallery</a>
+                                    <a href="https://cleansalem.org/#0">Gallery</a>
                                     <ul>
-                                        <li><a href="gallery.php">Photos Gallery</a></li>
-                                        <li><a href="video.php">Video Gallery</a></li>
+                                        <li><a href="https://cleansalem.org/gallery.php">Photos Gallery</a></li>
+                                        <li><a href="https://cleansalem.org/video.php">Video Gallery</a></li>
                                     </ul>
                                 </li>
                                 
-                                <li class="<?php if ($pagename == 'contact.php') echo "active"; ?>"><a href="contact.php">Contact Us</a></li>
+                                <li class="<?php if ($pagename == 'contact.php') echo "active"; ?>"><a href="https://cleansalem.org/contact.php">Contact Us</a></li>
                             </ul>
-                            <a href="complaint.php" class="default-btn"><span>Complaint Register <i class="fas fa-heart"></i></span></a>
+                            <a href="https://cleansalem.org/complaint.php" class="default-btn"><span>Complaint Register <i class="fas fa-heart"></i></span></a>
                         </div>
                     </div>
                 </div>
