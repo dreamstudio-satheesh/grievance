@@ -52,6 +52,16 @@ class PagesController extends Controller
             return redirect('register');
         }
     }
+    
+    public function trackcomplaint()
+    {
+        if (Auth::check()) {
+                
+            return view('frontend.trackcomplaint');
+        }else{
+            return redirect('register');
+        }
+    }
     public function store(Request $request)
     {
       // return   $request->all();
@@ -76,7 +86,7 @@ class PagesController extends Controller
 
         $complaint = Complaint::create($validatedData);
 
-        return redirect()->route('complaints.index', $complaint->id)->with('success', 'Complaint created successfully!');
+        return redirect()->route('trackcomplaint', $complaint->id)->with('success', 'Complaint created successfully!');
     }
 
     public function contact()

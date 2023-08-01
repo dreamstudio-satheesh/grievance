@@ -138,7 +138,7 @@
                     </div>
                 </div>
 				<div align="left" style="float: left">
-                            <button type="submit" class="default-btn move-right m-2"><span>Track you Complaint</span></button></div>
+                            <a href="{{ url('track-complaint.php') }}" class="default-btn move-right m-2"><span>Track you Complaint</span></a></div>
                 
 				<div align="right" ><form class="cart-checkout" action="#">
                         <button type="submit" class="default-btn move-right m-2"><span>Clear</span></button>
