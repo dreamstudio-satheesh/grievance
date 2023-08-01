@@ -74,12 +74,17 @@ class RegisterController extends Controller
             $avatar->move($avatarPath, $avatarName);
         }
 
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'mobile_number' => $data['mobile_number'],
             'password' => Hash::make($data['password']),
             'avatar' =>  $avatarName,
         ]);
+
+        $user->assignRole('user');
+
+        return $user;
+
     }
 }
