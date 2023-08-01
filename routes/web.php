@@ -134,6 +134,14 @@ Route::post('/galleries/{id}', [GalleryController::class, 'update'])->name('gall
 Route::delete('/galleries/{id}', [GalleryController::class, 'destroy'])->name('galleries.destroy');
 
 
+Route::get('/banners', [BannerController::class, 'index'])->name('banners.index');
+Route::get('/banners/create', [BannerController::class, 'create'])->name('banners.create');
+Route::post('/banners', [BannerController::class, 'store'])->name('banners.store');
+Route::get('/banners/{id}', [BannerController::class, 'show'])->name('banners.show');
+Route::post('/banners/{id}', [BannerController::class, 'update'])->name('banners.update');
+Route::delete('/banners/{id}', [BannerController::class, 'destroy'])->name('banners.destroy');
+
+
 Route::get('/imagelist', [GalleryController::class, 'list'])->name('imagelist');
 
 

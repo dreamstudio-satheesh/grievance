@@ -193,6 +193,25 @@
                 </li>
 
                 <li class="nav-item">
+                    <a class="nav-link menu-link" href="#Banner" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
+                        <i class="ri-artboard-fill"></i> <span>Banner</span>
+                    </a>
+                    <div class="collapse menu-dropdown" id="Banner">
+                        <ul class="nav nav-sm flex-column">
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-artboard-fill"></i> Banner List</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a href="{{ url('/admin/galleries/create')}}"  class="nav-link"> <i class="ri-artboard-add-line"></i>Add Banner</a>
+                            </li>
+
+                           
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="nav-item">
                     <a class="nav-link menu-link" href="#Enquiry" data-bs-toggle="collapse" role="button" aria-expanded="false" aria-controls="sidebarDashboards">
                         <i class="ri-questionnaire-fill"></i> <span>Enquiry</span>
                     </a>
