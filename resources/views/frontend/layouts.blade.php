@@ -119,32 +119,32 @@
                                         $pagename = basename($_SERVER['PHP_SELF']);
                                         ?>
                                 <li class="<?php if ($pagename == 'index.php') echo "active"; ?>">
-                                    <a href="index.php">Home</a>
+                                    <a href="{{ url('')}}index.php">Home</a>
                                     
                                 </li>
 								<li class="<?php if ($pagename == 'aboutus.php') echo "active"; ?>">
-                                    <a href="#0">About Us</a>
+                                    <a href="{{ url('')}}#0">About Us</a>
                                     <ul>
-                                        <li><a href="aboutus.php">About Clean Salem</a></li>
-                                        <li><a href="trustee.php">Our Trustee </a></li>
+                                        <li><a href="{{ url('')}}aboutus.php">About Clean Salem</a></li>
+                                        <li><a href="{{ url('')}}trustee.php">Our Trustee </a></li>
                                         
                                     </ul>
                                 </li>
                                 <li class="<?php if ($pagename == 'news-events.php') echo "active"; ?>">
-                                    <a href="news-events.php">News &amp; Events</a>
+                                    <a href="{{ url('')}}news-events.php">News &amp; Events</a>
                                    
                                 </li>
                                 <li class="<?php if ($pagename == 'gallery.php') echo "active"; ?>">
-                                    <a href="#0">Gallery</a>
+                                    <a href="{{ url('')}}#0">Gallery</a>
                                     <ul>
-                                        <li><a href="gallery.php">Photos Gallery</a></li>
-                                        <li><a href="video.php">Video Gallery</a></li>
+                                        <li><a href="{{ url('')}}gallery.php">Photos Gallery</a></li>
+                                        <li><a href="{{ url('')}}video.php">Video Gallery</a></li>
                                     </ul>
                                 </li>
                                 
-                                <li class="<?php if ($pagename == 'contact.php') echo "active"; ?>"><a href="contact.php">Contact Us</a></li>
+                                <li class="<?php if ($pagename == 'contact.php') echo "active"; ?>"><a href="{{ url('')}}contact.php">Contact Us</a></li>
                             </ul>
-                            <a href="complaint.php" class="default-btn"><span>Complaint Register <i class="fas fa-heart"></i></span></a>
+                            <a href="{{ url('')}}complaint.php" class="default-btn"><span>Complaint Register <i class="fas fa-heart"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -166,13 +166,13 @@
             <div class="social__area">
                 <ul class="social__list">
                     <li class="social__list-facebook">
-                        <a href="#">
+                        <a href="{{ url('')}}#">
                             <i class="fab fa-facebook-f"></i>
                             <span>facebook</span>
                         </a>
                     </li>
                     <li class="social__list-twitter">
-                        <a href="#">
+                        <a href="{{ url('')}}#">
                             <i class="fab fa-twitter"></i>
                             <span>twitter</span>
                         </a>
