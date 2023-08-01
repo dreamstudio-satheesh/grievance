@@ -32,6 +32,61 @@
     </div>
     <!-- ================> preloader ending here <================ -->
 
+    <!-- ================> Header Search <================ -->
+    <div class="header-form">
+        <div class="bg-lay">
+            <div class="cross">
+                <i class="fas fa-times"></i>
+            </div>
+        </div>
+        <form class="form-container">
+            <input type="text" placeholder="Input Your Search" name="name">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+    <!-- ================> Header Search <================ -->
+
+    <!-- ================> Header Cart <================ -->
+    <div class="overlay"></div>
+    <div class="cart-sidebar-area">
+        <div class="top-content">
+            <img src="{{ URL::asset('assets/images/logo/02.png')}}" alt="logo">
+            <span class="side-sidebar-close-btn"><i class="fas fa-times"></i></span>
+        </div>
+        <div class="bottom-content">
+            <div class="cart-products">
+                <h4 class="title">Login</h4>
+				<div class="contact__form">
+                    <form class="d-flex flex-wrap justify-content-between" action="https://demos.codexcoder.com/themeforest/html/peace/peace/contact.php" id="contact-form" method="POST">
+                        <input type="text" placeholder="Username" id="name" name="name" required="required">
+                        <input type="password" placeholder="Password" id="email" name="email" required>
+                        
+                        <div class="text-center w-100">
+                            <button type="submit" class="default-btn move-right"><span>Login Now</span></button>
+                        </div>
+                    </form>
+                    <p class="form-message"></p> 
+                </div> 
+				<br/><br/>
+				
+				<h4 class="title">Register</h4>
+				<div class="contact__form">
+                    <form class="d-flex flex-wrap justify-content-between" action="https://demos.codexcoder.com/themeforest/html/peace/peace/contact.php" id="contact-form" method="POST">
+                        <input class="w-100" type="text" placeholder="Your Name" id="name" name="name" required="required">
+                        <input class="w-100" type="text" placeholder="Mobile No" id="mobile" name="mobile" required>
+						<input class="w-100" type="text" placeholder="Your Email" id="email" name="email" required>
+                        <textarea placeholder="Your Address" rows="8" name="address" id="address" required></textarea>
+                        <div class="text-center w-100">
+                            <button type="submit" class="default-btn move-right"><span>Register Now</span></button>
+                        </div>
+                    </form>
+                    <p class="form-message"></p> 
+                </div> 
+                
+            </div>
+        </div>
+    </div>
+    <!-- ================> Header Cart <================ -->
 
 
 
@@ -119,32 +174,32 @@
                                         $pagename = basename($_SERVER['PHP_SELF']);
                                         ?>
                                 <li class="<?php if ($pagename == 'index.php') echo "active"; ?>">
-                                    <a href="{{ url('')}}index.php">Home</a>
+                                    <a href="index.php">Home</a>
                                     
                                 </li>
 								<li class="<?php if ($pagename == 'aboutus.php') echo "active"; ?>">
-                                    <a href="{{ url('')}}#0">About Us</a>
+                                    <a href="#0">About Us</a>
                                     <ul>
-                                        <li><a href="{{ url('')}}aboutus.php">About Clean Salem</a></li>
-                                        <li><a href="{{ url('')}}trustee.php">Our Trustee </a></li>
+                                        <li><a href="aboutus.php">About Clean Salem</a></li>
+                                        <li><a href="trustee.php">Our Trustee </a></li>
                                         
                                     </ul>
                                 </li>
                                 <li class="<?php if ($pagename == 'news-events.php') echo "active"; ?>">
-                                    <a href="{{ url('')}}news-events.php">News &amp; Events</a>
+                                    <a href="news-events.php">News &amp; Events</a>
                                    
                                 </li>
                                 <li class="<?php if ($pagename == 'gallery.php') echo "active"; ?>">
-                                    <a href="{{ url('')}}#0">Gallery</a>
+                                    <a href="#0">Gallery</a>
                                     <ul>
-                                        <li><a href="{{ url('')}}gallery.php">Photos Gallery</a></li>
-                                        <li><a href="{{ url('')}}video.php">Video Gallery</a></li>
+                                        <li><a href="gallery.php">Photos Gallery</a></li>
+                                        <li><a href="video.php">Video Gallery</a></li>
                                     </ul>
                                 </li>
                                 
-                                <li class="<?php if ($pagename == 'contact.php') echo "active"; ?>"><a href="{{ url('')}}contact.php">Contact Us</a></li>
+                                <li class="<?php if ($pagename == 'contact.php') echo "active"; ?>"><a href="contact.php">Contact Us</a></li>
                             </ul>
-                            <a href="{{ url('')}}complaint.php" class="default-btn"><span>Complaint Register <i class="fas fa-heart"></i></span></a>
+                            <a href="complaint.php" class="default-btn"><span>Complaint Register <i class="fas fa-heart"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -166,13 +221,13 @@
             <div class="social__area">
                 <ul class="social__list">
                     <li class="social__list-facebook">
-                        <a href="{{ url('')}}#">
+                        <a href="#">
                             <i class="fab fa-facebook-f"></i>
                             <span>facebook</span>
                         </a>
                     </li>
                     <li class="social__list-twitter">
-                        <a href="{{ url('')}}#">
+                        <a href="#">
                             <i class="fab fa-twitter"></i>
                             <span>twitter</span>
                         </a>
