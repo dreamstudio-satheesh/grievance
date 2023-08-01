@@ -12,7 +12,10 @@ class PagesController extends Controller
 {
     public function home()
     {    
-        return view('frontend.home');
+        
+        $galleries = Gallery::all();
+        $newsevents = NewsEvent::with('media')->get();
+        return view('frontend.home', compact('newsevents','galleries'));
     }
 
     public function aboutus()

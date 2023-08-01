@@ -143,39 +143,113 @@
 
 
 <!-- ================> gallery section start here <================== -->
-<div class="gallery padding--top padding--bottom bg-light">
-    <div class="container-fluid">
-        <div class="section__header text-center">
-            <h2>Photos Gallery</h2>
-        </div>
-        <div class="section__wrapper">
-            <div class="gallery__filter">
-                <ul>
-                    <li data-filter="*" class="active">All</li>
-                    <li data-filter=".cate-1">Public Grievance</li>
-                    <li data-filter=".cate-2">Meeting</li>
-                    <li data-filter=".cate-3">Events</li>
-                    <li data-filter=".cate-4">Others</li>
-                </ul>
+
+    <!-- ================> gallery section start here <================== -->
+    <div class="gallery padding--top padding--bottom bg-light">
+        <div class="container-fluid">
+            <div class="section__header text-center">
+                <h2>Photos Gallery</h2>
+                <p>Helping you remember your special day</p>
             </div>
-            
-            <div class="text-center mt-5">
-                <a href="#" class="default-btn move-right"><span>View All</span></a>
+            <div class="section__wrapper">
+                <div class="gallery__filter">                    
+                    <ul>
+                        <li data-filter="*" class="active">All</li>
+                        @foreach ($galleries as $gallery)
+                        <li data-filter=".cate-{{ $gallery->id }}">{{ $gallery->title  }}</li>
+                        @endforeach
+                        
+                    </ul>
+                </div>
+
+                <div class="row g-3 grid">
+                    @foreach ($galleries as $gallery)
+                        @foreach ($gallery->getMedia('images') as $image)
+                        
+                            <div class="col-lg-3 col-sm-6 col-12 cate-2 cate-{{ $gallery->id }}">
+                                <div class="gallery__item">
+                                    <div class="gallery__inner">
+                                        <div class="gallery__thumb">
+                                            <img src="{{ asset($image->getUrl('thumb')) }}" alt="gallery-thumb" class="w-100">
+                                        </div>
+                                        <div class="gallery__content text-center">
+                                            <a href="{{ asset($image->getUrl()) }}" data-rel="lightcase" class="gallery__icon"><i class="fas fa-plus"></i></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                    
+                        
+                        @endforeach                        
+                    @endforeach
+                </div>                
             </div>
         </div>
     </div>
-</div>
+    <!-- ================> gallery section end here <================== -->
 <!-- ================> gallery section end here <================== -->
 
 
 <!-- ================> Event section start here <================== -->
-<div class="event padding--top padding--bottom">
+<div class="event padding--top padding--bottom bg-light">
     <div class="container">
         <div class="section__header text-center">
             <h2>Recent News &amp; Event</h2>
-            
+            <p>Enthusiastically underwhelm quality benefits rather than professional outside the box thinking. Distinctively network highly efficient leadership skills</p>
         </div>
-        
+        <div class="section__wrapper">
+            <div class="row g-4 justify-content-center">
+
+                @foreach ($newsevents as $events)
+                <div class="col-lg-4 col-sm-6 col-12">
+                    <div class="event__item">
+                        <div class="event__inner">
+                            <div class="event__thumb">
+                                <a href="{{ url('event-single') }}/{{ $events->id }}"><img src="{{ $events->getFirstMediaUrl('images') }}" alt="event thumb"></a>
+                                <div class="event__thumb-date">
+                                    <h6>{{ \Carbon\Carbon::parse($events->date)->format('F') }}</h6>
+                                    <p>{{ \Carbon\Carbon::parse($events->date)->format('d') }}</p>
+                                </div>
+                            </div>
+                            <div class="event__content">
+                                <a href="event-single.php"><h5>{{ $events->titile }}</h5></a>
+                                <div class="event__metapost">
+                                    <ul class="event__metapost-info">
+                                        <li><i class="far fa-clock"></i>{{$events->date }}</li>
+                                        <li><i class="fas fa-map-marker-alt"></i> {{$events->location }}</li>
+                                    </ul>
+                                    <ul class="event__metapost-comentshare">
+                                        
+                                        <li class="event__metapost-share">
+                                            <i class="fas fa-share-alt"></i>
+                                            <ul>
+                                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                                                <li><a href="#"><i class="fab fa-dribbble"></i></a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <p>{{$events->description }}</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                @endforeach
+                
+               
+             
+            </div>
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-center mt-5">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
 </div>
 <!-- ================> Event section end here <================== -->
