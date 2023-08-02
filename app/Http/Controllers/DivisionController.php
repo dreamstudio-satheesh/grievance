@@ -66,8 +66,9 @@ class DivisionController extends Controller
      * @param  \App\Models\Division  $division
      * @return \Illuminate\Http\Response
      */
-    public function edit(Division $division)
+    public function edit($id)
     {
+        $division = Division::findOrFail($id);
         return view('divisions.edit',compact('division'));
     }
 
