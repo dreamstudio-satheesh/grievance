@@ -50,10 +50,10 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <div class="form-check form-switch form-switch-primary">
+                <div class="form-check form-switch form-switch-success">
                     <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3" checked>
                 </div>
-                &nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             </div>
             <div class="remove">
                 <form action="{{ route('panchayats.destroy',$panchayat->id) }}" method="POST"> 
