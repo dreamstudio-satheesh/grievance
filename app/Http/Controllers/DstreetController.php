@@ -51,7 +51,7 @@ class DstreetController extends Controller
 
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
-            'ward_id' => 'required|integer|exists:wards,id',
+            'division_id' => 'required|integer|exists:divisions,id',
         ]);
 
         $street->update($validatedData);
