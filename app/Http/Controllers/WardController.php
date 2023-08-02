@@ -57,7 +57,7 @@ class WardController extends Controller
 
         $ward->update($validatedData);
 
-        return redirect()->route('wards.show', $ward->id)->with('success', 'Ward updated successfully!');
+        return redirect()->route('wards.index')->with('success', 'Ward updated successfully!');
     }
 
     public function destroy($id)

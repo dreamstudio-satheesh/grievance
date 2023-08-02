@@ -56,7 +56,7 @@ class DstreetController extends Controller
 
         $street->update($validatedData);
 
-        return redirect()->route('dstreets.show', $street->id)->with('success', 'Dstreet updated successfully!');
+        return redirect()->route('dstreets.index')->with('success', 'Dstreet updated successfully!');
     }
 
     public function destroy($id)

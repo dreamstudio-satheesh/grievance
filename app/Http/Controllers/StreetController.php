@@ -56,7 +56,7 @@ class StreetController extends Controller
 
         $street->update($validatedData);
 
-        return redirect()->route('streets.show', $street->id)->with('success', 'Street updated successfully!');
+        return redirect()->route('streets.index')->with('success', 'Street updated successfully!');
     }
 
     public function destroy($id)
