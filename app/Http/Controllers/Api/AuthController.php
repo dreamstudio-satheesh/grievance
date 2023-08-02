@@ -4,52 +4,54 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Validator;
+use App\Http\Controllers\API\BaseController as BaseController;
 
-class AuthController extends Controller
+class AuthController extends BaseController
 {
     public function register(Request $request)
     {
-           
-        $validatedData = $request->validate([
+         
+        
+        $validator = Validator::make($request->all(), [
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users',
-            'password' => 'required|string|min:6',
+            'password' => 'required|string|min:8',
             'mobile_number' => 'required|string',
         ]);
-       
 
+        if($validator->fails()){
+            return $this->sendError('Error validation', $validator->errors());       
+        }
         $user = User::create([
-            'name' => $validatedData['name'],
-            'email' => $validatedData['email'],
-            'password' => $validatedData['password'],
-            'mobile_number' => $validatedData['mobile_number'],
+            'name' => $validator['name'],
+            'email' => $validator['email'],
+            'password' => $validator['password'],
+            'mobile_number' => $validator['mobile_number'],
         ]);
+        $data['token'] = $user->createToken('auth_token')->plainTextToken;
+        $data['token_type']= 'Bearer';
 
-        $token = $user->createToken('auth_token')->plainTextToken;
-
-        return response()->json([
-            'access_token' => $token,
-            'token_type' => 'Bearer',
-        ]);
+        return $this->sendResponse($data, 'User created successfully.');
     }
 
 
     public function login(Request $request)
     {
-        if (!Auth::attempt($request->only('email', 'password'))) {
-                return response()->json(['message' => 'Invalid login details' ], 401);
-            }
+        if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){ 
+            $user = Auth::user(); 
+            $data['token'] =  $user->createToken('auth_token')->plainTextToken; 
+            $data['name'] =  $user->name;
+            $data['token_type'] =  'Bearer';
+   
+            return $this->sendResponse($data, 'User Logged in');
+        } 
+        else{ 
+            return $this->sendError('Unauthorised.', ['error'=>'Unauthorised']);
+        } 
 
-        $user = User::where('email', $request['email'])->firstOrFail();
-
-        $token = $user->createToken('auth_token')->plainTextToken;
-
-        return response()->json([
-                'access_token' => $token,
-                'token_type' => 'Bearer',
-        ]);
+      
     }
 
 
