@@ -44,7 +44,7 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                <a href="{{ route('streets.edit',$street->id) }}" class="btn btn-sm btn-light edit-item-btn">Edit</a>
             </div>
             <div class="remove">
                {{--  <form action="{{ route('streets.destroy',$street->id) }}" method="POST"> 

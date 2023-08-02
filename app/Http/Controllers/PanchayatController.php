@@ -66,9 +66,10 @@ class PanchayatController extends Controller
      * @param  \App\Models\Panchayat  $panchayat
      * @return \Illuminate\Http\Response
      */
-    public function edit(Panchayat $panchayat)
+    public function edit($id)
     {
-        //
+        $panchayat = Panchayat::findOrFail($id);
+        return view('panchayats.edit', compact('panchayat'));
     }
 
     /**
