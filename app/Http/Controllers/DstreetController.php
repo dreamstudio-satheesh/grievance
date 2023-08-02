@@ -40,8 +40,9 @@ class DstreetController extends Controller
 
     public function edit($id)
     {
+        $wards = Ward::all();
         $street = Dstreet::findOrFail($id);
-        return view('dstreets.edit', compact('street'));
+        return view('dstreets.edit', compact('street','wards'));
     }
 
     public function update(Request $request, $id)

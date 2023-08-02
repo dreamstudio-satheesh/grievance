@@ -42,8 +42,9 @@ class WardController extends Controller
 
     public function edit($id)
     {
+        $panchayats = Panchayat::all();
         $ward = Ward::findOrFail($id);
-        return view('wards.edit', compact('ward'));
+        return view('wards.edit', compact('ward','panchayats'));
     }
 
     public function update(Request $request, $id)

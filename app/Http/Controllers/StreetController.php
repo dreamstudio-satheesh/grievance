@@ -40,8 +40,9 @@ class StreetController extends Controller
 
     public function edit($id)
     {
+        $wards = Ward::all();
         $street = Street::findOrFail($id);
-        return view('streets.edit', compact('street'));
+        return view('streets.edit', compact('street','wards'));
     }
 
     public function update(Request $request, $id)
