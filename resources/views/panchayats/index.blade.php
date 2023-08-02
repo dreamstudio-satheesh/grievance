@@ -53,12 +53,14 @@
                 <div class="form-check form-switch form-switch-primary">
                     <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3" checked>
                 </div>
+                &nbsp;
             </div>
             <div class="remove">
                 <form action="{{ route('panchayats.destroy',$panchayat->id) }}" method="POST"> 
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-sm btn-primary remove-item-btn">Remove</button>
+                    <button type="submit" class="btn btn-danger btn-icon waves-effect waves-light"><i class="ri-delete-bin-5-line"></i></button>
+                    
                 </form> 
             </div>
         </div>
