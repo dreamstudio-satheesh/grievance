@@ -20,6 +20,7 @@ return new class extends Migration
             $table->string('pmobile')->nullable();
             $table->string('vname')->nullable();
             $table->string('vmobile')->nullable();
+            $table->boolean('status')->default(1);
             $table->timestamps();
         });
     }

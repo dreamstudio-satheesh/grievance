@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
     {
         $user = User::create([
             'name' => 'admin',
-            'email' => 'admin@app.com',
+            'email' => 'info@cleansalem.org',
             'password' => 'password',
             'mobile_number' => '912456780',
             'email_verified_at'=>'2022-01-02 17:04:58',
@@ -27,7 +27,7 @@ class UserSeeder extends Seeder
 
         $user = User::create([
             'name' => 'user',
-            'email' => 'user@app.com',
+            'email' => 'user@cleansalem.org',
             'password' => 'password',
             'mobile_number' => '912456781',
             'avatar' => 'avatar-2.jpg',
