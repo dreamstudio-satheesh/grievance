@@ -87,7 +87,7 @@ class PanchayatController extends Controller
        }
        $panchayat = Panchayat::findOrFail($id);
 
-       return  $panchayat->update(['status'=> $status ]);
+        $panchayat->update(['status'=> $status ]);
 
         return redirect()->route('panchayats.index')->with('success','Panchayatststus updatedsuccessfully');
     }
