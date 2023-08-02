@@ -5,41 +5,24 @@
 
      <!-- ================> Banner section start here <================== -->
      <div class="banner__slider banner-style3 overflow-hidden">
+
         <div class="swiper-wrapper">
+        @foreach ($banners as $banner)
             <div class="swiper-slide">
-                <div class="banner" style="background-image: url(assets/images/banner/01.jpg);">
+                <div class="banner" style="background-image: url({{ $banner->getFirstMediaUrl('images') }});">
                     <div class="container">
                         <div class="banner__content ms-lg-auto">
-                            <h2 class="text-white">Title 1</h2>
-                            <p class="text-white">Enthusiastically underwhelm quality benefits rather than professional "outside the box" thinking. Distinctively network highly efficient leadership skills</p>
+                            <h2 class="text-white">{{ $banner->title}}</h2>
+                            <p class="text-white">{{ $banner->description}}</p>
                             
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(assets/images/banner/02.jpg);">
-                    <div class="container">
-                        <div class="banner__content ms-lg-auto">
-                            <h2>Title 2</h2>
-                            <p>Enthusiastically underwhelm quality benefits rather than professional "outside the box" thinking. Distinctively network highly efficient leadership skills</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide">
-                <div class="banner" style="background-image: url(assets/images/banner/03.jpg);">
-                    <div class="container">
-                        <div class="banner__content m-lg-auto text-lg-center">
-                            <h2 class="text-white">Title 3</h2>
-                            <p class="text-white">Enthusiastically underwhelm quality benefits rather than professional "outside the box" thinking. Distinctively network highly efficient leadership skills</p>
-                            
-                        </div>
-                    </div>
-                </div>
-            </div>
+            </div>               
+            @endforeach
         </div>
+            
+        
     </div>
     <!-- ================> Banner section end here <================== -->
 

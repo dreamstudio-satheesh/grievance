@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Banner;
 use App\Models\Gallery;
 use App\Models\Complaint;
 use App\Models\NewsEvent;
@@ -12,10 +13,11 @@ class PagesController extends Controller
 {
     public function home()
     {    
-        
+        $banners = Banner::all();
         $galleries = Gallery::all();
         $newsevents = NewsEvent::with('media')->get();
-        return view('frontend.home', compact('newsevents','galleries'));
+        $banners = Banner::all();
+        return view('frontend.home', compact('newsevents','galleries','banners'));
     }
 
     public function aboutus()
