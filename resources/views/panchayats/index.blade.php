@@ -50,9 +50,8 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <div class="form-check form-switch form-switch-success">
+                <div class="form-check form-switch form-switch-primary">
                     <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3" checked>
-                    <label class="form-check-label" for="SwitchCheck3">Status</label>
                 </div>
             </div>
             <div class="remove">
