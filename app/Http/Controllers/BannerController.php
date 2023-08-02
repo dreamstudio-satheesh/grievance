@@ -48,11 +48,11 @@ class BannerController extends Controller
         $gallery = Banner::create($validatedData);
 
         if ($request->has('images')) {
-            foreach ($request->images as $image) {
+           
                 // Image::load($image->getPathName())->quality(60)->save();  
                
-                $gallery->addMedia($image)->toMediaCollection('images');
-            }
+                $gallery->addMedia($request->images)->toMediaCollection('images');
+            
         }
 
         return redirect()->route('banners.index', $gallery->name)->with('success', 'Banner created successfully!');

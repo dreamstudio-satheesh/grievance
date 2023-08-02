@@ -37,8 +37,8 @@
             </div>
 
             <div class="mb-3">
-                <label for="image" class="form-label">Upload Images (upto 10 images)</label>
-                <input type="file" name="images[]"  class="form-control" accept="image/*" multiple>
+                <label for="image" class="form-label">Upload Image</label>
+                <input type="file" name="images"  class="form-control" accept="image/*" multiple>
             </div>
       
 

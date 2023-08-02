@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\WardController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\BannerController;
 use App\Http\Controllers\StreetController;
 use App\Http\Controllers\DstreetController;
 use App\Http\Controllers\GalleryController;

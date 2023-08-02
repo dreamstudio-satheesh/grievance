@@ -43,9 +43,7 @@
     <td>
       
         <div class="d-flex gap-2">
-            <div class="edit">
-                <a href="{{ url("/admin/banners/" ) }}/{{ $banner->id }}" class="btn btn-sm btn-success edit-item-btn" >Manage</a>
-            </div>
+           
             <div class="remove">
                 <form action="{{ route('banners.destroy',$banner->id) }}" method="POST"> 
                     @csrf

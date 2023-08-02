@@ -10,4 +10,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class Banner extends Model implements HasMedia
 {
     use HasFactory , InteractsWithMedia;
+
+
+    protected $guarded = ['id'];
 }
