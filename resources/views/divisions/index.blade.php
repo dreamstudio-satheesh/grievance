@@ -51,7 +51,7 @@
         <div class="d-flex gap-2">
             <div class="edit">
                 <div class="form-check form-switch form-switch-success">
-                    <form action="{{ route('divisions.update',$division->id) }}" method="POST"> 
+                    <form action="{{ route('divisions.updateststus',$division->id) }}" method="POST"> 
                         @csrf
                         @method('PUT')
                         <input name="status" class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3"  {{  ($division->status == 1 ? ' checked' : '') }} onChange="this.form.submit()">
