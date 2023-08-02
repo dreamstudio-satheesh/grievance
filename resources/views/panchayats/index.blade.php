@@ -61,12 +61,14 @@
                 
             </div>
             <div class="remove">
-                <form action="{{ route('panchayats.destroy',$panchayat->id) }}" method="POST"> 
+                {{-- <form action="{{ route('panchayats.destroy',$panchayat->id) }}" method="POST"> 
                     @csrf
                     @method('DELETE')
                     <button type="submit" class="btn btn-light btn-sm"><i class="ri-delete-bin-5-line"></i>Delete</button>
                     
-                </form> 
+                </form>  --}}
+
+                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
             </div>
         </div>
     </td>
