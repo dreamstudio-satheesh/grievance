@@ -52,7 +52,7 @@
             <div class="edit">
                 <button type="button" class="btn btn-sm btn-success custom-toggle" data-bs-toggle="button">
                     <span class="icon-on"><i class="ri-thumb-up-line align-bottom me-1"></i> Active</span>
-                    <span class="icon-off"><i class="ri-thumb-down-line align-bottom me-1"></i> Inactive</span>
+                    <span class="icon-off"><i class="ri-thumb-down-line align-bottom me-1"></i>Inactive</span>
                 </button>
             </div>
             <div class="remove">
