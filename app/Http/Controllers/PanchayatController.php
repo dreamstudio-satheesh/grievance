@@ -80,11 +80,9 @@ class PanchayatController extends Controller
      */
     public function update(Request $request, $id)
     {
-       return $request->all();
-
-       $status=0;
-       if ($request->status == 1) {
-        return 'hi';
+      $status=0;
+       if ($request->status == 'on') {
+        $status=1;        
        }
        $panchayat = Panchayat::findOrFail($id);
 
