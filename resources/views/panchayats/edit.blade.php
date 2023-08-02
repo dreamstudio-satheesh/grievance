@@ -8,7 +8,7 @@
 
 
     <div class="card">
-    <form action="{{ route('panchayats.update') }}"  method="POST" >
+    <form action="{{ route('panchayats.update',$panchayat->id) }}"  method="POST" >
         @csrf
         @method('PUT')
         <div class="card-body">
