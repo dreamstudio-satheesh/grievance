@@ -39,8 +39,8 @@ class PanchayatController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'pname' => 'string|max:255',
-            'pmobile' => 'string',
-            'vmobile' => 'string',
+            'pmobile' => 'string|digits:10',
+            'vmobile' => 'string|digits:10',
             'vname' => 'string|max:255',
         ]);
 
@@ -80,9 +80,18 @@ class PanchayatController extends Controller
      */
     public function update(Request $request, $id)
     {
-    
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'pname' => 'string|max:255',
+            'pmobile' => 'string|digits:10',
+            'vmobile' => 'string|digits:10',
+            'vname' => 'string|max:255',
+        ]);
 
-        return redirect()->route('panchayats.index')->with('success','Panchayatststus updated successfully');
+        $panchayat = Panchayat::findOrFail($id);
+        $panchayat->update($validatedData);
+
+        return redirect()->route('panchayats.index')->with('success','Panchayat updated successfully');
     }
 
     public function updatestatus(Request $request, $id)
