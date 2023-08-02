@@ -78,13 +78,14 @@ class PanchayatController extends Controller
      * @param  \App\Models\Panchayat  $panchayat
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Panchayat $panchayat)
+    public function update(Request $request, $id)
     {
 
        $status=0;
        if ($request->status == 1) {
         return $status=1;
        }
+       $panchayat = Panchayat::findOrFail($id);
 
        return  $panchayat->update(['status'=> $status ]);
 
