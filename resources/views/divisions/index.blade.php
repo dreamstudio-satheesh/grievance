@@ -50,7 +50,10 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                <button type="button" class="btn btn-success custom-toggle" data-bs-toggle="button">
+                    <span class="icon-on"><i class="ri-thumb-up-line align-bottom me-1"></i> Active</span>
+                    <span class="icon-off"><i class="ri-thumb-down-line align-bottom me-1"></i> Inactive</span>
+                </button>
             </div>
             <div class="remove">
                 <form action="{{ route('divisions.destroy',$division->id) }}" method="POST"> 
