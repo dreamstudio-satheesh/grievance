@@ -50,10 +50,10 @@
       
         <div class="d-flex gap-2">
             <div class="edit">
-                <button type="button" class="btn btn-sm btn-success custom-toggle" data-bs-toggle="button">
-                    <span class="icon-on"><i class="ri-thumb-up-line align-bottom me-1"></i> Active </span>
-                    <span class="icon-off"><i class="ri-thumb-down-line align-bottom me-1"></i>Inactive</span>
-                </button>
+                <div class="form-check form-switch form-switch-success">
+                    <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3" checked>
+                    <label class="form-check-label" for="SwitchCheck3">Status</label>
+                </div>
             </div>
             <div class="remove">
                 <form action="{{ route('divisions.destroy',$division->id) }}" method="POST"> 
