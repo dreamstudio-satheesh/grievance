@@ -3,13 +3,14 @@
 @section('content')
 @component('components.breadcrumb')
 @slot('li_1') Pages @endslot
-@slot('title') Add Wards  @endslot
+@slot('title') Edit Wards  @endslot
 @endcomponent
 
 
     <div class="card">
-    <form action="{{ route('wards.store') }}"  method="post" >
+    <form action="{{ route('wards.update',$ward->id) }}"  method="post" >
         @csrf
+        @method('PUT')
         <div class="card-body">
 
             @if ($errors->any())
