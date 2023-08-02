@@ -80,7 +80,6 @@ class PanchayatController extends Controller
      */
     public function update(Request $request, Panchayat $panchayat)
     {
-       return $request->all();
 
        $status=0;
        if ($request->status) {
