@@ -67,7 +67,7 @@
                     <button type="submit" class="btn btn-light btn-sm"><i class="ri-delete-bin-5-line"></i>Delete</button>
                 </form>  --}}
 
-                <button class="btn btn-sm btn-success edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
+                <button class="btn btn-sm btn-light edit-item-btn" data-bs-toggle="modal" data-bs-target="#showModal">Edit</button>
             </div>
         </div>
     </td>
