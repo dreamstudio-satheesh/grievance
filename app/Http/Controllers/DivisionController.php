@@ -39,8 +39,8 @@ class DivisionController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'jename' => 'string|max:255',
-            'jemobile' => 'string',
-            'aemobile' => 'string',
+            'jemobile' => 'string|digits:10',
+            'aemobile' => 'string|digits:10',
             'aename' => 'string|max:255',
         ]);
 
@@ -68,7 +68,7 @@ class DivisionController extends Controller
      */
     public function edit(Division $division)
     {
-        //
+        return view('divisions.edit',compact('division'));
     }
 
     /**
@@ -80,6 +80,22 @@ class DivisionController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'jename' => 'string|max:255',
+            'jemobile' => 'string|digits:10',
+            'aemobile' => 'string|digits:10',
+            'aename' => 'string|max:255',
+        ]);
+
+        $division = Division::findOrFail($id);
+        $division->update($validatedData);
+ 
+        return redirect()->route('divisions.index')->with('success','Panchayatst updated successfully');
+    }
+
+    public function updatestatus(Request $request, $id)
+    {
         $status=0;
         if ($request->status == 'on') {
          $status=1;        
@@ -88,7 +104,7 @@ class DivisionController extends Controller
          $division = Division::findOrFail($id);
          $division->update(['status'=> $status ]);
  
-         return redirect()->route('divisions.index')->with('success','Panchayatststus updated successfully');
+         return redirect()->route('divisions.index')->with('success','division status updated successfully');
     }
 
     /**

@@ -80,6 +80,13 @@ class PanchayatController extends Controller
      */
     public function update(Request $request, $id)
     {
+    
+
+        return redirect()->route('panchayats.index')->with('success','Panchayatststus updated successfully');
+    }
+
+    public function updatestatus(Request $request, $id)
+    {
       $status=0;
        if ($request->status == 'on') {
         $status=1;        
