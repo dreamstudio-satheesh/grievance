@@ -71,7 +71,7 @@ Route::post('/divisions', [DivisionController::class, 'store'])->name('divisions
 Route::get('/divisions/{id}', [DivisionController::class, 'show'])->name('divisions.show');
 Route::get('/divisions/{id}/edit', [DivisionController::class, 'edit'])->name('divisions.edit');
 Route::put('/divisions/{id}', [DivisionController::class, 'update'])->name('divisions.update');
-Route::put('/divisions/{id}', [DivisionController::class, 'updatestatus'])->name('divisions.updateststus');
+Route::put('/divisionstatus/{id}', [DivisionController::class, 'updatestatus'])->name('divisions.updateststus');
 Route::delete('/divisions/{id}', [DivisionController::class, 'destroy'])->name('divisions.destroy');
 
 
@@ -81,7 +81,7 @@ Route::post('/panchayats', [PanchayatController::class, 'store'])->name('panchay
 Route::get('/panchayats/{id}', [PanchayatController::class, 'show'])->name('panchayats.show');
 Route::get('/panchayats/{id}/edit', [PanchayatController::class, 'edit'])->name('panchayats.edit');
 Route::put('/panchayats/{id}', [PanchayatController::class, 'update'])->name('panchayats.update');
-Route::put('/panchayats/{id}', [PanchayatController::class, 'updatestatus'])->name('panchayats.updateststus');
+Route::put('/panchayatstatus/{id}', [PanchayatController::class, 'updatestatus'])->name('panchayats.updateststus');
 Route::delete('/panchayats/{id}', [PanchayatController::class, 'destroy'])->name('panchayats.destroy');
 
 Route::get('/streets', [StreetController::class, 'index'])->name('streets.index');
