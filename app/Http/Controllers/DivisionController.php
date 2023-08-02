@@ -78,9 +78,17 @@ class DivisionController extends Controller
      * @param  \App\Models\Division  $division
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Division $division)
+    public function update(Request $request, $id)
     {
-        return $request->all();
+        $status=0;
+        if ($request->status == 'on') {
+         $status=1;        
+        }
+        
+         $division = Division::findOrFail($id);
+         $division->update(['status'=> $status ]);
+ 
+         return redirect()->route('divisions.index')->with('success','Panchayatststus updated successfully');
     }
 
     /**
