@@ -60,7 +60,7 @@
                 <form action="{{ route('panchayats.destroy',$panchayat->id) }}" method="POST"> 
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-light btn-sm"><i class="ri-delete-bin-5-line"></i>Del</button>
+                    <button type="submit" class="btn btn-light btn-sm"><i class="ri-delete-bin-5-line"></i>Delete</button>
                     
                 </form> 
             </div>
