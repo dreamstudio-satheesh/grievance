@@ -83,7 +83,7 @@ class PanchayatController extends Controller
 
        $status=0;
        if ($request->status == 1) {
-        return $status=1;
+        return 'hi';
        }
        $panchayat = Panchayat::findOrFail($id);
 
