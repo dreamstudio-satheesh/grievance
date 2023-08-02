@@ -51,7 +51,10 @@
         <div class="d-flex gap-2">
             <div class="edit">
                 <div class="form-check form-switch form-switch-success">
-                    <input class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3" checked>
+                    <form action="{{ route('panchayats.status',$panchayat->id) }}" method="POST"> 
+                        @csrf
+                        <input name="status" class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3" {{  ($panchayat->status == 1 ? ' checked' : '') }} onChange="this.form.submit()">
+                    </form> 
                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </div>
                 
