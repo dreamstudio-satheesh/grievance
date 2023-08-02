@@ -82,7 +82,7 @@ class PanchayatController extends Controller
     {
 
        $status=0;
-       if ($request->status) {
+       if ($request->status == 1) {
         $status=1;
        }
 
