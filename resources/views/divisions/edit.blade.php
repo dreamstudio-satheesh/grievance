@@ -8,7 +8,7 @@
 
 
     <div class="card">
-    <form  action="{{ route('divisions.updateststus',$division->id) }}"  method="POST" >
+    <form  action="{{ route('divisions.update',$division->id) }}"  method="POST" >
         @csrf
         @method('PUT')
         <div class="card-body">
