@@ -80,7 +80,7 @@ class DivisionController extends Controller
      */
     public function update(Request $request, Division $division)
     {
-        //
+        return $request->all();
     }
 
     /**
