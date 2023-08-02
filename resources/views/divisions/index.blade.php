@@ -60,7 +60,7 @@
                 <form action="{{ route('divisions.destroy',$division->id) }}" method="POST"> 
                     @csrf
                     @method('DELETE')
-                    <button type="submit" class="btn btn-danger btn-sm"><i class="ri-delete-bin-5-line"></i></button>
+                    <button type="submit" class="btn btn-light btn-sm"><i class="ri-delete-bin-5-line"></i>Del</button>
                 </form> 
             </div>
         </div>
