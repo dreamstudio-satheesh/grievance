@@ -53,6 +53,7 @@
                 <div class="form-check form-switch form-switch-success">
                     <form action="{{ route('divisions.update',$division->id) }}" method="POST"> 
                         @csrf
+                        @method('PUT')
                         <input name="status" class="form-check-input" type="checkbox" role="switch" id="SwitchCheck3"  {{  ($division->status == 1 ? ' checked' : '') }} onChange="this.form.submit()">
                     </form>
                     &nbsp;&nbsp;&nbsp;&nbsp;
