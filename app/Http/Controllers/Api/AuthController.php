@@ -23,10 +23,10 @@ class AuthController extends BaseController
             return $this->sendError('Error validation', $validator->errors());       
         }
         $user = User::create([
-            'name' => $validator['name'],
-            'email' => $validator['email'],
-            'password' => $validator['password'],
-            'mobile_number' => $validator['mobile_number'],
+            'name' => $request->name,
+            'email' => $request->email,
+            'password' => $request->password,
+            'mobile_number' => $request->mobile_number,
         ]);
         $data['token'] = $user->createToken('auth_token')->plainTextToken;
         $data['token_type']= 'Bearer';
