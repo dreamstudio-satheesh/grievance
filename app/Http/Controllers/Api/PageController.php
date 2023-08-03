@@ -14,9 +14,11 @@ class PageController extends BaseController
 
     public function news_events()
     {
-        $newsevents = NewsEvent::all();        
+        $newsevents = NewsEvent::all();    
+        
+        return response()->json($newsevents);
 
-       return $this->sendResponse(News::collection($newsevents), 'Posts fetched.');     
+     //  return $this->sendResponse(News::collection($newsevents), 'Posts fetched.');     
       
     }
 
