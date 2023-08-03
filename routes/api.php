@@ -21,6 +21,10 @@ Route::controller(AuthController::class)->group(function () {
     Route::post('signup', 'signup');
 });
 
+Route::controller(PageController::class)->group(function () {
+    Route::get('news-events', 'news_events');
+});
+
 Route::middleware('auth:sanctum')->group( function () {
     //Route::resource('products', ProductController::class);
     Route::get('user', [UserController::class, 'index']);
