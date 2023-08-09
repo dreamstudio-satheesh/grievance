@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Models\Banner;
 use App\Models\Gallery;
 use App\Models\NewsEvent;
-use App\Http\Resources\BannerResource;
+use App\Http\Resources\Banner as BR;
 use App\Http\Resources\News as Newsresource;
 use App\Http\Resources\Gallery as Galleryresource;
 use App\Http\Controllers\Api\BaseController as BaseController;
@@ -34,8 +34,8 @@ class PageController extends BaseController
 
     public function banners()
     {
-        $banners = Banner::latest()->get();    
-        return $this->sendResponse(BannerResource::collection($banners), 'Galleries fetched.');      
+        $banners = Banner::latest()->get();  
+        return $this->sendResponse(BR::collection($banners), 'Banners fetched.');      
     }
 
 
