@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Models\Ward;
 use App\Models\Banner;
 use App\Models\Dstreet;
 use App\Models\Gallery;
 use App\Models\Division;
 use App\Models\NewsEvent;
+use App\Models\Panchayat;
 use Illuminate\Http\Request;
 use App\Http\Resources\Banner as BR;
 use App\Http\Resources\News as Newsresource;
@@ -41,18 +43,36 @@ class PageController extends BaseController
         return $this->sendResponse(BR::collection($banners), 'Banners fetched.');      
     }
 
+    public function panchayats()
+    {
+        $panchayats = Panchayat::select('id','name')->get();
+        return response()->json($panchayats);
+    }
+
+    public function wards($id)
+    { 
+        $wards = Ward::select('id','name','panchayat_id')->where('panchayat_id',$id)->get();
+        return response()->json($wards);
+    }
+
+    public function streets($id)
+    { 
+        $streets = Ward::select('id','name','ward_id')->where('ward_id',$id)->get();
+        return response()->json($streets);
+    }
+
+
     public function divisions()
     {
         $divisions = Division::select('id','name')->get();
-
         return response()->json($divisions);
     }
 
 
     public function dstreets($id)
     { 
-        $street = Dstreet::findOrFail($id);
-        return $street;
+        $street = Dstreet::select('id','name','division_id')->where('division_id',$id)->get();
+        return response()->json($street);
     }
 
 
