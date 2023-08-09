@@ -25,6 +25,7 @@ Route::controller(AuthController::class)->group(function () {
 Route::controller(PageController::class)->group(function () {
     Route::get('news-events', 'news_events');
     Route::get('galleries', 'galleries');
+    Route::get('banners', 'banners');
 });
 
 Route::middleware('auth:sanctum')->group( function () {
