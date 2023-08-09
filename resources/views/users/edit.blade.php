@@ -54,8 +54,7 @@
            
         </div>
         <div class="card-footer" >
-            <div class="hstack gap-2 justify-content-end">
-                
+            <div class="hstack gap-2 justify-content-end">                
                 <input type="submit" class="btn btn-success" value="Update User">
             </div>
         </div>

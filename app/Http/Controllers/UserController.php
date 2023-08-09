@@ -125,12 +125,16 @@ class UserController extends Controller
         ]);
 
         if ($request->filled('password')) {
-            $validatedData['password'] = $request->password;
+            $data['password'] = $request->password;
         }
 
-        $user->update($validatedData);
+        $data['name'] = $request->name;
+        $data['email'] = $request->email;
+        $data['mobile_number'] = $request->mobile_number;
 
-        return redirect()->route('users.show', $user->id)->with('success', 'User updated successfully!');
+        $user->update($data);
+
+        return redirect()->route('users')->with('success', 'User updated successfully!');
     }
 
 
