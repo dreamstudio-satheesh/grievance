@@ -11,7 +11,7 @@
     <div class="col-xl-12">
         <div class="card crm-widget">
             <div class="card-body p-0">
-                <div class="row row-cols-xxl-5 row-cols-md-3 row-cols-1 g-0">
+                <div class="row row-cols-xxl-3 row-cols-md-3 row-cols-1 g-0">
                     <div class="col">
                         <div class="py-4 px-3">
                             <h5 class="text-muted text-uppercase fs-13">Users<i class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"></i></h5>
