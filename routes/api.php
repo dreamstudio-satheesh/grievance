@@ -28,6 +28,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('galleries', 'galleries');
     Route::get('banners', 'banners');
     Route::get('dropdown/divisions', 'divisions');
+    Route::get('dropdown/divisions/{id}', 'dstreets');
 });
 
 Route::middleware('auth:sanctum')->group( function () {

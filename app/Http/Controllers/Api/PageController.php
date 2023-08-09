@@ -3,9 +3,11 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Banner;
+use App\Models\Dstreet;
 use App\Models\Gallery;
 use App\Models\Division;
 use App\Models\NewsEvent;
+use Illuminate\Http\Request;
 use App\Http\Resources\Banner as BR;
 use App\Http\Resources\News as Newsresource;
 use App\Http\Resources\Gallery as Galleryresource;
@@ -41,9 +43,16 @@ class PageController extends BaseController
 
     public function divisions()
     {
-        $divisions = Division::all();
+        $divisions = Division::select('id','name')->get();
 
         return response()->json($divisions);
+    }
+
+
+    public function dstreets($id)
+    { 
+        $street = Dstreet::findOrFail($id);
+        return $street;
     }
 
 
