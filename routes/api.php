@@ -37,6 +37,7 @@ Route::controller(PageController::class)->group(function () {
 Route::middleware('auth:sanctum')->group( function () {
     //Route::resource('products', ProductController::class);
     Route::get('user', [UserController::class, 'index']);
+    Route::get('track-complaint', [ComplaintController::class, 'track']);
     Route::post('complaint', [ComplaintController::class, 'register']);
     Route::post('logout', [UserController::class, 'logout']);
 });

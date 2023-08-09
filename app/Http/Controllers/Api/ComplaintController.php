@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Api;
 
+use App\Models\Complaint;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
@@ -10,7 +11,13 @@ use App\Http\Controllers\Api\BaseController as BaseController;
 class ComplaintController extends BaseController
 {
 
-
+    function track(Request $request)
+    {
+        if ($request->user()) { 
+        $complaints = Complaint::where('user_id', $request->user()->id)->get();
+        return response()->json($complaints);
+        }  
+    }
     public function register(Request $request)
     {
         if ($request->user()) { 
