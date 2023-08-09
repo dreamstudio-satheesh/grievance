@@ -1,47 +1,35 @@
-@if ($message = Session::get('success'))
-
-
 <script>
-
-
+    @if ($message = Session::get('success'))
     Swal.fire({
+            position: 'top-end',
             title: 'Good job!',
-            text: 'You clicked the button!',
+            text: '{{ $message }} !',
             icon: 'success',
+            showConfirmButton: false,
+            timer: 1500,
             showCancelButton: true,
-            confirmButtonClass: 'btn btn-primary w-xs me-2 mt-2',
             cancelButtonClass: 'btn btn-danger w-xs mt-2',
             buttonsStyling: false,
             showCloseButton: true
         });  
 
-</script>
-@endif
+
+    @endif
   
 @if ($message = Session::get('error'))
-<div class="alert alert-danger alert-block">
-    <button type="button" class="close" data-dismiss="alert">×</button>    
-    <strong>{{ $message }}</strong>
-</div>
+
 @endif
    
 @if ($message = Session::get('warning'))
-<div class="alert alert-warning alert-block">
-    <button type="button" class="close" data-dismiss="alert">×</button>    
-    <strong>{{ $message }}</strong>
-</div>
+
 @endif
    
 @if ($message = Session::get('info'))
-<div class="alert alert-info alert-block">
-    <button type="button" class="close" data-dismiss="alert">×</button>    
-    <strong>{{ $message }}</strong>
-</div>
+
 @endif
   
 @if ($errors->any())
-<div class="alert alert-danger">
-    <button type="button" class="close" data-dismiss="alert">×</button>    
-    Please check the form below for errors
-</div>
+
 @endif
+
+</script>
