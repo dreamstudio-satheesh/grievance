@@ -13,7 +13,7 @@ class ComplaintController extends Controller
     {
         if ($request->user()) { 
           
-
+            return $request->user()->id;
             return response()->json([
                 'message' => 'Successfully register',
             ]);
