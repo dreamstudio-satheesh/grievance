@@ -39,9 +39,9 @@ class PageController extends BaseController
         return $this->sendResponse(BR::collection($banners), 'Banners fetched.');      
     }
 
-    public function dropdown()
+    public function divisions()
     {
-        $divisions = Division::with('dstreets')->get();
+        $divisions = Division::all();
 
         return response()->json($divisions);
     }

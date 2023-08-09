@@ -27,7 +27,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('news-events', 'news_events');
     Route::get('galleries', 'galleries');
     Route::get('banners', 'banners');
-    Route::get('dropdown', 'dropdown');
+    Route::get('dropdown/divisions', 'divisions');
 });
 
 Route::middleware('auth:sanctum')->group( function () {
