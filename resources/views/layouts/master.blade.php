@@ -25,7 +25,7 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="container-fluid">
-                    @include('flash-message')
+                    @include('layouts.flash-message')
                     @yield('content')
                 </div>
                 <!-- container-fluid -->
