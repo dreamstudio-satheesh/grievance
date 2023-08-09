@@ -17,7 +17,7 @@
                             <h5 class="text-muted text-uppercase fs-13">Users<i class="ri-account-circle-line text-success fs-18 float-end align-middle"></i></h5>
                             <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                    <i class="ri-space-ship-line display-6 text-muted"></i>
+                                    <i class="ri-account-circle-line display-6 text-muted"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
                                     <h2 class="mb-0"><span class="counter-value" data-target="197">0</span></h2>
