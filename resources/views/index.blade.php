@@ -14,7 +14,7 @@
                 <div class="row row-cols-xxl-5 row-cols-md-3 row-cols-1 g-0">
                     <div class="col">
                         <div class="py-4 px-3">
-                            <h5 class="text-muted text-uppercase fs-13">Users<i class="ri-account-circle-line text-success fs-18 float-end align-middle"></i></h5>
+                            <h5 class="text-muted text-uppercase fs-13">Users<i class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"></i></h5>
                             <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
                                     <i class="ri-account-circle-line display-6 text-muted"></i>
@@ -27,13 +27,13 @@
                     </div><!-- end col -->
                     <div class="col">
                         <div class="mt-3 mt-md-0 py-4 px-3">
-                            <h5 class="text-muted text-uppercase fs-13">Annual Profit <i class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"></i></h5>
+                            <h5 class="text-muted text-uppercase fs-13">Complaints <i class="ri-arrow-up-circle-line text-success fs-18 float-end align-middle"></i></h5>
                             <div class="d-flex align-items-center">
                                 <div class="flex-shrink-0">
-                                    <i class="ri-exchange-dollar-line display-6 text-muted"></i>
+                                    <i class="ri-questionnaire-line display-6 text-muted"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h2 class="mb-0">$<span class="counter-value" data-target="489.4">0</span>k</h2>
+                                    <h2 class="mb-0"> <span class="counter-value" data-target="890"></span></h2>
                                 </div>
                             </div>
                         </div>
