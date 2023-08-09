@@ -16,7 +16,8 @@ class Banner extends JsonResource
     {
         return [
             'id' => $this->id,
-            'title' => $this->title,           
+            'title' => $this->title,            
+            'description' => $this->description,            
             'images'  => $this->getFirstMediaUrl('images'),
             'created_at' => $this->created_at->format('d-m-Y'),
             'updated_at' => $this->updated_at->format('d-m-Y'),
