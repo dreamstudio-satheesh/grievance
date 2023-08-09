@@ -32,7 +32,7 @@
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
-            @include('layouts.flash-message')
+           
             @include('layouts.footer')
         </div>
         <!-- end main content-->
@@ -46,6 +46,7 @@
     
     <script src="{{ URL::asset('/admin_assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
     <script src="{{ URL::asset('/admin_assets/js/pages/sweetalerts.init.js') }}"></script>
+    @include('layouts.flash-message')
 </body>
 
 </html>
