@@ -9,6 +9,7 @@
                 '</div>' +
                 '</div>',
             showCancelButton: true,
+            timer: 1500,
             showConfirmButton: false,
             cancelButtonClass: 'btn btn-primary w-xs mb-1',
             cancelButtonText: 'Back',
