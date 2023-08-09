@@ -32,7 +32,7 @@ Route::controller(PageController::class)->group(function () {
 Route::middleware('auth:sanctum')->group( function () {
     //Route::resource('products', ProductController::class);
     Route::get('user', [UserController::class, 'index']);
-    Route::post('register-complaint', [ComplaintController::class, 'register']);
+    Route::post('complaint', [ComplaintController::class, 'register']);
     Route::post('logout', [UserController::class, 'logout']);
 });
 
