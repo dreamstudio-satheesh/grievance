@@ -45,7 +45,7 @@
 
             <div class="mb-3">
                 <label for="phone-field" class="form-label">Password</label>
-                <input type="text" name="password" id="password" class="form-control" value="{{ $user->password }}" required="">
+                <input type="text" name="password" id="password" class="form-control" value="" required="">
                 <div class="invalid-feedback">Please enter password.</div>
             </div>
 
