@@ -45,7 +45,7 @@
 
             <div class="mb-3">
                 <label for="phone-field" class="form-label">Password</label>
-                <input type="text" name="password" id="password" class="form-control" value="" required="">
+                <input type="text" name="password" id="password" class="form-control" value="">
                 <div class="invalid-feedback">Please enter password.</div>
             </div>
 
@@ -56,7 +56,7 @@
         <div class="card-footer" >
             <div class="hstack gap-2 justify-content-end">
                 
-                <input type="submit" class="btn btn-success" value="Add User">
+                <input type="submit" class="btn btn-success" value="Update User">
             </div>
         </div>
     </form>
