@@ -2,9 +2,7 @@
 
 
 <script>
-  $( document ).ready(function() {
 
-    console.log( "ready!" );
 
     Swal.fire({
             title: 'Good job!',
@@ -15,8 +13,7 @@
             cancelButtonClass: 'btn btn-danger w-xs mt-2',
             buttonsStyling: false,
             showCloseButton: true
-        });
-});  
+        });  
 
 </script>
 @endif
