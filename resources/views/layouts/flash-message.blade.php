@@ -1,6 +1,12 @@
 @if ($message = Session::get('success'))
+
+
 <script>
- Swal.fire({
+  $( document ).ready(function() {
+
+    console.log( "ready!" );
+
+    Swal.fire({
             title: 'Good job!',
             text: 'You clicked the button!',
             icon: 'success',
@@ -10,6 +16,8 @@
             buttonsStyling: false,
             showCloseButton: true
         });
+});  
+
 </script>
 @endif
   
