@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Banner;
 use App\Models\Gallery;
+use App\Models\Division;
 use App\Models\NewsEvent;
 use App\Http\Resources\Banner as BR;
 use App\Http\Resources\News as Newsresource;
@@ -37,6 +38,16 @@ class PageController extends BaseController
         $banners = Banner::latest()->get();  
         return $this->sendResponse(BR::collection($banners), 'Banners fetched.');      
     }
+
+    public function dropdown()
+    {
+        $divisions = Division::with('dstreets')->get();
+
+        return response()->json($divisions);
+    }
+
+
+
 
 
 

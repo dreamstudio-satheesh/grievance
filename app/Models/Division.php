@@ -11,4 +11,9 @@ class Division extends Model
 
     protected $guarded = ['id'];
 
+    public function dstreets()
+    {
+        return $this->hasMany(Dstreet::class, 'division_id');
+    }
+
 }
