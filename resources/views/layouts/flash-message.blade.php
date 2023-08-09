@@ -1,10 +1,15 @@
 @if ($message = Session::get('success'))
 <script>
-Swal.fire(
-  'Good job!',
-  '{{ $message }}',
-  'success'
-);
+ Swal.fire({
+            title: 'Good job!',
+            text: 'You clicked the button!',
+            icon: 'success',
+            showCancelButton: true,
+            confirmButtonClass: 'btn btn-primary w-xs me-2 mt-2',
+            cancelButtonClass: 'btn btn-danger w-xs mt-2',
+            buttonsStyling: false,
+            showCloseButton: true
+        });
 </script>
 @endif
   
