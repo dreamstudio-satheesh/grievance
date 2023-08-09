@@ -4,7 +4,7 @@ namespace App\Http\Resources;
 
 use Illuminate\Http\Resources\Json\JsonResource;
 
-class News extends JsonResource
+class Gallery extends JsonResource
 {
     /**
      * Transform the resource into an array.
@@ -14,16 +14,12 @@ class News extends JsonResource
      */
     public function toArray($request)
     {
-        
         return [
             'id' => $this->id,
-            'title' => $this->title,
-            'description' => $this->description,            
+            'title' => $this->title,           
             'images'  => $this->getFirstMediaUrl('images'),
             'created_at' => $this->created_at->format('m/d/Y'),
             'updated_at' => $this->updated_at->format('m/d/Y'),
         ];
-
-       // return parent::toArray($request);
     }
 }
