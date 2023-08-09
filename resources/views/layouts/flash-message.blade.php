@@ -7,9 +7,6 @@
             icon: 'success',
             showConfirmButton: false,
             timer: 1500,
-            showCancelButton: true,
-            cancelButtonClass: 'btn btn-danger w-xs mt-2',
-            buttonsStyling: false,
             showCloseButton: true
         });  
 
