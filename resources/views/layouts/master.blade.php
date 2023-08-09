@@ -10,6 +10,7 @@
     <!-- App favicon -->
     <link rel="shortcut icon" href="{{ URL::asset('admin_assets/images/favicon.ico')}}">
     @include('layouts.head-css')
+    <link href="{{ URL::asset('admin_assets/libs/sweetalert2/sweetalert2.min.css')}}" rel="stylesheet" type="text/css" />
 </head>
 
 @section('body')
@@ -25,12 +26,13 @@
         <div class="main-content">
             <div class="page-content">
                 <div class="container-fluid">
-                    @include('layouts.flash-message')
+                   
                     @yield('content')
                 </div>
                 <!-- container-fluid -->
             </div>
             <!-- End Page-content -->
+            @include('layouts.flash-message')
             @include('layouts.footer')
         </div>
         <!-- end main content-->
@@ -41,6 +43,9 @@
 
     <!-- JAVASCRIPT -->
     @include('layouts.vendor-scripts')
+    
+    <script src="{{ URL::asset('/admin_assets/libs/sweetalert2/sweetalert2.min.js') }}"></script>
+    <script src="{{ URL::asset('/admin_assets/js/pages/sweetalerts.init.js') }}"></script>
 </body>
 
 </html>

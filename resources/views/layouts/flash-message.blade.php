@@ -1,8 +1,11 @@
 @if ($message = Session::get('success'))
-<div class="alert alert-success alert-block">
-    <button type="button" class="close" data-dismiss="alert">×</button>    
-    <strong>{{ $message }}</strong>
-</div>
+<script>
+Swal.fire(
+  'Good job!',
+  '{{ $message }}',
+  'success'
+);
+</script>
 @endif
   
 @if ($message = Session::get('error'))
