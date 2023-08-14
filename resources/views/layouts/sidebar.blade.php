@@ -218,7 +218,7 @@
                     <div class="collapse menu-dropdown" id="Enquiry">
                         <ul class="nav nav-sm flex-column">
                             <li class="nav-item">
-                                <a href="{{ url('/admin/galleries')}}"  class="nav-link"> <i class="ri-questionnaire-line"></i> Enquiry List</a>
+                                <a href="{{ url('/admin/enquiry')}}"  class="nav-link"> <i class="ri-questionnaire-line"></i> Enquiry List</a>
                             </li>
 
                            
