@@ -98,5 +98,17 @@ class PagesController extends Controller
     {
         return view('frontend.contact');
     }
+
+    public function savecontact(Request $request) {
+        
+        return $request->all();
+
+        $validatedData = $request->validate([
+            'name' => 'required|string|max:255',
+            'email' => 'required|email',
+            'password' => 'nullable|string|min:6',
+            'mobile_number' => 'required|string',
+        ]);
+    }
     
 }

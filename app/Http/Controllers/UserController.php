@@ -120,8 +120,8 @@ class UserController extends Controller
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email|unique:users,email,' . $user->id,
-            'password' => 'nullable|string|min:6',
-            'mobile_number' => 'required|string',
+            'subject' => 'required|string|min:6',
+            'message' => 'required|string',
         ]);
 
         if ($request->filled('password')) {

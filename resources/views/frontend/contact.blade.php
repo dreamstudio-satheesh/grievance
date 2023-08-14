@@ -13,7 +13,7 @@
             </div>
             <div class="section__wrapper">
                 <div class="contact__form">
-                    <form class="d-flex flex-wrap justify-content-between" action="#" id="contact-form" method="POST">
+                    <form class="d-flex flex-wrap justify-content-between" action="{{ url('contact.php')}}" id="contact-form" method="POST">
                         <input type="text" placeholder="Your Name" id="name" name="name" required="required">
                         <input type="text" placeholder="Your Email" id="email" name="email" required>
                         <input class="w-100" type="text" placeholder="Subject" id="subject" name="subject" required>

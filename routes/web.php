@@ -42,6 +42,7 @@ Route::get('/complaint.php', [PagesController::class, 'complaint'])->name('compl
 Route::get('/track-complaint.php', [PagesController::class, 'trackcomplaint'])->name('trackcomplaint');
 Route::post('/complaint', [PagesController::class, 'store'])->name('complaintsave');
 Route::get('/contact.php', [PagesController::class, 'contact'])->name('contact');
+Route::post('/contact.php', [PagesController::class, 'savecontact'])->name('contact.store');
 
 Route::get('/home', [HomeController::class, 'index'])->name('userhome');
 
