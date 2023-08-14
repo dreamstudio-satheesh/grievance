@@ -8,15 +8,13 @@
     <div class="contact padding--top padding--bottom bg-light">
         <div class="container">
             <div class="section__header text-center">
+                @if(session()->has('message'))
+                <h2>{{ session()->get('message') }}</h2>                    
+                @else                    
                 <h2>Contact Us</h2>
-                
+                @endif                
             </div>
             <div class="section__wrapper">
-                @if(session()->has('message'))
-                    <div class="alert alert-success">
-                        {{ session()->get('message') }}
-                    </div>
-                @endif
                 <div class="contact__form">
                     <form class="d-flex flex-wrap justify-content-between" action="{{ url('contact.php')}}" id="contact-form" method="POST">
                         @csrf
