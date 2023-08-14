@@ -8,7 +8,7 @@
     <div class="contact padding--top padding--bottom bg-light">
         <div class="container">
             <div class="section__header text-center">
-                @if(session()->has('message'))
+                @if($message = Session::get('success'))
                 <h2>{{ session()->get('message') }}</h2>                    
                 @else                    
                 <h2>Contact Us</h2>
