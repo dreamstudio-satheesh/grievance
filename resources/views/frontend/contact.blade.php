@@ -14,12 +14,13 @@
             <div class="section__wrapper">
                 <div class="contact__form">
                     <form class="d-flex flex-wrap justify-content-between" action="{{ url('contact.php')}}" id="contact-form" method="POST">
+                        @csrf
                         <input type="text" placeholder="Your Name" id="name" name="name" required="required">
                         <input type="text" placeholder="Your Email" id="email" name="email" required>
                         <input class="w-100" type="text" placeholder="Subject" id="subject" name="subject" required>
                         <textarea placeholder="Your Message" rows="8" name="message" id="message" required></textarea>
                         <div class="text-center w-100">
-                            <button type="submit" class="default-btn move-right"><span>SEND</span></button>
+                            <button type="submit" class="default-btn move-right"><span>SEND NOW</span></button>
                         </div>
                     </form>
                     <p class="form-message"></p> 
