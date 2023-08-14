@@ -18,27 +18,22 @@
                 <div class="contact__form">
                     <form class="d-flex flex-wrap justify-content-between" action="{{ url('contact.php')}}" id="contact-form" method="POST">
                         @csrf
+                        <input type="text" placeholder="Your Name" id="name" name="name" required="required">
                         @if ($errors->has('name'))
                         <span class="text-danger">{{ $errors->first('name') }}</span>
                         @endif
-                        <input type="text" placeholder="Your Name" id="name" name="name" required="required">
-                        
+                        <input type="text" placeholder="Your Email" id="email" name="email" required>
                         @if ($errors->has('email'))
                         <span class="text-danger">{{ $errors->first('email') }}</span>
                         @endif
-                        <input type="text" placeholder="Your Email" id="email" name="email" required>
-                        
+                        <input class="w-100" type="text" placeholder="Subject" id="subject" name="subject" required>
                         @if ($errors->has('subject'))
                         <span class="text-danger">{{ $errors->first('subject') }}</span>
                         @endif
-                        <input class="w-100" type="text" placeholder="Subject" id="subject" name="subject" required>
-
-                       
+                        <textarea placeholder="Your Message" rows="8" name="message" id="message" required></textarea>
                         @if ($errors->has('message'))
                         <span class="text-danger">{{ $errors->first('message') }}</span>
                         @endif
-                        <textarea placeholder="Your Message" rows="8" name="message" id="message" required></textarea>
-                        
                         <div class="text-center w-100">
                             <button type="submit" class="default-btn move-right"><span>SEND NOW</span></button>
                         </div>
