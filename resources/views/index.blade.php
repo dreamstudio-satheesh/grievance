@@ -20,7 +20,7 @@
                                     <i class="ri-account-circle-line display-6 text-muted"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h2 class="mb-0"><span class="counter-value" data-target="197">0</span></h2>
+                                    <h2 class="mb-0"><span class="counter-value" data-target="{{ $user }}">0</span></h2>
                                 </div>
                             </div>
                         </div>
@@ -33,7 +33,7 @@
                                     <i class="ri-questionnaire-line display-6 text-muted"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h2 class="mb-0"> <span class="counter-value" data-target="890"></span></h2>
+                                    <h2 class="mb-0"> <span class="counter-value" data-target="{{ $complaint }}"></span></h2>
                                 </div>
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                                     <i class="ri-pulse-line display-6 text-muted"></i>
                                 </div>
                                 <div class="flex-grow-1 ms-3">
-                                    <h2 class="mb-0"><span class="counter-value" data-target="32"></h2>
+                                    <h2 class="mb-0"><span class="counter-value" data-target="{{ $pending }}"></h2>
                                 </div>
                             </div>
                         </div>
