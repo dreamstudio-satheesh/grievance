@@ -3,10 +3,13 @@
 @section('content')
 @component('components.breadcrumb')
 @slot('li_1') Pages @endslot
-@slot('title') News & Events  @endslot
+@slot('title') Enquiry  @endslot
 @endcomponent
 
-
+<div class="row g-4 mb-3">
+    <div class="col-sm-auto">
+    </div>
+</div>
 <table class="table table-nowrap">
     <thead>
     <tr>
