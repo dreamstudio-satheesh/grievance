@@ -13,7 +13,6 @@
 <table class="table table-nowrap">
     <thead>
     <tr>
-    <th scope="col">ID</th>
     <th scope="col">Name</th>
     <th scope="col">Email</th>
     <th scope="col">subject</th>
@@ -24,7 +23,6 @@
     <tbody>
         @foreach($enquirylist as $item )
     <tr>
-    <th scope="row"><a href="#" class="fw-semibold">#{{ $item->id }}</a></th>
     <td>{{ $item->name }}</td>
     <td>{{ $item->email }}</td>
     <td>{{ $item->subject }}</td>
