@@ -26,7 +26,7 @@
     <td>{{ $item->email }}</td>
     <td>{{ $item->subject }}</td>
     <td>{{ $item->message }}</td>
-      
+    <td>
         <div class="d-flex gap-2">
             
             <div class="remove">
