@@ -12,6 +12,11 @@
                 
             </div>
             <div class="section__wrapper">
+                @if(session()->has('message'))
+                    <div class="alert alert-success">
+                        {{ session()->get('message') }}
+                    </div>
+                @endif
                 <div class="contact__form">
                     <form class="d-flex flex-wrap justify-content-between" action="{{ url('contact.php')}}" id="contact-form" method="POST">
                         @csrf

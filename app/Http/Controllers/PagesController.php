@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Banner;
+use App\Models\Enquiry;
 use App\Models\Gallery;
 use App\Models\Complaint;
 use App\Models\NewsEvent;
@@ -100,15 +101,18 @@ class PagesController extends Controller
     }
 
     public function savecontact(Request $request) {
-        
-        return $request->all();
+
 
         $validatedData = $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|email',
-            'password' => 'nullable|string|min:6',
-            'mobile_number' => 'required|string',
+            'subject' => 'nullable|string|min:6',
+            'message' => 'required|string',
         ]);
+
+        $enquiry = Enquiry::create($validatedData);
+        return redirect()->route('contact')->with('success', 'Thanks for contacting us! We will be in touch with you shortly.');
+
     }
     
 }
