@@ -19,7 +19,7 @@
                         <input class="w-100" type="text" placeholder="Subject" id="subject" name="subject" required>
                         <textarea placeholder="Your Message" rows="8" name="message" id="message" required></textarea>
                         <div class="text-center w-100">
-                            <button type="submit" class="default-btn move-right"><span>SEND NOW</span></button>
+                            <button type="submit" class="default-btn move-right"><span>SEND</span></button>
                         </div>
                     </form>
                     <p class="form-message"></p> 
