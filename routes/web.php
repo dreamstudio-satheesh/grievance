@@ -12,6 +12,7 @@ use App\Http\Controllers\DstreetController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\DivisionController;
 use App\Http\Controllers\ComplaintController;
+use App\Http\Controllers\EnquiryController;
 use App\Http\Controllers\NewsEventController;
 use App\Http\Controllers\PanchayatController;
 /*
@@ -148,6 +149,9 @@ Route::delete('/banners/{id}', [BannerController::class, 'destroy'])->name('bann
 
 Route::get('/imagelist', [GalleryController::class, 'list'])->name('imagelist');
 
+
+Route::get('/enquiry', [EnquiryController::class, 'index'])->name('enquiry.index');
+Route::delete('/enquiry/{id}', [EnquiryController::class, 'destroy'])->name('enquiry.destroy');
 
 });
 
