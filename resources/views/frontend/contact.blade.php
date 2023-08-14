@@ -9,7 +9,7 @@
         <div class="container">
             <div class="section__header text-center">
                 @if($message = Session::get('success'))
-                <h2>{{ session()->get('message') }}</h2>                    
+                <h2>{{ $message }}</h2>                    
                 @else                    
                 <h2>Contact Us</h2>
                 @endif                
