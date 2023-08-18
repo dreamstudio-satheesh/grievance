@@ -52,6 +52,7 @@ class PageController extends BaseController
 
     public function wards($id)
     { 
+        return 'hi';
         $wards = Ward::select('id','name','panchayat_id')->where('panchayat_id',$id)->get();
         return $this->sendResponse($wards, 'data fetched.'); 
        // return response()->json($wards);
