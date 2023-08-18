@@ -26,42 +26,71 @@ class PageController extends BaseController
         //$newsevents = NewsEvent::all();
         $newsevents = NewsEvent::latest()->get();    
         
-       // return response()->json($newsevents);
+        if(count($newsevents) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
 
-       return $this->sendResponse(Newsresource::collection($newsevents), 'Posts fetched.');     
+       return $this->sendResponse(Newsresource::collection($newsevents), $message );     
       
     }
 
     public function galleries()
     {
-        $galleries = Gallery::latest()->get();    
-        return $this->sendResponse(Galleryresource::collection($galleries), 'Galleries fetched.');      
+        $galleries = Gallery::latest()->get();   
+        if(count($galleries) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse(Galleryresource::collection($galleries), $message);      
     }
 
     public function banners()
     {
         $banners = Banner::latest()->get();  
-        return $this->sendResponse(BR::collection($banners), 'Banners fetched.');      
+        if(count($banners) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse(BR::collection($banners), $message);      
     }
 
     public function panchayats()
     {
         $panchayats = Panchayat::select('id','name')->get();
-        return $this->sendResponse($panchayats, 'data fetched.');    
+        if(count($panchayats) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse($panchayats, $message);    
        // return response()->json($panchayats);
     }
 
     public function wards($id)
     { 
         $wards = Ward::select('id','name','panchayat_id')->where('panchayat_id',$id)->get();
-        return $this->sendResponse($wards, 'data fetched.'); 
+        if(count($wards) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse($wards, $message); 
        // return response()->json($wards);
     }
 
     public function streets($id)
     { 
         $streets = Street::select('id','name','ward_id')->where('id',$id)->get();
-        return $this->sendResponse($streets, 'data fetched.'); 
+        if(count($streets) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse($streets,$message); 
         //return response()->json($streets);
     }
 
@@ -69,7 +98,12 @@ class PageController extends BaseController
     public function divisions()
     {
         $divisions = Division::select('id','name')->get();
-        return $this->sendResponse($divisions, 'data fetched.');
+        if(count($divisions) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse($divisions, $message);
         //return response()->json($divisions);
     }
 
@@ -77,7 +111,12 @@ class PageController extends BaseController
     public function dstreets($id)
     { 
         $street = Dstreet::select('id','name','division_id')->where('division_id',$id)->get();
-        return $this->sendResponse($street, 'data fetched.');
+        if(count($street) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse($street, $message);
        // return response()->json($street);
     }
 
