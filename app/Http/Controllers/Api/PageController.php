@@ -60,20 +60,23 @@ class PageController extends BaseController
     public function streets($id)
     { 
         $streets = Ward::select('id','name','ward_id')->where('ward_id',$id)->get();
-        return response()->json($streets);
+        return $this->sendResponse($streets, 'data fetched.'); 
+        //return response()->json($streets);
     }
 
 
     public function divisions()
     {
         $divisions = Division::select('id','name')->get();
-        return response()->json($divisions);
+        return $this->sendResponse($divisions, 'data fetched.');
+        //return response()->json($divisions);
     }
 
 
     public function dstreets($id)
     { 
         $street = Dstreet::select('id','name','division_id')->where('division_id',$id)->get();
+        return $this->sendResponse($street, 'data fetched.');
         return response()->json($street);
     }
 

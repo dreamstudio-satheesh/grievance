@@ -39,7 +39,8 @@ class ComplaintController extends BaseController
             ]);
 
             if($validator->fails()){
-                return $this->sendError('Error validation', $validator->errors());       
+
+                return $this->sendError('Error validation', $validator->errors()->first());       
             }
             $complaint_id=mt_rand(1000000, 9999999);          
             $user_id= $request->user()->id;
