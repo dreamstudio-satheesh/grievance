@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Ward;
 use App\Models\Banner;
+use App\Models\Street;
 use App\Models\Dstreet;
 use App\Models\Gallery;
 use App\Models\Division;
@@ -52,7 +53,6 @@ class PageController extends BaseController
 
     public function wards($id)
     { 
-        return 'hi';
         $wards = Ward::select('id','name','panchayat_id')->where('panchayat_id',$id)->get();
         return $this->sendResponse($wards, 'data fetched.'); 
        // return response()->json($wards);
@@ -60,7 +60,7 @@ class PageController extends BaseController
 
     public function streets($id)
     { 
-        $streets = Ward::select('id','name','ward_id')->where('id',$id)->get();
+        $streets = Street::select('id','name','ward_id')->where('id',$id)->get();
         return $this->sendResponse($streets, 'data fetched.'); 
         //return response()->json($streets);
     }
