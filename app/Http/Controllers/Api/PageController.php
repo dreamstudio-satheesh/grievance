@@ -46,7 +46,8 @@ class PageController extends BaseController
     public function panchayats()
     {
         $panchayats = Panchayat::select('id','name')->get();
-        return response()->json($panchayats);
+        return $this->sendResponse($panchayats, 'data fetched.');    
+       // return response()->json($panchayats);
     }
 
     public function wards($id)
