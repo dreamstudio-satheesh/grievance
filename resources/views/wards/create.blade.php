@@ -27,7 +27,7 @@
 
             <div class="mb-3">
                 <label for="customername-field" class="form-label">Ward No</label>
-                <input type="text" name="name" value="{{ $ward->name }}" class="form-control" placeholder="Enter Name" required="">
+                <input type="text" name="name" value="" class="form-control" placeholder="Enter Name" required="">
                 <div class="invalid-feedback">Please enter ward name.</div>
             </div>
 
