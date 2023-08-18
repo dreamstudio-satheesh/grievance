@@ -59,7 +59,7 @@ class PageController extends BaseController
 
     public function streets($id)
     { 
-        $streets = Ward::select('id','name','ward_id')->where('ward_id',$id)->get();
+        $streets = Ward::select('id','name','ward_id')->where('id',$id)->get();
         return $this->sendResponse($streets, 'data fetched.'); 
         //return response()->json($streets);
     }
