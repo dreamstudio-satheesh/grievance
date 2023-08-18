@@ -77,7 +77,7 @@ class PageController extends BaseController
     { 
         $street = Dstreet::select('id','name','division_id')->where('division_id',$id)->get();
         return $this->sendResponse($street, 'data fetched.');
-        return response()->json($street);
+       // return response()->json($street);
     }
 
 
