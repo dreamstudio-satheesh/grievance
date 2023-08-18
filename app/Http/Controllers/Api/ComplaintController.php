@@ -42,13 +42,14 @@ class ComplaintController extends BaseController
 
                 return $this->sendError('Error validation', $validator->errors()->first());       
             }
-            $complaint_id=mt_rand(1000000, 9999999);          
-            $user_id= $request->user()->id;
+            
+            $data = $validator->validated();
+            $data['complaint_id']=mt_rand(1000000, 9999999);          
+            $data['user_id']= $request->user()->id;
+            $complaint = Complaint::create($data);
 
+            return $this->sendResponse($data, 'Complaint created successfully.');
 
-            return response()->json([
-                'message' => 'Successfully register',
-            ]);
         }
         else{ 
             return $this->sendError('Unauthorised.', ['error'=>'Unauthorised']);
