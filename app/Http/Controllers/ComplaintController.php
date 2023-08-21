@@ -44,11 +44,17 @@ class ComplaintController extends Controller
             'subject' => 'required|string|max:255',
             'priority' => 'required|string',
             'description' => 'required|string',
+            'photo' => 'nullable|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
             'status' => 'required|string|in:new,in-progress,resolved',
         ]);
 
 
         $complaint = Complaint::create($validatedData);
+
+        if ($request->hasFile('photo')) {
+            $complaint->addMediaFromRequest('photo')->toMediaCollection('images');
+        }
+        
 
         return redirect()->route('complaints.index', $complaint->id)->with('success', 'Complaint created successfully!');
     }
