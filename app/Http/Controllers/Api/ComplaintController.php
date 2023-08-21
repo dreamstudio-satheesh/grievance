@@ -35,6 +35,7 @@ class ComplaintController extends BaseController
                 'subject' => 'required|string|max:255',
                 'priority' => 'required|string',
                 'description' => 'required|string',
+                'photo' => 'nullable|image|mimes:jpg,png,jpeg,gif,svg|max:2048',
                 'status' => 'required|string|in:new,in-progress,resolved',
             ]);
 
@@ -42,11 +43,17 @@ class ComplaintController extends BaseController
 
                 return $this->sendError('Error validation', $validator->errors()->first());       
             }
-            
+
             $data = $validator->validated();
             $data['complaint_id']=mt_rand(1000000, 9999999);          
             $data['user_id']= $request->user()->id;
             $complaint = Complaint::create($data);
+
+            if ($request->hasFile('photo')) {
+                $complaint->addMediaFromRequest('photo')->toMediaCollection('images');
+            }
+            
+          
 
             return $this->sendResponse($data, 'Complaint created successfully.');
 
