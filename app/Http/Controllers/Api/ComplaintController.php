@@ -14,7 +14,7 @@ class ComplaintController extends BaseController
     function track(Request $request)
     {
         if ($request->user()) { 
-        $complaints = Complaint::where('user_id', $request->user()->id)->get();
+        $complaints = Complaint::where('user_id', $request->user()->id)->paginate(10);
         return response()->json($complaints);
         }  
     }
