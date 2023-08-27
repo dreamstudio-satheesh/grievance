@@ -45,6 +45,7 @@ class PageController extends BaseController
             $message = 'data fetched';
         }else{
             $message = 'No record found';
+        }
        return $this->sendResponse($newsevents, $message );  
 
     }
