@@ -15,7 +15,7 @@ class ComplaintController extends BaseController
         if ($request->user()) { 
         $complaints = Complaint::where('user_id', $request->user()->id)->paginate(10);
         // return response()->json($complaints);
-        if(count($complaints) > 0){
+        if($complaints){
             $message = 'data fetched';
         }else{
             $message = 'No record found';
@@ -28,7 +28,7 @@ class ComplaintController extends BaseController
     {
         
         $complaints = Complaint::where('id', $request->id)->first();
-        if(count($complaints) > 0){
+        if($complaints){
             $message = 'data fetched';
         }else{
             $message = 'No record found';
