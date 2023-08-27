@@ -17,6 +17,14 @@ class ComplaintController extends BaseController
         return response()->json($complaints);
         }  
     }
+
+    function tracksingle(Request $request)
+    {
+        if ($request->user()) { 
+       // $complaints = Complaint::where('user_id', $request->user()->id)->paginate(10);
+        return response()->json($request->id);
+        }  
+    }
     public function register(Request $request)
     {
         if ($request->user()) { 
