@@ -39,7 +39,7 @@ class PageController extends BaseController
 
     public function galleries()
     {
-        $galleries = Gallery::latest()->get();   
+        $galleries = Gallery::latest()->paginate(10);   
         if(count($galleries) > 0){
             $message = 'data fetched';
         }else{
