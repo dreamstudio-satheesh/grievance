@@ -25,7 +25,7 @@ class PageController extends BaseController
     public function news_events()
     {
         //$newsevents = NewsEvent::all();
-        $newsevents = NewsEvent::latest()->paginate(10);    
+        $newsevents = NewsEvent::latest()->get();    
         
         if($newsevents){
             $message = 'data fetched';
