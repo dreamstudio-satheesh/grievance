@@ -32,8 +32,8 @@ class PageController extends BaseController
         }else{
             $message = 'No record found';
         }
-        return response()->json($newsevents);
-       //return $this->sendResponse(Newsresource::collection($newsevents), $message );     
+       // return response()->json($newsevents);
+       return $this->sendResponse(Newsresource::collection($newsevents), $message );     
       
     }
 
