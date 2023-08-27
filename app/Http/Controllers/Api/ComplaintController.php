@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Complaint;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Validator;
 use App\Http\Controllers\Api\BaseController as BaseController;
 
@@ -53,7 +52,6 @@ class ComplaintController extends BaseController
                 $complaint->addMediaFromRequest('photo')->toMediaCollection('images');
             }
             
-          
 
             return $this->sendResponse($data, 'Complaint created successfully.');
 
