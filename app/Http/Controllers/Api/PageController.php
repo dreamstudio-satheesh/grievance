@@ -25,15 +25,15 @@ class PageController extends BaseController
     public function news_events()
     {
         //$newsevents = NewsEvent::all();
-        $newsevents = NewsEvent::latest()->get();    
+        $newsevents = NewsEvent::latest()->paginate(10);    
         
         if(count($newsevents) > 0){
             $message = 'data fetched';
         }else{
             $message = 'No record found';
         }
-
-       return $this->sendResponse(Newsresource::collection($newsevents), $message );     
+        return response()->json($newsevents);
+       //return $this->sendResponse(Newsresource::collection($newsevents), $message );     
       
     }
 
