@@ -27,6 +27,7 @@ Route::controller(PageController::class)->group(function () {
     Route::get('news-events', 'news_events');
     Route::get('galleries', 'galleries');
     Route::get('banners', 'banners');
+    Route::get('dropdown/grievance', 'grievance');
     Route::get('dropdown/panchayats', 'panchayats');
     Route::get('dropdown/panchayats/{id}', 'wards');
     Route::get('dropdown/panchayatstreets/{id}', 'streets');

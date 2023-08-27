@@ -8,14 +8,15 @@ use App\Models\Street;
 use App\Models\Dstreet;
 use App\Models\Gallery;
 use App\Models\Division;
+use App\Models\Grievance;
 use App\Models\NewsEvent;
 use App\Models\Panchayat;
 use Illuminate\Http\Request;
 use App\Http\Resources\Banner as BR;
 use App\Http\Resources\News as Newsresource;
 use App\Http\Resources\Gallery as Galleryresource;
+use App\Http\Resources\Grievance as Grievanceresouce;
 use App\Http\Controllers\Api\BaseController as BaseController;
-
 
 class PageController extends BaseController
 {
@@ -45,6 +46,17 @@ class PageController extends BaseController
             $message = 'No record found';
         }
         return $this->sendResponse(Galleryresource::collection($galleries), $message);      
+    }
+
+    public function grievance()
+    {
+        $grievances = Grievance::all();
+        if(count($grievances) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse(Grievanceresouce::collection($grievances), $message);     
     }
 
     public function banners()
