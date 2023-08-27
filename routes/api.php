@@ -25,7 +25,7 @@ Route::controller(AuthController::class)->group(function () {
 
 Route::controller(PageController::class)->group(function () {
     Route::get('news-events', 'news_events');
-    Route::get('news-/{id}', 'single_news');
+    Route::get('news-events/{id}', 'single_news');
     Route::get('galleries', 'galleries');
     Route::get('banners', 'banners');
     Route::get('dropdown/grievance', 'grievance');
