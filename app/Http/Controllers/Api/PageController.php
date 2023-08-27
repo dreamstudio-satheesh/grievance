@@ -27,7 +27,7 @@ class PageController extends BaseController
         //$newsevents = NewsEvent::all();
         $newsevents = NewsEvent::latest()->paginate(10);    
         
-        if(count($newsevents) > 0){
+        if($newsevents){
             $message = 'data fetched';
         }else{
             $message = 'No record found';
@@ -35,6 +35,18 @@ class PageController extends BaseController
        // return response()->json($newsevents);
        return $this->sendResponse($newsevents, $message );     
       
+    }
+
+    public function single_news(Request $request)
+    {
+
+        $newsevents = NewsEvent::where('id',$request->id)->first();
+        if($newsevents){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+       return $this->sendResponse($newsevents, $message );  
+
     }
 
     public function galleries()
