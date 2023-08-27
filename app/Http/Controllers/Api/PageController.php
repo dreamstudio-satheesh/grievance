@@ -50,7 +50,7 @@ class PageController extends BaseController
 
     public function grievance()
     {
-        $grievances = Grievance::all();
+        $grievances = Grievance::select('name')->get();
         if(count($grievances) > 0){
             $message = 'data fetched';
         }else{
