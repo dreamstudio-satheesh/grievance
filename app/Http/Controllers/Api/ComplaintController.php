@@ -14,16 +14,29 @@ class ComplaintController extends BaseController
     {
         if ($request->user()) { 
         $complaints = Complaint::where('user_id', $request->user()->id)->paginate(10);
-        return response()->json($complaints);
+        // return response()->json($complaints);
+        if(count($complaints) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse($complaints,$message); 
         }  
     }
 
     function tracksingle(Request $request)
     {
-        if ($request->user()) { 
-        $complaint = Complaint::where('id', $request->id)->first();
-        return response()->json($complaint);
-        }  
+        
+        $complaints = Complaint::where('id', $request->id)->first();
+        if(count($complaints) > 0){
+            $message = 'data fetched';
+        }else{
+            $message = 'No record found';
+        }
+        return $this->sendResponse($complaints,$message); 
+        
+         //return response()->json($complaint);
+        
     }
     public function register(Request $request)
     {
