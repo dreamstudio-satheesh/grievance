@@ -13,15 +13,7 @@ class Complaint extends Model implements HasMedia
 
     protected $guarded = ['id'];
 
-    public function registerMediaConversions(Media $media = null): void
-    {
-      $this->addMediaConversion('thumb')
-      ->width(368)
-      ->height(232)
-      ->sharpen(10);
-
-
-    }
+    
 
     public function user()
     {
