@@ -14,7 +14,6 @@ class ComplaintController extends BaseController
     {
         if ($request->user()) { 
         $complaints = Complaint::where('user_id', $request->user()->id)->paginate(10);
-        // return response()->json($complaints);
         if($complaints){
             $message = 'data fetched';
         }else{

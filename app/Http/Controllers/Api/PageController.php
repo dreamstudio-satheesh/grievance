@@ -36,10 +36,10 @@ class PageController extends BaseController
       
     }
 
-    public function single_news(Request $request)
+    public function single_news($id)
     {
 
-        $newsevents = NewsEvent::where('id',$request->id)->first();
+        $newsevents = NewsEvent::where('id',$id)->first();
         if($newsevents){
             $message = 'data fetched';
         }else{
